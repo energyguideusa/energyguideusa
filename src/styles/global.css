@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #2563eb 0%, #059669 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.btn {
+  background: white;
+  color: #2563eb;
+  padding: 15px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #f0f9ff;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Benefits */
+.benefits {
+  padding: 60px 20px;
+  background: #f9fafb;
+}
+
+.benefits h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+/* State Selector */
+.states {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.states h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.state-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.state-btn {
+  background: #2563eb;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+}
+
+.state-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Form Section */
+.form-section {
+  background: linear-gradient(135deg, #059669 0%, #2563eb 100%);
+  padding: 60px 20px;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.form-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* Header */
+header {
+  background: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: #2563eb;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background: #1f2937;
+  color: white;
+  padding: 40px 20px;
+  margin-top: 60px;
+}
+
+footer .grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+footer h3, footer h4 {
+  margin-bottom: 15px;
+}
+
+footer a {
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+.trust-signals {
+  padding: 40px 20px;
+  background: #f9fafb;
+  text-align: center;
+}
+
+.trust-signals .grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.trust-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2563eb;
+  margin-bottom: 10px;
+}

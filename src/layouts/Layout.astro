@@ -1,0 +1,43 @@
+---
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Your state-by-state guide to solar panels and HVAC systems" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <style is:global>
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+    </style>
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+ </head>
+  <body>
+    <header class="bg-white shadow-sm">
+      <div class="max-w-6xl mx-auto px-4 py-4">
+        <a href="/" class="text-2xl font-bold text-blue-600">Energy Guide USA</a>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12 mt-20">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <p class="text-gray-400">© 2026 Energy Guide USA. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LeadForm from '../components/LeadForm.astro';
+---
+
+<Layout title="Energy Guide USA - Your State-by-State Guide to Solar & HVAC">
+  <!-- Hero Section -->
+  <section class="bg-[#2562eb] text-white py-20">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="text-5xl font-bold mb-6">
+        Your State-by-State Guide to Solar & HVAC
+      </h1>
+      <p class="text-xl mb-8 text-blue-100">
+        Compare costs, find incentives, and get free quotes from certified installers in your area
+      </p>
+      <a href="#get-quotes" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 inline-block">
+        Get Free Quotes Now
+      </a>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Why Use Energy Guide USA?</h2>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="text-4xl mb-4">⚡</div>
+          <h3 class="text-xl font-bold mb-3">Save Money</h3>
+          <p class="text-gray-600">
+            Compare quotes from multiple installers and save an average of $3,000-6,000 on your installation.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="text-4xl mb-4">📍</div>
+          <h3 class="text-xl font-bold mb-3">Local Expertise</h3>
+          <p class="text-gray-600">
+            Get recommendations specific to your state's climate, incentives, and energy costs.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="text-4xl mb-4">✓</div>
+          <h3 class="text-xl font-bold mb-3">Certified Installers</h3>
+          <p class="text-gray-600">
+            All installers are pre-screened, licensed, and certified for quality work.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- State Selector -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Select Your State</h2>
+      
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+        <a href="/alabama" class="bg-blue-600 text-white p-4 rounded-lg text-center hover:bg-blue-700 transition">Alabama</a>
+        <a href="/alaska" class="bg-blue-600 text-white p-4 rounded-lg text-center hover:bg-blue-700 transition">Alaska</a>
+        <a href="/arizona" class="bg-blue-600 text-white p-4 rounded-lg text-center hover:bg-blue-700 transition">Arizona</a>
+        <a href="/california" class="bg-blue-600 text-white p-4 rounded-lg text-center hover:bg-blue-700 transition">California</a>
+        <a href="/texas" class="bg-blue-600 text-white p-4 rounded-lg text-center hover:bg-blue-700 transition">Texas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Form Section -->
+ <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+
+  <!-- Trust Signals -->
+  <section class="py-12 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div>
+          <div class="text-3xl font-bold text-blue-600 mb-2">50,000+</div>
+          <div class="text-gray-600">Homeowners Helped</div>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-blue-600 mb-2">$25M+</div>
+          <div class="text-gray-600">Saved on Energy Costs</div>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-blue-600 mb-2">1,000+</div>
+          <div class="text-gray-600">Certified Installers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

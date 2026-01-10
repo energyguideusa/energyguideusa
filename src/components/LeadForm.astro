@@ -1,0 +1,95 @@
+---
+// No server-side code needed for client-side form
+---
+
+<div class="bg-white rounded-lg shadow-xl p-8">
+  <h2 class="text-3xl font-bold text-center mb-6">Get Free Quotes from Local Installers</h2>
+  <p class="text-center text-gray-600 mb-8">Compare prices and save thousands</p>
+  
+  <form id="leadForm" class="space-y-4">
+    <div>
+      <label class="block text-sm font-medium mb-2">What service are you interested in?</label>
+      <select name="service_type" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+        <option value="">Select a service</option>
+        <option value="solar">Solar Panels</option>
+        <option value="hvac">HVAC System</option>
+        <option value="both">Both Solar & HVAC</option>
+      </select>
+    </div>
+
+    <div>
+      <label class="block text-sm font-medium mb-2">ZIP Code</label>
+      <input type="text" name="zip_code" placeholder="Enter your ZIP code" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required pattern="[0-9]{5}">
+    </div>
+
+    <div>
+      <label class="block text-sm font-medium mb-2">Email</label>
+      <input type="email" name="email" placeholder="your@email.com" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+    </div>
+
+    <div>
+      <label class="block text-sm font-medium mb-2">Phone</label>
+      <input type="tel" name="phone" placeholder="(555) 123-4567" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+    </div>
+
+    <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition">
+      Get My Free Quotes
+    </button>
+
+    <div id="formMessage" class="hidden text-center font-medium"></div>
+
+    <p class="text-xs text-gray-500 text-center">
+      By clicking "Get My Free Quotes" you agree to our privacy policy and to be contacted by up to 3 certified installers.
+    </p>
+  </form>
+</div>
+
+<script>
+  import { supabase } from '../lib/supabase.js';
+
+  const form = document.getElementById('leadForm');
+  const formMessage = document.getElementById('formMessage');
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const formData = new FormData(form);
+    const data = {
+      service_type: formData.get('service_type'),
+      zip_code: formData.get('zip_code'),
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+      source_page: window.location.pathname
+    };
+
+    // Show submitting message
+    if (formMessage) {
+      formMessage.textContent = 'Submitting...';
+      formMessage.className = 'text-blue-600 text-center font-medium';
+      formMessage.classList.remove('hidden');
+    }
+
+    try {
+      // Save to Supabase
+      const { error } = await supabase
+        .from('leads')
+        .insert([data]);
+
+      if (error) throw error;
+
+      // Success!
+      if (formMessage) {
+        formMessage.textContent = '✅ Success! We\'ll connect you with installers shortly.';
+        formMessage.className = 'text-green-600 text-center font-medium';
+      }
+      form.reset();
+
+    } catch (error) {
+      console.error('Error:', error);
+      if (formMessage) {
+        formMessage.textContent = '❌ Something went wrong. Please try again.';
+        formMessage.className = 'text-red-600 text-center font-medium';
+      }
+    }
+  });
+</script>
