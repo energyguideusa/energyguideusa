@@ -22,3 +22,10 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Generation scripts with API keys
+generate-states.js
+regenerate-california.js
+
+generate-states.js
+regenerate-california.js
