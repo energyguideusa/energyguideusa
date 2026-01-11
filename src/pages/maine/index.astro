@@ -1,0 +1,183 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+
+const content = `<h2>Overview</h2>
+<p>Maine presents exceptional opportunities for both solar panel installations and high-efficiency HVAC systems, making it an ideal state for homeowners looking to reduce energy costs and environmental impact. With an average of 4.1 sun hours per day and electricity rates averaging 16.1¢ per kilowatt-hour through Central Maine Power, the state's primary utility provider, solar installations can generate substantial long-term savings. Maine's net metering policies and strong renewable energy incentives further enhance the financial attractiveness of solar investments.</p>
+
+<p>The state's distinctive four-season climate, characterized by cold winters requiring significant heating and moderate summers needing cooling, creates unique HVAC requirements that modern high-efficiency systems can address effectively. Maine homeowners typically spend 40-60% of their energy budget on heating and cooling, making efficient HVAC systems crucial for managing utility costs. The combination of solar panels and efficient HVAC systems can reduce total energy expenses by 70-90%, while heat pump technology specifically designed for cold climates has revolutionized heating efficiency in the state.</p>
+
+<p>Central Maine Power serves approximately 630,000 customers across the state, offering various rebate programs and time-of-use rates that can maximize solar savings. The utility's commitment to renewable energy integration and grid modernization supports distributed solar installations, while Maine's Renewable Portfolio Standard requires 80% renewable electricity by 2030, creating a supportive policy environment for clean energy investments.</p>
+
+<h2>Solar Panels in Maine</h2>
+<h3>Solar Resource and Production</h3>
+<p>Maine receives excellent solar irradiance despite common misconceptions about northern climates, with annual solar irradiance levels ranging from 4.2 to 4.6 kWh/m²/day across the state. Coastal areas, including Portland and Bar Harbor, typically experience slightly higher production due to reduced atmospheric interference and cooler temperatures that improve panel efficiency. The state's peak solar production occurs from April through September, with July typically generating 140-160% of average monthly production.</p>
+
+<p>Seasonal variations in Maine create interesting production patterns, with winter months producing approximately 40-50% of summer levels due to shorter days and occasional snow coverage. However, Maine's cold temperatures actually benefit solar panel efficiency, as photovoltaic panels perform better in cooler conditions. A typical 6kW solar system in Maine produces 6,500-7,500 kWh annually, enough to offset 80-100% of average household electricity consumption.</p>
+
+<p>Snow load considerations are important in Maine installations, requiring proper mounting systems and panel tilt angles optimized for both production and snow shedding. Most quality solar panels are designed to handle Maine's snow loads, and the dark surface typically facilitates rapid snow melting and sliding, minimizing production losses during winter months.</p>
+
+<h3>Average Solar Costs in Maine</h3>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Size</th>
+      <th class="border px-4 py-2 text-left">Equipment Cost</th>
+      <th class="border px-4 py-2 text-left">Installation</th>
+      <th class="border px-4 py-2 text-left">Total Before</th>
+      <th class="border px-4 py-2 text-left">After 30% Credit</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border px-4 py-2">5kW</td>
+      <td class="border px-4 py-2">\$10,000-12,000</td>
+      <td class="border px-4 py-2">\$3,500-4,000</td>
+      <td class="border px-4 py-2">\$13,500-16,000</td>
+      <td class="border px-4 py-2">\$9,450-11,200</td>
+      <td class="border px-4 py-2">\$850-1,100</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">7kW</td>
+      <td class="border px-4 py-2">\$14,000-16,800</td>
+      <td class="border px-4 py-2">\$4,200-5,000</td>
+      <td class="border px-4 py-2">\$18,200-21,800</td>
+      <td class="border px-4 py-2">\$12,740-15,260</td>
+      <td class="border px-4 py-2">\$1,200-1,500</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">10kW</td>
+      <td class="border px-4 py-2">\$20,000-24,000</td>
+      <td class="border px-4 py-2">\$5,000-6,500</td>
+      <td class="border px-4 py-2">\$25,000-30,500</td>
+      <td class="border px-4 py-2">\$17,500-21,350</td>
+      <td class="border px-4 py-2">\$1,700-2,200</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>HVAC Systems in Maine</h2>
+<h3>Climate Considerations</h3>
+<p>Maine's climate demands robust heating systems capable of handling temperatures that regularly drop below 0°F, while still providing efficient cooling during summer months when temperatures can reach the 80s and 90s. The heating season typically extends from October through April, representing approximately 7,000-8,500 heating degree days annually, significantly higher than the national average. This extended heating season means that heating efficiency takes priority over cooling efficiency when selecting HVAC systems.</p>
+
+<p>For cooling applications, SEER ratings of 16-18 are recommended in Maine, balancing efficiency with cost-effectiveness given the relatively short cooling season. However, heating efficiency becomes paramount, making heat pumps with high HSPF (Heating Seasonal Performance Factor) ratings of 10+ highly desirable. Cold-climate heat pumps, specifically designed for regions like Maine, can effectively heat homes even when outdoor temperatures drop to -15°F or lower.</p>
+
+<p>Humidity control is another important consideration, particularly during Maine's humid summers and the dry heating season. Modern HVAC systems with variable-speed components can better manage humidity levels year-round, improving comfort and indoor air quality while reducing energy consumption through more precise temperature and humidity control.</p>
+
+<h3>HVAC Costs and Savings</h3>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Type</th>
+      <th class="border px-4 py-2 text-left">Installation Cost</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+      <th class="border px-4 py-2 text-left">Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border px-4 py-2">Cold Climate Heat Pump</td>
+      <td class="border px-4 py-2">\$12,000-18,000</td>
+      <td class="border px-4 py-2">\$800-1,400</td>
+      <td class="border px-4 py-2">8-15 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">High-Efficiency Gas Furnace + AC</td>
+      <td class="border px-4 py-2">\$8,000-14,000</td>
+      <td class="border px-4 py-2">\$400-800</td>
+      <td class="border px-4 py-2">10-20 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">Geothermal Heat Pump</td>
+      <td class="border px-4 py-2">\$20,000-30,000</td>
+      <td class="border px-4 py-2">\$1,200-2,000</td>
+      <td class="border px-4 py-2">12-18 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">Ductless Mini-Split System</td>
+      <td class="border px-4 py-2">\$6,000-12,000</td>
+      <td class="border px-4 py-2">\$600-1,000</td>
+      <td class="border px-4 py-2">8-12 years</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Maine Incentives & Rebates</h2>
+<p>Maine offers robust incentive programs that significantly improve the economics of solar and HVAC installations. The cornerstone incentive is the federal solar Investment Tax Credit (ITC), which provides a 30% tax credit for solar installations through 2032, then decreasing to 26% in 2033 and 22% in 2034. This credit applies to the total system cost including equipment, installation, and associated electrical work, and can be carried forward to future tax years if the credit exceeds current tax liability.</p>
+
+<ul>
+<li><strong>Federal 30% Solar Tax Credit:</strong> Available for solar panel systems, battery storage, and solar water heating systems. The credit can be claimed against federal income taxes and covers all qualifying expenses including equipment, installation, permits, and interconnection fees. Homeowners can carry unused credits forward for up to five years, and there is no cap on the credit amount.</li>
+<li><strong>State Solar Rebates:</strong> Maine offers solar rebates up to \$4,000 through various programs, including rebates for residential solar installations and community solar projects. The Governor's Energy Office administers several programs that provide direct rebates and low-interest financing options for qualifying installations.</li>
+<li><strong>Central Maine Power Programs:</strong> CMP offers several energy efficiency programs including rebates for heat pumps (\$500-1,200), high-efficiency water heaters (\$300-600), and weatherization improvements. The utility also provides interconnection support for solar installations and maintains net metering programs that credit excess solar production at retail rates.</li>
+<li><strong>Heat Pump Rebates:</strong> Efficiency Maine offers rebates up to \$2,100 for qualifying heat pump installations, with additional rebates available for low-income households. These rebates apply to both ducted and ductless heat pump systems that meet minimum efficiency requirements.</li>
+<li><strong>Property Tax Exemptions:</strong> Maine provides a 100% property tax exemption for solar installations, meaning the added home value from solar panels is not subject to property taxes. This exemption applies to both the equipment and installation costs, providing ongoing savings throughout the system's lifetime.</li>
+</ul>
+
+<h2>Major Cities in Maine</h2>
+<div class="grid md:grid-cols-2 gap-6 my-6">
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Portland</h3>
+    <p>Portland, Maine's largest city, offers excellent solar potential with 4.3 average daily sun hours and supportive municipal policies for renewable energy. The city's coastal location provides consistent solar resources and cooler temperatures that enhance panel efficiency. Portland residents served by Central Maine Power pay average electricity rates of 16.5¢/kWh, making solar particularly attractive. Local contractors report average installation costs of \$2.80-3.20 per watt, slightly higher than rural areas due to permitting requirements and urban installation challenges. The city offers expedited permitting for solar installations and has eliminated many regulatory barriers. HVAC considerations include higher humidity levels requiring enhanced dehumidification and salt air exposure necessitating corrosion-resistant equipment. Heat pump installations are particularly popular due to the moderate coastal climate and available rebates through Efficiency Maine.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Lewiston</h3>
+    <p>Lewiston presents strong opportunities for both solar and HVAC upgrades, particularly given the city's older housing stock and industrial heritage. The area receives 4.1 daily sun hours with excellent south-facing roof exposure on many homes. Electricity costs average 15.8¢/kWh, creating favorable economics for solar installations. The city has streamlined solar permitting processes and actively promotes renewable energy adoption. Many Lewiston homes benefit from heat pump installations to replace older oil heating systems, with potential savings of \$1,200-2,000 annually. Local HVAC contractors report strong demand for cold-climate heat pumps capable of handling the area's harsh winters. Installation costs are typically 10-15% lower than Portland due to reduced permitting complexity and labor costs. The city's participation in community solar programs also provides options for residents unable to install rooftop systems.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Bangor</h3>
+    <p>Bangor, located in central Maine, experiences slightly lower solar irradiance at 3.9 daily sun hours but offers competitive installation costs and strong utility support through Emera Maine. The city's continental climate creates excellent conditions for cold-climate heat pumps and geothermal systems. Electricity rates average 15.9¢/kWh with time-of-use options that can enhance solar savings. Bangor's municipal government actively supports renewable energy through property tax incentives and streamlined permitting. The area's heating requirements, with over 8,000 heating degree days annually, make efficient heating systems particularly valuable. Local HVAC contractors report strong performance from air-source heat pumps designed for extreme cold, with many systems operating effectively down to -20°F. Snow load requirements are higher than coastal areas, but proper system design accommodates these conditions effectively.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">South Portland</h3>
+    <p>South Portland benefits from excellent solar resources with 4.4 daily sun hours and progressive municipal policies supporting clean energy adoption. The city's coastal location and industrial infrastructure create ideal conditions for larger residential and commercial solar installations. Central Maine Power rates average 16.3¢/kWh, providing strong financial incentives for solar adoption. The municipality offers expedited permitting and has eliminated many installation barriers through updated zoning codes. South Portland's proximity to the ocean moderates temperature extremes, making heat pumps particularly effective year-round. Local contractors report high demand for solar-plus-storage systems, taking advantage of the city's net metering policies and time-of-use rates. HVAC installations benefit from moderate coastal climate but must account for salt air exposure and higher humidity levels. The city's participation in regional energy planning initiatives provides additional resources and support for residential energy improvements.</p>
+  </div>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+<div class="space-y-6 my-6">
+  <div>
+    <h3 class="text-xl font-bold mb-2">How much do solar panels cost in Maine?</h3>
+    <p>Solar panel costs in Maine typically range from \$2.70 to \$3.30 per watt installed, making a typical 6kW residential system cost \$16,200-19,800 before incentives. After applying the 30% federal tax credit, costs reduce to \$11,340-13,860. Additional state and utility rebates can further reduce costs by \$1,000-4,000. Financing options include solar loans, leases, and power purchase agreements, with many homeowners choosing loan options to maximize incentive benefits. Installation costs vary by location, with urban areas like Portland commanding premium pricing while rural installations may be 10-15% less expensive. System costs have decreased by approximately 20% over the past five years while panel efficiency has improved, providing better value for Maine homeowners.</p>
+  </div>
+  <div>
+    <h3 class="text-xl font-bold mb-2">What SEER rating is recommended for Maine?</h3>`;
+---
+
+<Layout title="Maine Solar & HVAC Guide - Costs, Incentives & ROI | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">Maine</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Maine Solar & HVAC Guide
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Complete guide for Maine homeowners - solar panels, HVAC systems, costs, savings, and incentives
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">☀️ 4.1 sun hours/day</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 16.1¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ Central Maine Power</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>

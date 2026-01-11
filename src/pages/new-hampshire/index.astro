@@ -1,0 +1,190 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+
+const content = `<h2>Overview</h2>
+<p>New Hampshire presents exceptional opportunities for both solar panel installations and energy-efficient HVAC systems, making it an ideal state for homeowners looking to reduce energy costs and environmental impact. With an average of 4.1 sun hours per day, the Granite State receives sufficient solar irradiance throughout the year to make solar installations highly profitable. The state's electricity rates averaging 19.6¢ per kWh—significantly higher than the national average—create compelling economics for solar adoption, allowing homeowners to achieve substantial savings on their monthly utility bills.</p>
+
+<p>Eversource Energy serves as the primary utility provider for most of New Hampshire, offering net metering programs that allow solar customers to sell excess electricity back to the grid at retail rates. The state's four-season climate, characterized by cold winters and warm summers, creates year-round energy demands that make both solar panels and high-efficiency HVAC systems essential investments. New Hampshire's commitment to renewable energy, combined with favorable state and federal incentives, positions homeowners to achieve payback periods of 8-12 years on solar installations while enjoying decades of free electricity thereafter.</p>
+
+<p>The combination of New Hampshire's solar resource potential and high electricity costs creates an environment where integrated solar and HVAC solutions can deliver exceptional value. Modern heat pump systems powered by solar electricity offer particular advantages in New Hampshire's climate, providing efficient heating in winter and cooling in summer while maximizing the value of solar production throughout the year.</p>
+
+<h2>Solar Panels in New Hampshire</h2>
+
+<h3>Solar Resource and Production</h3>
+<p>New Hampshire receives approximately 1,500 kWh of solar irradiance per square meter annually, with peak production occurring during the summer months from June through August. The state's solar resource is remarkably consistent, with even winter months providing viable solar production despite shorter daylight hours and occasional snow coverage. A typical residential solar installation in New Hampshire can expect to generate between 1,200-1,400 kWh per installed kW annually, making it one of the more productive northeastern states for solar energy.</p>
+
+<p>Seasonal variations in New Hampshire solar production follow predictable patterns, with summer months producing 40-50% more electricity than winter months. However, the state's cold temperatures actually improve solar panel efficiency, as photovoltaic cells operate more effectively in cooler conditions. Snow coverage, while temporary, typically slides off modern solar panels or melts quickly due to the dark surface absorption, minimizing long-term production impacts.</p>
+
+<h3>Average Solar Costs in New Hampshire</h3>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Size</th>
+      <th class="border px-4 py-2 text-left">Equipment Cost</th>
+      <th class="border px-4 py-2 text-left">Installation</th>
+      <th class="border px-4 py-2 text-left">Total Before</th>
+      <th class="border px-4 py-2 text-left">After 30% Credit</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border px-4 py-2">5kW</td>
+      <td class="border px-4 py-2">\$11,500</td>
+      <td class="border px-4 py-2">\$3,500</td>
+      <td class="border px-4 py-2">\$15,000</td>
+      <td class="border px-4 py-2">\$10,500</td>
+      <td class="border px-4 py-2">\$1,372</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">8kW</td>
+      <td class="border px-4 py-2">\$18,400</td>
+      <td class="border px-4 py-2">\$5,600</td>
+      <td class="border px-4 py-2">\$24,000</td>
+      <td class="border px-4 py-2">\$16,800</td>
+      <td class="border px-4 py-2">\$2,195</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">10kW</td>
+      <td class="border px-4 py-2">\$23,000</td>
+      <td class="border px-4 py-2">\$7,000</td>
+      <td class="border px-4 py-2">\$30,000</td>
+      <td class="border px-4 py-2">\$21,000</td>
+      <td class="border px-4 py-2">\$2,744</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>HVAC Systems in New Hampshire</h2>
+
+<h3>Climate Considerations</h3>
+<p>New Hampshire's continental climate requires HVAC systems capable of handling temperature extremes ranging from below 0°F in winter to over 85°F in summer. The state experiences approximately 7,300 heating degree days and 500 cooling degree days annually, indicating that heating represents the primary HVAC load. For cooling applications, SEER ratings of 16-20 are recommended to maximize efficiency during the summer months, while heating systems should prioritize cold-weather performance and efficiency.</p>
+
+<p>Heat pump systems are increasingly popular in New Hampshire, particularly cold-climate air source heat pumps rated for operation down to -15°F or below. These systems can provide both heating and cooling while maintaining high efficiency throughout New Hampshire's temperature range. Traditional heating systems like natural gas furnaces or oil boilers remain common, but modern heat pump technology offers superior efficiency and the ability to integrate seamlessly with solar panel systems.</p>
+
+<h3>HVAC Costs and Savings</h3>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Type</th>
+      <th class="border px-4 py-2 text-left">Installation Cost</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+      <th class="border px-4 py-2 text-left">Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border px-4 py-2">Cold Climate Heat Pump</td>
+      <td class="border px-4 py-2">\$12,000-\$18,000</td>
+      <td class="border px-4 py-2">\$800-\$1,500</td>
+      <td class="border px-4 py-2">8-15 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">High-Efficiency Gas Furnace</td>
+      <td class="border px-4 py-2">\$8,000-\$12,000</td>
+      <td class="border px-4 py-2">\$400-\$800</td>
+      <td class="border px-4 py-2">10-20 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">Ductless Mini-Split</td>
+      <td class="border px-4 py-2">\$5,000-\$9,000</td>
+      <td class="border px-4 py-2">\$300-\$700</td>
+      <td class="border px-4 py-2">7-15 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">Central Air Conditioning</td>
+      <td class="border px-4 py-2">\$6,000-\$10,000</td>
+      <td class="border px-4 py-2">\$200-\$400</td>
+      <td class="border px-4 py-2">15-25 years</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>New Hampshire Incentives & Rebates</h2>
+<p>New Hampshire offers multiple incentive programs that significantly reduce the cost of solar and HVAC installations, making these investments more accessible and profitable for homeowners. The federal solar Investment Tax Credit (ITC) provides a 30% tax credit for solar panel installations through 2032, stepping down to 26% in 2033 and 22% in 2034. This credit applies to the total installed cost of the solar system, including equipment, installation, and associated electrical work, and can be carried forward to future tax years if not fully utilized in the installation year.</p>
+
+<ul>
+<li><strong>Federal Solar Tax Credit (30%):</strong> Available for solar installations through 2032, this credit covers 30% of total system costs including panels, inverters, mounting equipment, and installation labor. The credit can be applied against federal income taxes owed and carried forward for up to five years if not fully utilized in the first year.</li>
+<li><strong>New Hampshire Rebate Program:</strong> The state offers rebates up to \$3,500 for renewable energy installations, including solar panels and certain high-efficiency HVAC systems. These rebates are administered through the New Hampshire Public Utilities Commission and are available on a first-come, first-served basis with annual funding limits.</li>
+<li><strong>Eversource Energy Programs:</strong> As New Hampshire's largest utility, Eversource offers various rebates for energy-efficient HVAC systems, including up to \$1,500 for qualifying heat pumps and \$500-\$1,000 for high-efficiency air conditioning systems. The utility also provides net metering for solar customers at full retail rates.</li>
+<li><strong>Local Utility Programs:</strong> Smaller municipal utilities throughout New Hampshire offer their own incentive programs, including rebates for energy-efficient appliances and sometimes additional support for solar installations. These programs vary by utility and should be researched based on specific service territories.</li>
+<li><strong>USDA Rural Energy Grants:</strong> Rural properties in New Hampshire may qualify for USDA Rural Energy for America Program (REAP) grants, which can cover up to 25% of project costs for renewable energy installations, including solar panels and energy-efficient HVAC systems.</li>
+</ul>
+
+<h2>Major Cities in New Hampshire</h2>
+<div class="grid md:grid-cols-2 gap-6 my-6">
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Manchester</h3>
+    <p>As New Hampshire's largest city, Manchester offers excellent opportunities for both solar and HVAC installations, with urban infrastructure supporting reliable utility connections and service availability. The city's mix of residential neighborhoods and commercial districts creates diverse opportunities for solar installations, from rooftop residential systems to larger commercial arrays. Manchester residents served by Eversource benefit from full retail rate net metering, making solar particularly attractive. Local permitting processes are streamlined, with typical solar permits processed within 2-3 weeks. Average residential solar system costs in Manchester range from \$2.80-\$3.20 per watt installed, with most homeowners achieving 8-10 year payback periods.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Nashua</h3>
+    <p>Nashua's proximity to Massachusetts creates unique opportunities for competitive pricing on solar and HVAC installations, as contractors from both states serve the market. The city's relatively newer housing stock often features electrical systems that accommodate solar installations with minimal upgrades. Nashua Electric Division provides municipal utility service to some areas, offering competitive rates and local net metering programs. Residential solar installations in Nashua typically range from \$15,000-\$35,000 before incentives, with strong south-facing exposure available in most suburban neighborhoods. Heat pump installations are particularly popular due to the city's moderate climate and high electricity efficiency ratings.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Concord</h3>
+    <p>As New Hampshire's capital city, Concord benefits from state government initiatives promoting renewable energy adoption and energy efficiency. The city offers expedited permitting for solar installations that meet specific criteria, reducing installation timelines and costs. Concord's municipal buildings showcase various renewable energy technologies, providing local examples of successful installations. Residential solar potential is excellent throughout the city's established neighborhoods, with mature trees requiring careful site assessment for optimal solar placement. Local HVAC contractors are well-versed in cold-climate heat pump installations, making Concord an ideal market for integrated solar-plus-heat pump systems that maximize energy independence.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Dover</h3>
+    <p>Dover's location in the Seacoast region provides unique climate considerations for both solar and HVAC installations, with coastal influences moderating temperature extremes. The city's mix of historic and modern housing requires customized approaches to solar installations, with many successful integrations preserving architectural character while maximizing energy production. Dover Electric Department offers municipal utility service with competitive rates and local customer service for net metering customers. The city's growing tech sector and environmental consciousness create strong demand for renewable energy solutions, supporting a competitive market for solar and HVAC contractors. Average solar installation costs in Dover are slightly below state averages due to competitive market conditions.</p>
+  </div>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+<div class="space-y-6 my-6">
+  <div>
+    <h3 class="text-xl font-bold mb-2">How much do solar panels cost in New Hampshire?</h3>
+    <p>Solar panel costs in New Hampshire typically range from \$2.80 to \$3.50 per watt installed, meaning a typical 8kW residential system costs between \$22,400 and \$28,000 before incentives. After applying the 30% federal tax credit and potential state rebates, homeowners can expect to pay \$15,680 to \$19,600 for a complete solar installation. These costs include all equipment (panels, inverters, mounting systems), installation labor, permitting, and interconnection fees. Financing options are widely available, including solar loans with rates as low as 3.99% APR, allowing many homeowners to achieve immediate monthly savings even with loan payments.</p>
+  </div>
+  <div>
+    <h3 class="text-xl font-bold mb-2">What SEER rating is recommended for New Hampshire?</h3>
+    <p>For New Hampshire's climate, SEER ratings of 16-20 are recommended for central air conditioning systems, providing optimal efficiency during the state's moderate cooling season. Since New Hampshire has relatively low cooling demands compared to heating needs, investing in extremely high SEER ratings (above 20) may not provide sufficient payback through energy savings. For heat pump systems providing both heating and cooling, look for units with SEER ratings of 18+ and HSPF (Heating Seasonal Performance Factor) ratings of 9.0 or higher to ensure efficient operation during New Hampshire's extended heating season. Cold-climate heat pumps rated for operation at -15°F or below are specifically recommended for reliable winter performance.</p>
+  </div>
+  <div>
+    <h3 class="text-xl font-bold mb-2">Do solar panels work during New Hampshire winters?</h3>
+    <p>Yes, solar panels work effectively during New Hampshire winters, often performing better than expected due to increased efficiency in cold temperatures. While snow can temporarily reduce production, modern panels are installed at angles that promote natural snow shedding, and their dark surfaces help accelerate melting. Even on cloudy winter days, panels continue generating electricity from available daylight. Annual solar production calculations already account for seasonal variations, and properly designed systems still achieve their projected energy output despite winter weather conditions.</p>
+  </div>
+  <div>
+    <h3 class="text-xl font-bold mb-2">What size solar system do I need for my New Hampshire home?</h3>
+    <p>Most New Hampshire homes require 6kW to 12kW solar systems to offset their electricity usage, depending on home size, efficiency, and energy consumption patterns. A typical 2,000 square foot home with electric heat might need an`;
+---
+
+<Layout title="New Hampshire Solar & HVAC Guide - Costs, Incentives & ROI | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">New Hampshire</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        New Hampshire Solar & HVAC Guide
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Complete guide for New Hampshire homeowners - solar panels, HVAC systems, costs, savings, and incentives
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">☀️ 4.1 sun hours/day</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 19.6¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ Eversource</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>

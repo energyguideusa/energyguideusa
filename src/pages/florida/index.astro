@@ -1,0 +1,186 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+
+const content = `<h2>Overview</h2>
+<p>Florida stands as one of the premier states in the United States for solar energy adoption and HVAC system optimization, making it an ideal location for homeowners seeking energy independence and cost savings. With an impressive average of 5.3 sun hours per day throughout the year, the Sunshine State offers exceptional solar irradiance that translates directly into robust energy production from photovoltaic systems. The state's favorable solar conditions, combined with electricity rates averaging 11.4¢ per kilowatt-hour, create compelling economics for residential and commercial solar installations that can significantly reduce monthly utility bills.</p>
+
+<p>Florida's subtropical and tropical climate zones present unique opportunities and challenges for both solar energy systems and heating, ventilation, and air conditioning (HVAC) equipment. The state's year-round sunshine provides consistent solar energy production, while the hot, humid summers and mild winters create substantial cooling demands that make energy-efficient HVAC systems essential for comfort and cost management. Florida Power & Light (FPL), serving as the primary utility provider for much of the state, along with other regional utilities, offers various programs and rate structures that can enhance the financial benefits of solar installations and energy-efficient HVAC upgrades.</p>
+
+<p>The combination of abundant solar resources, supportive state policies including property tax exemptions for solar installations, and the federal 30% solar investment tax credit creates an environment where homeowners can achieve substantial energy savings. When paired with high-efficiency HVAC systems designed for Florida's climate, property owners can reduce their overall energy consumption by 40-60% while improving indoor comfort and increasing property values. The integration of solar panels with modern, efficient HVAC systems represents a comprehensive approach to energy management that addresses Florida's specific climatic conditions and energy consumption patterns.</p>
+
+<h2>Solar Panels in Florida</h2>
+<h3>Solar Resource and Production</h3>
+<p>Florida's exceptional solar resource stems from its geographic location between 24°N and 31°N latitude, providing optimal angles for solar panel installations throughout the year. The state receives an average annual solar irradiance of 5.0-5.5 kWh/m²/day, with peak production months occurring from March through September when daily irradiance can exceed 6.5 kWh/m²/day. Southern Florida, including Miami-Dade, Broward, and Palm Beach counties, experiences the highest solar irradiance levels, while northern regions like Jacksonville and Tallahassee still maintain excellent production potential with slightly lower but consistent values.</p>
+
+<p>Seasonal variations in Florida's solar production follow predictable patterns, with summer months delivering 15-20% higher energy yields compared to winter periods. A typical 5kW residential solar system in Florida can generate between 6,500-7,500 kWh annually, depending on specific location, panel orientation, and shading conditions. South-facing installations with optimal 25-30 degree tilts achieve maximum production, though southwest and southeast orientations typically maintain 90-95% of optimal performance. The state's minimal snowfall and infrequent weather-related obstructions ensure consistent year-round energy production, making Florida one of the most reliable solar markets in the United States.</p>
+
+<p>Cloud patterns and afternoon thunderstorms, common during summer months, create brief production interruptions but rarely impact overall monthly generation significantly. Advanced solar inverter technology and battery storage systems can help manage these temporary fluctuations, ensuring continuous power availability during peak demand periods. The combination of high irradiance levels, extended daylight hours during summer months, and minimal weather-related production losses makes Florida an ideal environment for maximizing solar energy investments and achieving rapid payback periods on system installations.</p>
+
+<h3>Average Solar Costs in Florida</h3>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Size</th>
+      <th class="border px-4 py-2 text-left">Equipment Cost</th>
+      <th class="border px-4 py-2 text-left">Installation</th>
+      <th class="border px-4 py-2 text-left">Total Before</th>
+      <th class="border px-4 py-2 text-left">After 30% Credit</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border px-4 py-2">5kW</td>
+      <td class="border px-4 py-2">\$8,500-10,500</td>
+      <td class="border px-4 py-2">\$3,500-4,000</td>
+      <td class="border px-4 py-2">\$12,000-14,500</td>
+      <td class="border px-4 py-2">\$8,400-10,150</td>
+      <td class="border px-4 py-2">\$750-850</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">8kW</td>
+      <td class="border px-4 py-2">\$13,600-16,800</td>
+      <td class="border px-4 py-2">\$5,200-6,000</td>
+      <td class="border px-4 py-2">\$18,800-22,800</td>
+      <td class="border px-4 py-2">\$13,160-15,960</td>
+      <td class="border px-4 py-2">\$1,200-1,360</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">10kW</td>
+      <td class="border px-4 py-2">\$17,000-21,000</td>
+      <td class="border px-4 py-2">\$6,000-7,500</td>
+      <td class="border px-4 py-2">\$23,000-28,500</td>
+      <td class="border px-4 py-2">\$16,100-19,950</td>
+      <td class="border px-4 py-2">\$1,500-1,700</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">15kW</td>
+      <td class="border px-4 py-2">\$25,500-31,500</td>
+      <td class="border px-4 py-2">\$8,500-10,500</td>
+      <td class="border px-4 py-2">\$34,000-42,000</td>
+      <td class="border px-4 py-2">\$23,800-29,400</td>
+      <td class="border px-4 py-2">\$2,250-2,550</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>HVAC Systems in Florida</h2>
+<h3>Climate Considerations</h3>
+<p>Florida's subtropical and tropical climate zones create unique HVAC requirements that differ significantly from other regions of the United States. The state experiences hot, humid summers with temperatures regularly exceeding 90°F and humidity levels above 70%, creating substantial cooling loads that can account for 60-70% of residential energy consumption. Winter months bring mild temperatures, typically ranging from 50-75°F, requiring minimal heating in most areas except for northern Florida where occasional heating needs arise during December through February.</p>
+
+<p>Due to the intense cooling demands, Florida building codes and energy efficiency standards recommend HVAC systems with SEER (Seasonal Energy Efficiency Ratio) ratings of 14.5 or higher, though systems with SEER 16-20+ ratings provide optimal performance and energy savings. High-efficiency heat pump systems are particularly well-suited for Florida's climate, providing both cooling and heating capabilities while maintaining superior energy efficiency compared to traditional split systems. The state's coastal areas require additional considerations for salt air corrosion, necessitating specialized coatings and materials for outdoor HVAC components.</p>
+
+<p>Proper humidity control represents a critical aspect of HVAC system design in Florida, where inadequate dehumidification can lead to indoor air quality issues, mold growth, and reduced comfort levels. Variable-speed compressors and multi-stage systems excel in Florida's climate by providing precise temperature and humidity control while operating more efficiently during partial load conditions. Smart thermostats and zoning systems further enhance efficiency by allowing customized climate control for different areas of homes, reducing energy waste and improving overall comfort during Florida's extended cooling season.</p>
+
+<h3>HVAC Costs and Savings</h3>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Type</th>
+      <th class="border px-4 py-2 text-left">Installation Cost</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+      <th class="border px-4 py-2 text-left">Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border px-4 py-2">High-Efficiency Heat Pump (SEER 16-18)</td>
+      <td class="border px-4 py-2">\$4,500-7,500</td>
+      <td class="border px-4 py-2">\$400-800</td>
+      <td class="border px-4 py-2">6-12 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">Variable Speed System (SEER 18-20)</td>
+      <td class="border px-4 py-2">\$6,000-9,500</td>
+      <td class="border px-4 py-2">\$600-1,200</td>
+      <td class="border px-4 py-2">7-10 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">Ductless Mini-Split (SEER 20+)</td>
+      <td class="border px-4 py-2">\$3,500-8,000</td>
+      <td class="border px-4 py-2">\$500-1,000</td>
+      <td class="border px-4 py-2">5-8 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">Smart Thermostat Upgrade</td>
+      <td class="border px-4 py-2">\$200-500</td>
+      <td class="border px-4 py-2">\$150-300</td>
+      <td class="border px-4 py-2">1-2 years</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Florida Incentives & Rebates</h2>
+<p>Florida offers several attractive incentives and rebates that significantly reduce the cost of solar panel installations and energy-efficient HVAC systems, making these investments more accessible and financially beneficial for homeowners and businesses throughout the state.</p>
+
+<ul>
+<li><strong>Federal Solar Investment Tax Credit (ITC):</strong> The federal government provides a 30% tax credit for solar panel installations completed through 2032, allowing property owners to deduct 30% of the total system cost from their federal tax liability. This credit applies to equipment, installation labor, and related expenses, with no cap on the credit amount. The credit steps down to 26% in 2033 and 22% in 2034 before expiring for residential installations.</li>
+
+<li><strong>Florida Solar and CHP Sales Tax Exemption:</strong> Florida exempts solar energy systems from state sales tax, providing immediate savings of 6-7.5% on equipment purchases. This exemption applies to solar panels, inverters, batteries, and installation materials, reducing upfront costs by \$800-2,000 on typical residential installations.</li>
+
+<li><strong>Property Tax Exemption for Renewable Energy:</strong> Florida Statute 196.175 provides a 100% property tax exemption for solar energy systems installed on residential and commercial properties. This exemption means that adding solar panels will not increase property tax assessments, despite potentially increasing home values by \$15,000-25,000 or more.</li>
+
+<li><strong>Florida Power & Light (FPL) Programs:</strong> FPL offers net metering agreements allowing solar customers to receive credit for excess energy production at retail rates. The utility also provides rebates for energy-efficient HVAC equipment, smart thermostats, and home energy audits through their conservation programs, with rebates ranging from \$50-500 depending on equipment type and efficiency ratings.</li>
+
+<li><strong>Local Utility Rebates:</strong> Municipal utilities throughout Florida, including Orlando Utilities Commission (OUC), Gainesville Regional Utilities (GRU), and others, offer additional rebates and incentives for solar installations and energy-efficient equipment. These programs vary by utility but can provide rebates of \$500-2,000 for qualifying solar installations and \$100-300 for high-efficiency HVAC upgrades.</li>
+
+<li><strong>PACE Financing:</strong> Many Florida counties participate in Property Assessed Clean Energy (PACE) financing programs, allowing property owners to finance solar and energy efficiency improvements through property tax assessments. This financing option provides long-term, low-interest funding with payments tied to the property rather than the individual owner.</li>
+</ul>
+
+<h2>Major Cities in Florida</h2>
+<div class="grid md:grid-cols-2 gap-6 my-6">
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Jacksonville</h3>
+    <p>Jacksonville, Florida's largest city by area, offers excellent solar potential with 5.1 average daily sun hours and serves as JEA's (Jacksonville Electric Authority) primary service territory. The city's diverse neighborhoods, from historic Riverside to modern Ponte Vedra Beach, present varied opportunities for solar installations, with typical 8kW systems costing \$16,800-20,400 before incentives. JEA's net metering program and solar rebate offerings, combined with the city's mild winter climate, make both solar and high-efficiency HVAC systems attractive investments. Local contractors report strong demand for SEER 16+ heat pump systems, particularly in coastal areas where salt air requires specialized equipment coatings.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Miami</h3>
+    <p>Miami's tropical climate and 5.4 average daily sun hours create ideal conditions for solar energy production, with FPL serving most residential and commercial customers in Miami-Dade County. The city's year-round cooling demands make high-efficiency HVAC systems essential, with SEER 18+ systems recommended for optimal performance and humidity control. Solar installations typically range from \$15,000-22,000 for 8kW systems before incentives, while HVAC upgrades cost \$5,500-8,500 for whole-home solutions. Miami's Building Department has streamlined solar permitting processes, and local rebate programs through Miami-Dade County can provide additional savings of \$500-1,500 for qualifying energy efficiency improvements.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Tampa</h3>
+    <p>Tampa's central Florida location provides 5.2 average daily sun hours, with Tampa Electric Company (TECO) serving the majority of residential customers through competitive net metering rates and energy efficiency programs. The city's mix of historic neighborhoods and modern developments offers diverse opportunities for solar installations, with typical costs ranging \$14,500-19,200 for 8kW systems before incentives. Tampa's humid subtropical climate creates substantial cooling loads 8-9 months per year, making variable-speed heat pump systems with SEER 17+ ratings ideal for maximizing efficiency. Local contractors report increasing integration of solar-powered HVAC systems, with combined installations providing 50-70% reductions in annual energy costs.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Orlando</h3>
+    <p>Orlando benefits from 5.3 average daily sun hours and is serve`;
+---
+
+<Layout title="Florida Solar & HVAC Guide - Costs, Incentives & ROI | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">Florida</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Florida Solar & HVAC Guide
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Complete guide for Florida homeowners - solar panels, HVAC systems, costs, savings, and incentives
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">☀️ 5.3 sun hours/day</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 11.4¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ Florida Power & Light</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>

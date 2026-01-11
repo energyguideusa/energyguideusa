@@ -1,0 +1,186 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+
+const content = `<h2>Overview</h2>
+<p>West Virginia presents unique opportunities for both solar energy adoption and HVAC system optimization despite its mountainous terrain and varied climate conditions. With an average of 3.8 sun hours per day, the Mountain State receives sufficient solar irradiance to make residential and commercial solar installations economically viable. The state's relatively affordable electricity rates at 11.7¢ per kWh, primarily supplied by Appalachian Power, create a stable baseline for calculating solar savings and return on investment. While West Virginia's solar resource may not match southwestern states, the combination of federal incentives, state property tax exemptions, and rising energy costs make solar an increasingly attractive option for homeowners and businesses.</p>
+
+<p>The state's continental climate presents distinct seasonal challenges that make efficient HVAC systems essential for year-round comfort and energy management. West Virginia experiences cold winters requiring substantial heating, particularly in higher elevations, while summers bring moderate to high cooling demands in lower valleys. This climate profile makes the integration of solar panels with high-efficiency HVAC systems particularly compelling, as peak cooling seasons align well with maximum solar production periods. Homeowners can significantly reduce their energy burden by combining these technologies, especially when factoring in the state's net metering policies and utility rebate programs.</p>
+
+<p>The economic landscape for renewable energy in West Virginia is evolving rapidly, with increasing recognition of solar's role in energy independence and cost savings. Appalachian Power's net metering program allows solar customers to receive credit for excess energy production, while various federal and state incentives can reduce initial installation costs by 30% or more. For HVAC systems, the focus on energy efficiency aligns with both environmental goals and practical cost savings, making high-SEER equipment and heat pump technologies particularly valuable investments in the state's variable climate conditions.</p>
+
+<h2>Solar Panels in West Virginia</h2>
+
+<h3>Solar Resource and Production</h3>
+<p>West Virginia's solar irradiance levels average between 4.0-4.5 kWh/m²/day, with variations across the state's diverse topography. The eastern panhandle and southern regions typically receive higher solar irradiance, while mountainous areas in the central and northern portions may experience more shading and weather-related impacts. Peak production months occur from May through August, when systems can generate 120-140% of their average monthly output. A typical 5kW residential system in West Virginia can produce approximately 5,500-6,500 kWh annually, depending on installation factors such as roof orientation, tilt angle, and local shading conditions.</p>
+
+<p>Seasonal variations significantly impact solar production, with winter months producing 60-70% less energy than peak summer months due to shorter days, lower sun angles, and increased cloud cover. However, snow can actually benefit solar panel performance by reflecting additional light and helping clean panel surfaces when it melts. The state's moderate temperatures during peak production months help maintain panel efficiency, as excessive heat can reduce photovoltaic performance. Most residential installations utilize roof-mounted systems with south-facing orientations and 30-35 degree tilts to optimize year-round production.</p>
+
+<h3>Average Solar Costs in West Virginia</h3>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Size</th>
+      <th class="border px-4 py-2 text-left">Equipment Cost</th>
+      <th class="border px-4 py-2 text-left">Installation</th>
+      <th class="border px-4 py-2 text-left">Total Before</th>
+      <th class="border px-4 py-2 text-left">After 30% Credit</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border px-4 py-2">5kW</td>
+      <td class="border px-4 py-2">\$8,500-10,000</td>
+      <td class="border px-4 py-2">\$3,500-4,500</td>
+      <td class="border px-4 py-2">\$12,000-14,500</td>
+      <td class="border px-4 py-2">\$8,400-10,150</td>
+      <td class="border px-4 py-2">\$650-760</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">8kW</td>
+      <td class="border px-4 py-2">\$13,600-16,000</td>
+      <td class="border px-4 py-2">\$5,000-6,500</td>
+      <td class="border px-4 py-2">\$18,600-22,500</td>
+      <td class="border px-4 py-2">\$13,020-15,750</td>
+      <td class="border px-4 py-2">\$1,040-1,215</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">10kW</td>
+      <td class="border px-4 py-2">\$17,000-20,000</td>
+      <td class="border px-4 py-2">\$6,000-7,500</td>
+      <td class="border px-4 py-2">\$23,000-27,500</td>
+      <td class="border px-4 py-2">\$16,100-19,250</td>
+      <td class="border px-4 py-2">\$1,300-1,520</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>HVAC Systems in West Virginia</h2>
+
+<h3>Climate Considerations</h3>
+<p>West Virginia's continental climate creates distinct heating and cooling requirements that vary significantly by elevation and geographic location. The state experiences approximately 4,500-5,500 heating degree days annually, with higher elevations requiring substantially more heating energy. Cooling degree days range from 800-1,200 annually, indicating moderate air conditioning needs during summer months. This climate profile makes heating efficiency the primary concern for most homeowners, though cooling efficiency remains important for comfort and energy management during peak summer periods.</p>
+
+<p>For optimal performance in West Virginia's climate, HVAC systems should prioritize high heating efficiency with adequate cooling capacity. Heat pumps are particularly well-suited for much of the state, offering both heating and cooling with superior efficiency compared to traditional systems. In areas with extreme winter temperatures, dual-fuel heat pump systems that switch to gas backup during very cold periods provide optimal comfort and efficiency. Recommended SEER ratings for cooling should be 16-18 for optimal efficiency without over-investing in cooling capacity that won't be fully utilized. HSPF ratings for heat pumps should be 9.0 or higher to ensure efficient heating performance.</p>
+
+<h3>HVAC Costs and Savings</h3>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Type</th>
+      <th class="border px-4 py-2 text-left">Installation Cost</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+      <th class="border px-4 py-2 text-left">Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border px-4 py-2">High-Efficiency Heat Pump (16 SEER/9.5 HSPF)</td>
+      <td class="border px-4 py-2">\$12,000-16,000</td>
+      <td class="border px-4 py-2">\$400-600</td>
+      <td class="border px-4 py-2">8-12 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">Dual-Fuel Heat Pump System</td>
+      <td class="border px-4 py-2">\$15,000-20,000</td>
+      <td class="border px-4 py-2">\$500-800</td>
+      <td class="border px-4 py-2">10-14 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">High-Efficiency Gas Furnace (95% AFUE)</td>
+      <td class="border px-4 py-2">\$8,000-12,000</td>
+      <td class="border px-4 py-2">\$300-450</td>
+      <td class="border px-4 py-2">7-10 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">Ductless Mini-Split System</td>
+      <td class="border px-4 py-2">\$6,000-10,000</td>
+      <td class="border px-4 py-2">\$250-400</td>
+      <td class="border px-4 py-2">6-9 years</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>West Virginia Incentives & Rebates</h2>
+<p>West Virginia offers several financial incentives that make solar and HVAC investments more attractive for residential and commercial customers. The most significant incentive remains the federal Investment Tax Credit (ITC), which provides a 30% tax credit for solar installations through 2032, stepping down to 26% in 2033 and 22% in 2034. This credit applies to the total system cost including equipment, installation, and associated electrical work, potentially saving thousands of dollars on typical residential installations.</p>
+
+<ul>
+<li><strong>Federal Solar Investment Tax Credit (30%):</strong> Available through 2032, this credit can be applied against federal income taxes owed and covers the full cost of solar panel systems, inverters, mounting equipment, and installation labor. The credit can be carried forward to future tax years if it exceeds current year tax liability.</li>
+<li><strong>Property Tax Exemption:</strong> West Virginia exempts solar energy systems from property tax assessments, meaning the added home value from solar installation won't increase annual property tax bills. This exemption applies to both the equipment and installation value.</li>
+<li><strong>Appalachian Power Net Metering:</strong> Customers with solar systems up to 25kW can participate in net metering, receiving credit for excess electricity generation at the full retail rate. Credits roll over monthly and are paid out annually at avoided cost rates.</li>
+<li><strong>Utility Rebate Programs:</strong> Appalachian Power and other utilities occasionally offer rebates for high-efficiency HVAC equipment, energy audits, and weatherization improvements. These programs vary by utility territory and available funding.</li>
+<li><strong>USDA Rural Development Grants:</strong> Rural properties may qualify for USDA Rural Energy for America Program (REAP) grants covering up to 25% of renewable energy project costs, which can be combined with federal tax credits for maximum savings.</li>
+</ul>
+
+<h2>Major Cities in West Virginia</h2>
+<div class="grid md:grid-cols-2 gap-6 my-6">
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Charleston</h3>
+    <p>As West Virginia's capital and largest city, Charleston offers excellent opportunities for both solar and HVAC investments. The city receives good solar exposure with minimal urban shading, and its location in the Kanawha Valley provides moderate climate conditions requiring balanced heating and cooling solutions. Appalachian Power serves the area with net metering available for solar customers. Typical residential solar installations range from \$12,000-\$25,000 before incentives, with annual savings of \$600-\$1,400. The city's mix of older homes creates significant opportunities for HVAC upgrades, with heat pump systems particularly well-suited for the region's moderate winters and warm summers.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Huntington</h3>
+    <p>Located along the Ohio River, Huntington benefits from good solar exposure and moderate climate conditions similar to Charleston. The city's lower elevation results in slightly higher cooling demands during summer months, making efficient air conditioning systems important for comfort and energy savings. Solar installations typically produce 5,800-6,200 kWh annually per installed kW. Appalachian Power's net metering program provides full retail credit for excess solar production. The area's older housing stock presents opportunities for significant HVAC efficiency improvements, with dual-fuel heat pump systems offering optimal performance for the region's variable winter temperatures.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Morgantown</h3>
+    <p>Home to West Virginia University, Morgantown's higher elevation and northern location create slightly more challenging conditions for solar production but excellent opportunities for heating system improvements. The city experiences longer, colder winters requiring robust heating solutions, making high-efficiency furnaces and heat pump systems valuable investments. Solar systems typically produce 5,400-5,800 kWh annually per installed kW. Mon Power serves the area with net metering available. The combination of student housing and established residential areas creates diverse opportunities for both solar and HVAC improvements, with particular emphasis on heating efficiency and comfort.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Parkersburg</h3>
+    <p>Situated in the northwestern part of the state along the Ohio River, Parkersburg offers favorable conditions for solar installations with good southern exposure opportunities and minimal geographic shading. The city's moderate elevation and river valley location create balanced heating and cooling needs, making it ideal for heat pump systems and comprehensive solar installations. Annual solar production typically ranges from 5,600-6,000 kWh per installed kW. Appalachian Power provides net metering services, and the area's mix of residential and commercial properties offers diverse opportunities for energy efficiency improvements and solar adoption.</p>
+  </div>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+<div class="space-y-6 my-6">
+  <div>
+    <h3 class="text-xl font-bold mb-2">How much do solar panels cost in West Virginia?</h3>
+    <p>Solar panel costs in West Virginia typically range from \$2.40-\$2.90 per watt before incentives, making a typical 5kW residential system cost \$12,000-\$14,500 before the federal tax credit. After applying the 30% federal Investment Tax Credit, homeowners can expect to pay \$8,400-\$10,150 for a complete system. Installation costs vary based on roof complexity, electrical upgrades needed, and local permitting requirements. With West Virginia's electricity rates at 11.7¢/kWh and average system production of 5,500-6,500 kWh annually, most homeowners see payback periods of 12-16 years and total 25-year savings of \$8,000-\$15,000.</p>
+  </div>
+  <div>
+    <h3 class="text-xl font-bold mb-2">What SEER rating is recommended for West Virginia?</h3>
+    <p>For West Virginia's climate, SEER ratings of 16-18 provide the optimal balance of efficiency and cost-effectiveness. While higher SEER ratings offer greater efficiency, the state's moderate cooling loads (800-1,200 cooling degree days annually) mean that systems above 18 SEER may not provide sufficient additional savings to justify their higher cost. More importantly, focus should be placed on heating efficiency, with heat pump HSPF ratings of 9.0 or higher recommended due to the state's significant heating requirements of 4,500-5,500 heating degree days annually. In higher elevation areas with harsh winters, dual-fuel heat pump systems or high-efficiency gas furnaces (95%+ AFUE) may provide better performance and comfort.</p>
+  </div>
+  <div>
+    <h3 class="text-xl font-bold mb-2">Does West Virginia have net metering for solar customers?</h3>
+    <p`;
+---
+
+<Layout title="West Virginia Solar & HVAC Guide - Costs, Incentives & ROI | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">West Virginia</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        West Virginia Solar & HVAC Guide
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Complete guide for West Virginia homeowners - solar panels, HVAC systems, costs, savings, and incentives
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">☀️ 3.8 sun hours/day</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 11.7¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ Appalachian Power</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>

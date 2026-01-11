@@ -1,0 +1,197 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+
+const content = `<h2>Overview</h2>
+
+<p>Utah presents exceptional opportunities for both solar energy systems and high-efficiency HVAC installations, making it one of the most attractive states in the Mountain West for residential energy upgrades. With an impressive average of 5.3 peak sun hours per day and over 240 sunny days annually, Utah ranks among the top 15 states nationally for solar potential. The state's high elevation and dry climate create ideal conditions for photovoltaic systems, which operate more efficiently in cooler temperatures and clear atmospheric conditions. Rocky Mountain Power, the primary utility provider serving most of Utah, offers competitive electricity rates averaging 10.4¢ per kWh, providing substantial savings potential for homeowners who generate their own solar power.</p>
+
+<p>Utah's unique climate characteristics—featuring hot, dry summers with temperatures often exceeding 95°F and cold winters with temperatures dropping below 20°F—create significant demand for both heating and cooling systems throughout the year. This substantial seasonal variation means Utah homeowners can achieve remarkable energy savings by combining solar panel installations with high-efficiency HVAC systems. The state's continental climate, characterized by low humidity and significant temperature swings between day and night, allows for strategic system sizing that maximizes both solar production and HVAC efficiency.</p>
+
+<p>The combination of excellent solar resources, reasonable electricity rates, generous federal and state incentives, and high energy consumption for climate control creates an ideal environment for homeowners to achieve energy independence while significantly reducing utility costs. Utah residents typically see 15-25% reductions in total energy costs within the first year of installing integrated solar and HVAC systems, with many achieving net-zero energy consumption during peak production months.</p>
+
+<h2>Solar Panels in Utah</h2>
+
+<h3>Solar Resource and Production</h3>
+
+<p>Utah's solar irradiance levels consistently rank among the highest in the nation, with most regions receiving between 4.8 and 5.8 peak sun hours daily on average. The state benefits from exceptional solar conditions due to its high elevation (average 6,100 feet above sea level), low annual precipitation (typically 12-16 inches), and consistently clear skies. Northern Utah, including the Wasatch Front metropolitan areas, receives approximately 5.1-5.4 peak sun hours daily, while southern Utah near St. George and Moab can exceed 5.8 peak sun hours, rivaling Arizona's solar potential.</p>
+
+<p>Seasonal variations in Utah create interesting production patterns that align well with energy consumption needs. Summer months (June through August) typically produce 140-160% of average monthly output, with July peak production often reaching 180% of the annual average. Winter production drops to approximately 60-70% of the annual average, but snow typically melts quickly due to steep roof angles and intense high-altitude sunlight. Spring and fall months provide consistent production at 90-110% of average, creating excellent shoulder season performance that helps offset seasonal HVAC demands.</p>
+
+<p>A typical residential solar installation in Utah ranges from 5kW to 12kW, with the average 7kW system producing approximately 10,500-11,500 kWh annually. This production level can offset 80-120% of a typical Utah home's electricity consumption, depending on energy efficiency measures and HVAC system performance. Utah's net metering policies allow excess production to be credited at full retail rates, making oversized systems economically attractive for homes with high cooling loads or electric heating systems.</p>
+
+<h3>Average Solar Costs in Utah</h3>
+
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Size</th>
+      <th class="border px-4 py-2 text-left">Equipment Cost</th>
+      <th class="border px-4 py-2 text-left">Installation</th>
+      <th class="border px-4 py-2 text-left">Total Before</th>
+      <th class="border px-4 py-2 text-left">After 30% Credit</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border px-4 py-2">5kW</td>
+      <td class="border px-4 py-2">\$11,500-13,500</td>
+      <td class="border px-4 py-2">\$3,500-4,200</td>
+      <td class="border px-4 py-2">\$15,000-17,700</td>
+      <td class="border px-4 py-2">\$10,500-12,390</td>
+      <td class="border px-4 py-2">\$780-920</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">7kW</td>
+      <td class="border px-4 py-2">\$15,800-18,600</td>
+      <td class="border px-4 py-2">\$4,200-5,100</td>
+      <td class="border px-4 py-2">\$20,000-23,700</td>
+      <td class="border px-4 py-2">\$14,000-16,590</td>
+      <td class="border px-4 py-2">\$1,090-1,285</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">10kW</td>
+      <td class="border px-4 py-2">\$21,500-25,500</td>
+      <td class="border px-4 py-2">\$5,500-6,800</td>
+      <td class="border px-4 py-2">\$27,000-32,300</td>
+      <td class="border px-4 py-2">\$18,900-22,610</td>
+      <td class="border px-4 py-2">\$1,560-1,840</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">12kW</td>
+      <td class="border px-4 py-2">\$25,200-30,000</td>
+      <td class="border px-4 py-2">\$6,300-7,800</td>
+      <td class="border px-4 py-2">\$31,500-37,800</td>
+      <td class="border px-4 py-2">\$22,050-26,460</td>
+      <td class="border px-4 py-2">\$1,870-2,205</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>HVAC Systems in Utah</h2>
+
+<h3>Climate Considerations</h3>
+
+<p>Utah's continental climate creates unique HVAC requirements that differ significantly from coastal or southern regions. The state experiences substantial seasonal temperature variations, with summer cooling needs typically spanning May through September and heating requirements extending from October through April. Most Utah homes require both robust heating and cooling systems, making heat pumps and dual-fuel systems increasingly popular choices for energy-conscious homeowners.</p>
+
+<p>For cooling systems in Utah, SEER ratings of 16-18 provide optimal efficiency without over-investment in areas with moderate cooling loads. However, homes in Utah's hotter southern regions or those with significant solar heat gain should consider systems with SEER ratings of 18-20. The state's low humidity levels mean that standard air conditioning systems perform exceptionally well without the need for enhanced dehumidification features common in humid climates.</p>
+
+<p>Heating requirements dominate Utah energy consumption, with natural gas furnaces traditionally serving most homes. However, modern cold-climate heat pumps with HSPF ratings of 9.0-12.0 are becoming increasingly viable, especially when paired with solar panel systems. These systems can provide efficient heating down to -10°F to -15°F, covering most winter conditions along the Wasatch Front. For homes in colder mountain areas or those seeking maximum efficiency, dual-fuel systems combining heat pumps with backup furnaces offer optimal performance and cost-effectiveness.</p>
+
+<h3>HVAC Costs and Savings</h3>
+
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Type</th>
+      <th class="border px-4 py-2 text-left">Installation Cost</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+      <th class="border px-4 py-2 text-left">Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border px-4 py-2">High-Efficiency Furnace (95% AFUE)</td>
+      <td class="border px-4 py-2">\$4,500-7,200</td>
+      <td class="border px-4 py-2">\$280-420</td>
+      <td class="border px-4 py-2">12-16 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">16 SEER Heat Pump</td>
+      <td class="border px-4 py-2">\$6,800-9,500</td>
+      <td class="border px-4 py-2">\$450-680</td>
+      <td class="border px-4 py-2">10-14 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">18 SEER Heat Pump</td>
+      <td class="border px-4 py-2">\$7,800-11,200</td>
+      <td class="border px-4 py-2">\$520-780</td>
+      <td class="border px-4 py-2">11-15 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">Dual-Fuel System</td>
+      <td class="border px-4 py-2">\$8,500-12,800</td>
+      <td class="border px-4 py-2">\$620-925</td>
+      <td class="border px-4 py-2">9-13 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">Geothermal Heat Pump</td>
+      <td class="border px-4 py-2">\$18,000-28,000</td>
+      <td class="border px-4 py-2">\$1,100-1,650</td>
+      <td class="border px-4 py-2">12-18 years</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Utah Incentives & Rebates</h2>
+
+<p>Utah offers a comprehensive suite of incentives that make solar and HVAC investments highly attractive for homeowners. The foundation of these incentives begins with the federal solar Investment Tax Credit (ITC), which provides a 30% tax credit for solar panel installations through 2032. This credit applies to the total system cost, including equipment, installation, and associated electrical work. For a typical \$25,000 solar installation, homeowners can claim a \$7,500 federal tax credit, significantly reducing the effective system cost.</p>
+
+<ul>
+<li><strong>Federal Solar Investment Tax Credit (ITC):</strong> The 30% federal tax credit remains the most significant incentive available to Utah homeowners. This credit covers the full cost of solar panel systems, including equipment, installation, permits, and interconnection fees. Unlike rebates, tax credits reduce your federal tax liability dollar-for-dollar, and unused credits can be carried forward to future tax years. The credit is scheduled to decrease to 26% in 2033 and 22% in 2034 before expiring for residential installations.</li>
+
+<li><strong>Utah State Renewable Energy Tax Credit:</strong> Utah offers a state tax credit equal to 25% of the cost of renewable energy systems, up to a maximum of \$1,600 for residential installations. This credit can be combined with the federal ITC, providing additional savings for Utah homeowners. The state credit applies to solar panels, solar water heating, geothermal systems, and qualifying wind installations.</li>
+
+<li><strong>Rocky Mountain Power Solar Incentive Program:</strong> Rocky Mountain Power offers performance-based incentives for qualifying solar installations through their Schedule 135 net metering program. While direct cash incentives are limited, the utility provides full retail rate credit for excess solar production, effectively creating a 1:1 energy credit system. Additionally, Rocky Mountain Power offers time-of-use rates that can increase solar savings by 15-25% for homes with battery storage systems.</li>
+
+<li><strong>Local Utility Programs:</strong> Several municipal utilities in Utah offer additional rebates and incentives. Salt Lake City Corporation provides rebates up to \$2,000 for solar installations and additional incentives for battery storage systems. Provo City offers similar programs with rebates up to \$1,500 for qualifying renewable energy systems. These local programs often have limited funding and operate on a first-come, first-served basis.</li>
+
+<li><strong>HVAC Rebates and Incentives:</strong> Utah residents can access federal tax credits for qualifying heat pumps, geothermal systems, and high-efficiency HVAC equipment through the Inflation Reduction Act. Heat pump installations can qualify for up to \$2,000 in federal tax credits, while geothermal systems can receive 30% tax credits similar to solar installations. Rocky Mountain Power and Dominion Energy offer rebates ranging from \$200-800 for high-efficiency furnaces, air conditioners, and heat pumps that meet ENERGY STAR requirements.</li>
+</ul>
+
+<h2>Major Cities in Utah</h2>
+
+<div class="grid md:grid-cols-2 gap-6 my-6">
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Salt Lake City</h3>
+    <p>Salt Lake City offers exceptional solar potential with 5.2 peak sun hours daily and extensive municipal support for renewable energy installations. The city provides additional rebates up to \$2,000 for solar systems and streamlined permitting processes that reduce installation timelines. Salt Lake City Corporation electricity rates average 9.8¢/kWh, making solar payback periods particularly attractive. The city's urban heat island effect creates higher cooling loads, making high-efficiency HVAC systems essential. Typical 7kW solar installations cost \$19,500-23,000 before incentives, with annual production of 10,800-11,400 kWh offsetting most residential consumption.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">West Valley City</h3>
+    <p>West Valley City residents benefit from Rocky Mountain Power service and excellent solar exposure with minimal shading from mature trees or tall buildings. The area receives 5.1-5.3 peak sun hours daily, with newer residential developments featuring optimal roof orientations for solar installations. HVAC loads are moderate compared to downtown areas, making 16-18 SEER systems cost-effective choices. Solar installations average \$2.65-3.10 per watt, with typical residential systems ranging from 6-10kW. The city's growing population and new construction create opportunities for integrated solar and HVAC planning during home building or major renovations.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Provo</h3>
+    <p>Provo offers unique advantages with municipal utility service providing competitive rates and local solar incentives up to \$1,500. The city's elevation and mountain valley location create excellent solar conditions with 5.3 peak sun hours daily and cooler summer temperatures that improve HVAC efficiency. Provo City's utility rates average 9.2¢/kWh, creating attractive economics for solar installations. The presence of Brigham Young University creates a knowledgeable customer base interested in sustainability initiatives. Typical residential solar costs range from \$18,800-22,500 for 7kW systems, with geothermal installations particularly popular due to favorable soil conditions.</p>
+  </div>
+  <div class="border rounded-lg p-6`;
+---
+
+<Layout title="Utah Solar & HVAC Guide - Costs, Incentives & ROI | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">Utah</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Utah Solar & HVAC Guide
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Complete guide for Utah homeowners - solar panels, HVAC systems, costs, savings, and incentives
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">☀️ 5.3 sun hours/day</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 10.4¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ Rocky Mountain Power</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>

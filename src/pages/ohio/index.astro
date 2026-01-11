@@ -1,0 +1,192 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+
+const content = `<h2>Overview</h2>
+<p>Ohio presents exceptional opportunities for both solar energy and HVAC system upgrades, making it an ideal state for homeowners looking to reduce energy costs and improve home comfort. With an average of 4.0 peak sun hours per day, Ohio receives sufficient solar radiation to make solar panel installations highly cost-effective. The state's average electricity rate of 12.6¢ per kilowatt-hour, primarily served by AEP Ohio and other major utilities, provides a solid foundation for calculating solar savings and return on investment.</p>
+
+<p>Ohio's continental climate, characterized by hot, humid summers and cold winters, creates significant demand for both heating and cooling systems throughout the year. This climate pattern makes efficient HVAC systems essential for maintaining comfortable indoor temperatures while managing energy costs. The state's temperature extremes, ranging from summer highs in the 80s to winter lows often below freezing, mean that Ohio residents typically use substantial amounts of energy for climate control, making energy-efficient solutions particularly valuable.</p>
+
+<p>The combination of favorable solar conditions, competitive electricity rates, and significant heating and cooling needs positions Ohio homeowners to achieve substantial energy savings through solar panel installations and high-efficiency HVAC systems. With available federal tax credits, state incentives, and utility rebate programs, the financial benefits of these energy improvements are enhanced, often resulting in payback periods of 8-12 years for solar systems and immediate monthly savings on utility bills.</p>
+
+<h2>Solar Panels in Ohio</h2>
+<h3>Solar Resource and Production</h3>
+<p>Ohio receives excellent solar irradiance despite its reputation for cloudy weather, with annual solar irradiance levels averaging 4.0-4.5 kWh/m²/day across most of the state. The southern regions of Ohio, including Cincinnati and the Ohio River Valley, experience slightly higher solar production potential compared to northern areas near Lake Erie. However, even Cleveland and Toledo receive sufficient solar radiation to make residential solar installations economically viable.</p>
+
+<p>Seasonal variations in solar production are typical for Ohio's latitude, with peak production occurring during the summer months of May through August, when systems can generate 25-30% more electricity than the annual average. Winter months see reduced production, typically 40-50% below summer peaks, but modern solar panels perform efficiently even in cold temperatures and can generate significant power on clear winter days. A typical 6kW residential solar system in Ohio can produce 7,000-8,500 kWh annually, enough to offset 70-90% of average household electricity consumption.</p>
+
+<h3>Average Solar Costs in Ohio</h3>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Size</th>
+      <th class="border px-4 py-2 text-left">Equipment Cost</th>
+      <th class="border px-4 py-2 text-left">Installation</th>
+      <th class="border px-4 py-2 text-left">Total Before</th>
+      <th class="border px-4 py-2 text-left">After 30% Credit</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border px-4 py-2">5kW</td>
+      <td class="border px-4 py-2">\$11,500</td>
+      <td class="border px-4 py-2">\$3,500</td>
+      <td class="border px-4 py-2">\$15,000</td>
+      <td class="border px-4 py-2">\$10,500</td>
+      <td class="border px-4 py-2">\$756</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">6kW</td>
+      <td class="border px-4 py-2">\$13,800</td>
+      <td class="border px-4 py-2">\$4,200</td>
+      <td class="border px-4 py-2">\$18,000</td>
+      <td class="border px-4 py-2">\$12,600</td>
+      <td class="border px-4 py-2">\$907</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">8kW</td>
+      <td class="border px-4 py-2">\$18,400</td>
+      <td class="border px-4 py-2">\$5,600</td>
+      <td class="border px-4 py-2">\$24,000</td>
+      <td class="border px-4 py-2">\$16,800</td>
+      <td class="border px-4 py-2">\$1,210</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">10kW</td>
+      <td class="border px-4 py-2">\$23,000</td>
+      <td class="border px-4 py-2">\$7,000</td>
+      <td class="border px-4 py-2">\$30,000</td>
+      <td class="border px-4 py-2">\$21,000</td>
+      <td class="border px-4 py-2">\$1,512</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>HVAC Systems in Ohio</h2>
+<h3>Climate Considerations</h3>
+<p>Ohio's humid continental climate requires HVAC systems capable of handling both significant cooling loads during summer months and substantial heating demands throughout the winter. Summer temperatures regularly reach 85-90°F with high humidity levels, while winter temperatures frequently drop below 20°F, creating a need for versatile, efficient climate control systems. The state experiences approximately 5,600-6,000 heating degree days annually and 800-1,200 cooling degree days, indicating that heating represents the primary energy load for most Ohio homes.</p>
+
+<p>For air conditioning systems, the recommended minimum SEER (Seasonal Energy Efficiency Ratio) rating for Ohio is 14, though systems with SEER ratings of 16-20 provide optimal efficiency and cost savings. Heat pump systems are increasingly popular in Ohio, particularly in southern regions, as modern cold-climate heat pumps can operate efficiently even when temperatures drop to -5°F. For heating, high-efficiency gas furnaces with AFUE ratings of 90-95% are common, while heat pump systems with HSPF ratings of 9-12 offer excellent performance for both heating and cooling needs.</p>
+
+<h3>HVAC Costs and Savings</h3>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Type</th>
+      <th class="border px-4 py-2 text-left">Installation Cost</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+      <th class="border px-4 py-2 text-left">Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border px-4 py-2">High-Efficiency Heat Pump (16 SEER/9.5 HSPF)</td>
+      <td class="border px-4 py-2">\$8,500-\$12,000</td>
+      <td class="border px-4 py-2">\$450-\$650</td>
+      <td class="border px-4 py-2">12-18 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">Gas Furnace + AC (95% AFUE/16 SEER)</td>
+      <td class="border px-4 py-2">\$7,000-\$10,500</td>
+      <td class="border px-4 py-2">\$380-\$520</td>
+      <td class="border px-4 py-2">13-20 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">Ductless Mini-Split (20 SEER/10 HSPF)</td>
+      <td class="border px-4 py-2">\$4,500-\$8,000</td>
+      <td class="border px-4 py-2">\$280-\$420</td>
+      <td class="border px-4 py-2">11-16 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">Geothermal Heat Pump</td>
+      <td class="border px-4 py-2">\$18,000-\$25,000</td>
+      <td class="border px-4 py-2">\$800-\$1,200</td>
+      <td class="border px-4 py-2">15-22 years</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Ohio Incentives & Rebates</h2>
+<p>Ohio homeowners have access to several valuable incentive programs that significantly reduce the cost of solar and HVAC installations. The most substantial benefit is the federal solar Investment Tax Credit (ITC), which allows homeowners to deduct 30% of the total cost of their solar panel system from their federal taxes. This credit applies to all system components including panels, inverters, mounting equipment, and installation costs, and there is no cap on the credit amount. The 30% rate is available through 2032, after which it will step down to 26% in 2033 and 22% in 2034.</p>
+
+<ul>
+<li><strong>Federal Solar Tax Credit (ITC):</strong> The 30% federal tax credit applies to the entire cost of solar installation, including equipment and labor. For a \$20,000 system, this represents \$6,000 in tax savings. The credit can be carried forward to future tax years if it exceeds current year tax liability.</li>
+<li><strong>Ohio Property Tax Exemption:</strong> Solar energy systems are exempt from property tax assessments in Ohio, meaning the added home value from solar installation won't increase property taxes. This exemption can save homeowners \$200-400 annually depending on local tax rates and system size.</li>
+<li><strong>AEP Ohio Energy Efficiency Programs:</strong> AEP Ohio offers rebates up to \$1,200 for high-efficiency HVAC systems, smart thermostats, and other energy efficiency improvements. Heat pump installations can qualify for rebates of \$300-800 depending on efficiency ratings.</li>
+<li><strong>FirstEnergy Rebate Programs:</strong> Customers in FirstEnergy territories can receive rebates of \$250-600 for ENERGY STAR certified HVAC equipment, with additional incentives for programmable thermostats and duct sealing services.</li>
+<li><strong>Local Utility Programs:</strong> Many Ohio municipal utilities offer additional rebates and financing programs. Columbus offers low-interest loans for energy efficiency improvements, while Cincinnati provides rebates up to \$500 for heat pump installations.</li>
+</ul>
+
+<h2>Major Cities in Ohio</h2>
+<div class="grid md:grid-cols-2 gap-6 my-6">
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Columbus</h3>
+    <p>Columbus offers excellent solar potential with 4.1 peak sun hours daily and competitive electricity rates through AEP Ohio at 12.8¢/kWh. The city has streamlined permitting processes for solar installations, typically completing reviews within 2-3 weeks. Columbus homeowners can expect a 6kW solar system to generate approximately 7,800 kWh annually, providing \$998 in annual savings. The city's PACE financing program offers low-interest loans for both solar and HVAC improvements, while Columbus City Schools' solar initiative has demonstrated strong community support for renewable energy projects.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Cleveland</h3>
+    <p>Cleveland receives 3.9 peak sun hours daily, slightly lower than southern Ohio but still economically viable for solar installations. FirstEnergy serves most Cleveland residents with rates averaging 13.2¢/kWh. The proximity to Lake Erie provides natural cooling benefits in summer but increases heating demands in winter, making efficient HVAC systems particularly valuable. A typical 6kW system generates 7,200 kWh annually, saving Cleveland homeowners approximately \$950 per year. The city offers expedited permitting for renewable energy projects and has partnered with local contractors to provide group purchasing programs.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Cincinnati</h3>
+    <p>Cincinnati enjoys Ohio's highest solar irradiance at 4.3 peak sun hours daily, making it the state's most attractive market for solar installations. Duke Energy serves the area with competitive rates of 11.9¢/kWh. The city's southern location provides excellent year-round solar production, with a 6kW system generating up to 8,400 kWh annually and saving homeowners over \$1,000 per year. Cincinnati offers property tax abatements for green building improvements and has implemented net metering policies that credit solar customers at full retail rates for excess electricity production.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Toledo</h3>
+    <p>Toledo receives 3.8 peak sun hours daily and benefits from Toledo Edison's renewable energy initiatives and competitive electricity rates of 12.4¢/kWh. The city's location near Lake Erie creates moderate summer temperatures but increases winter heating needs, making heat pump systems an attractive option for year-round efficiency. A 6kW solar system generates approximately 7,000 kWh annually, providing \$868 in annual savings. Toledo offers expedited permitting for solar installations and has established partnerships with local banks to provide preferential financing rates for energy efficiency improvements.</p>
+  </div>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+<div class="space-y-6 my-6">
+  <div>
+    <h3 class="text-xl font-bold mb-2">How much do solar panels cost in Ohio?</h3>
+    <p>Solar panel installations in Ohio typically cost \$2.80-3.20 per watt before incentives, making a standard 6kW residential system cost \$16,800-19,200. After the 30% federal tax credit, homeowners pay \$11,760-13,440 out of pocket. Installation costs vary based on roof complexity, equipment quality, and local labor rates. Columbus and Cincinnati tend to have the most competitive pricing due to larger installer networks, while rural areas may see slightly higher costs. Most Ohio installations include 25-year warranties and achieve payback periods of 9-12 years.</p>
+  </div>
+  <div>
+    <h3 class="text-xl font-bold mb-2">What SEER rating is recommended for Ohio?</h3>
+    <p>For Ohio's climate, air conditioning systems should have minimum SEER ratings of 14-16, with 16-18 SEER units providing optimal efficiency for most homes. Higher SEER ratings (18-20) are cost-effective for larger homes or those with high cooling loads. Heat pumps should have HSPF ratings of at least 8.5 for heating efficiency, with 9.5-10+ HSPF ratings recommended for maximum savings. The higher upfront cost of more efficient systems is typically recovered within 5-8 years through reduced electricity bills in Ohio's climate.</p>
+  </div>
+  <div>
+    <h3 class="text-xl font-bold mb-2">Does Ohio have net metering for solar?</h3>
+    <p>Yes, Ohio has net metering laws that require utilities to credit solar customers for excess electricity sent to the grid. Most Ohio utilities, including AEP Ohio, FirstEnergy, and Duke Energy, provide credits at or near retail electricity rates. Net metering agreements typically allow monthly rollover of`;
+---
+
+<Layout title="Ohio Solar & HVAC Guide - Costs, Incentives & ROI | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">Ohio</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Ohio Solar & HVAC Guide
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Complete guide for Ohio homeowners - solar panels, HVAC systems, costs, savings, and incentives
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">☀️ 4.0 sun hours/day</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 12.6¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ AEP Ohio</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>

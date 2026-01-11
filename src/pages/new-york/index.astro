@@ -1,0 +1,184 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+
+const content = `<h2>Overview</h2>
+<p>New York presents excellent opportunities for both solar panel installations and HVAC system upgrades, making it an ideal state for homeowners looking to reduce energy costs and increase home efficiency. With an average of 3.8 sun hours per day, New York receives sufficient solar irradiance to make solar installations highly profitable, especially considering the state's high electricity rates averaging 18.1¢/kWh. ConEd (Consolidated Edison) serves as the primary utility provider for much of the state, offering various rebate programs and net metering policies that further enhance the financial benefits of renewable energy investments.</p>
+
+<p>The state's diverse climate zones, from the humid continental climate of upstate regions to the modified continental climate of New York City, create significant heating and cooling demands throughout the year. This creates substantial opportunities for energy savings through both solar power generation and high-efficiency HVAC systems. New York's commitment to clean energy, including the Climate Leadership and Community Protection Act requiring 70% renewable electricity by 2030, has resulted in generous state incentives that complement federal tax credits, making now an optimal time for energy efficiency investments.</p>
+
+<p>The combination of high electricity rates, strong solar resources, extreme temperature variations, and substantial incentive programs means New York homeowners can typically see payback periods of 6-8 years for solar installations and 8-12 years for HVAC upgrades, with total lifetime savings often exceeding \$30,000-50,000 for comprehensive energy efficiency improvements.</p>
+
+<h2>Solar Panels in New York</h2>
+<h3>Solar Resource and Production</h3>
+<p>New York receives substantial solar irradiance despite its northern latitude, with the state averaging 3.8 peak sun hours daily and annual solar irradiance levels ranging from 1,200-1,400 kWh/m²/year. The southern regions of the state, including New York City and Long Island, receive the highest solar irradiance, while upstate areas like Buffalo and Syracuse still maintain excellent solar potential. A typical 6kW residential solar system in New York can produce 7,200-8,400 kWh annually, which covers 70-90% of an average household's electricity consumption.</p>
+
+<p>Seasonal variations are significant, with summer months (June-August) producing 40-45% of annual generation, while winter months contribute 15-20%. However, New York's net metering policies allow homeowners to bank excess summer production as credits for winter consumption, maximizing the value of solar investments. Snow coverage typically affects production for only 10-15 days per year, as panels shed snow quickly due to their smooth surface and heat generation. The state's moderate temperatures actually benefit solar panel efficiency, as panels perform better in cooler conditions compared to extremely hot climates.</p>
+
+<h3>Average Solar Costs in New York</h3>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Size</th>
+      <th class="border px-4 py-2 text-left">Equipment Cost</th>
+      <th class="border px-4 py-2 text-left">Installation</th>
+      <th class="border px-4 py-2 text-left">Total Before</th>
+      <th class="border px-4 py-2 text-left">After 30% Credit</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border px-4 py-2">5kW</td>
+      <td class="border px-4 py-2">\$11,500-13,000</td>
+      <td class="border px-4 py-2">\$3,500-4,500</td>
+      <td class="border px-4 py-2">\$15,000-17,500</td>
+      <td class="border px-4 py-2">\$10,500-12,250</td>
+      <td class="border px-4 py-2">\$1,085-1,265</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">7kW</td>
+      <td class="border px-4 py-2">\$16,100-18,200</td>
+      <td class="border px-4 py-2">\$4,200-5,200</td>
+      <td class="border px-4 py-2">\$20,300-23,400</td>
+      <td class="border px-4 py-2">\$14,210-16,380</td>
+      <td class="border px-4 py-2">\$1,520-1,770</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">10kW</td>
+      <td class="border px-4 py-2">\$23,000-26,000</td>
+      <td class="border px-4 py-2">\$5,500-6,500</td>
+      <td class="border px-4 py-2">\$28,500-32,500</td>
+      <td class="border px-4 py-2">\$19,950-22,750</td>
+      <td class="border px-4 py-2">\$2,170-2,530</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>HVAC Systems in New York</h2>
+<h3>Climate Considerations</h3>
+<p>New York's climate presents unique HVAC challenges, with heating loads significantly exceeding cooling loads in most regions. The state experiences approximately 5,000-7,000 heating degree days annually compared to only 500-1,200 cooling degree days, making efficient heating systems the primary concern for most homeowners. Winter temperatures regularly drop below freezing for 3-5 months, while summer temperatures typically range from 70-85°F with moderate humidity levels.</p>
+
+<p>For cooling systems, SEER ratings of 16-18 are recommended to balance efficiency with cost-effectiveness, though higher ratings may be justified in downstate regions with greater cooling demands. Heating systems should prioritize cold-weather performance, making cold-climate heat pumps with HSPF ratings of 10+ ideal for many applications. Traditional heating options like natural gas furnaces (90%+ AFUE) or oil systems remain viable in areas with established fuel infrastructure.</p>
+
+<p>Humidity control is important during summer months, particularly in coastal areas, making properly sized systems with good dehumidification capabilities essential. Zoning systems are popular in larger New York homes due to varying sun exposure and occupancy patterns. Air quality considerations, including pollen and urban pollutants, make high-quality filtration systems valuable additions to any HVAC upgrade.</p>
+
+<h3>HVAC Costs and Savings</h3>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Type</th>
+      <th class="border px-4 py-2 text-left">Installation Cost</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+      <th class="border px-4 py-2 text-left">Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border px-4 py-2">Cold-Climate Heat Pump</td>
+      <td class="border px-4 py-2">\$15,000-25,000</td>
+      <td class="border px-4 py-2">\$1,200-2,000</td>
+      <td class="border px-4 py-2">8-12 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">High-Efficiency Gas Furnace (95% AFUE)</td>
+      <td class="border px-4 py-2">\$8,000-14,000</td>
+      <td class="border px-4 py-2">\$400-800</td>
+      <td class="border px-4 py-2">10-15 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">Central AC (18 SEER)</td>
+      <td class="border px-4 py-2">\$6,000-12,000</td>
+      <td class="border px-4 py-2">\$200-500</td>
+      <td class="border px-4 py-2">12-18 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">Ductless Mini-Split System</td>
+      <td class="border px-4 py-2">\$4,000-8,000</td>
+      <td class="border px-4 py-2">\$300-700</td>
+      <td class="border px-4 py-2">6-12 years</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>New York Incentives & Rebates</h2>
+<p>New York offers some of the nation's most generous renewable energy incentives, making solar and HVAC upgrades exceptionally attractive financially. The federal solar Investment Tax Credit (ITC) provides a 30% tax credit on the total installed cost of solar systems, including equipment, installation, and associated electrical work. This credit applies to the full system cost and can be carried forward to future tax years if it exceeds current tax liability.</p>
+
+<ul>
+<li><strong>Federal 30% Solar Tax Credit:</strong> Available through 2032, this credit reduces to 26% in 2033 and 22% in 2034. The credit applies to all solar installations, including battery storage systems when installed with solar panels. Homeowners can claim this credit on their federal tax return using Form 5695.</li>
+<li><strong>NY-Sun Initiative:</strong> New York's flagship solar program provides upfront rebates ranging from \$0.20-0.40 per watt depending on system size and location. These rebates are automatically applied at installation, reducing upfront costs. The program also includes additional incentives for low-to-moderate income households.</li>
+<li><strong>ConEd Energy Efficiency Programs:</strong> ConEd offers rebates up to \$12,000 for heat pump installations, \$1,500 for high-efficiency furnaces, and \$500 for central air conditioning systems meeting efficiency requirements. Smart thermostat rebates of \$85-100 are also available.</li>
+<li><strong>NYSERDA Home Energy Efficiency Programs:</strong> Income-qualified homeowners can receive up to 50% cost reduction on comprehensive energy improvements, including insulation, air sealing, and HVAC upgrades. The EmPower+ program provides no-cost improvements for eligible households.</li>
+<li><strong>Local Utility Programs:</strong> Regional utilities like National Grid, NYSEG, and RG&E offer additional rebates for efficient HVAC equipment, often providing \$200-800 for qualifying heat pumps and \$100-300 for efficient cooling systems.</li>
+</ul>
+
+<p>To maximize incentives, homeowners should work with certified installers familiar with program requirements and coordinate timing to capture all available benefits. Many incentives can be combined, potentially reducing total project costs by 40-60% when federal, state, and utility programs are optimally utilized.</p>
+
+<h2>Major Cities in New York</h2>
+<div class="grid md:grid-cols-2 gap-6 my-6">
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">New York City</h3>
+    <p>New York City presents unique opportunities and challenges for solar and HVAC installations. With ConEd electricity rates among the nation's highest at 20-22¢/kWh, solar payback periods are typically 6-7 years. The city's Property Assessed Clean Energy (PACE) financing program helps overcome high upfront costs. Limited roof space drives demand for high-efficiency panels, while Local Law 97 carbon emissions requirements make building efficiency upgrades increasingly important. HVAC costs run 15-25% higher than state averages due to complex installations and labor costs, but annual savings potential of \$2,000-4,000 makes investments worthwhile. The city's solar property tax exemption and accelerated permitting process further enhance project economics.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Buffalo</h3>
+    <p>Buffalo's lake-effect climate creates substantial heating demands, making it ideal for cold-climate heat pump installations that can achieve 250-300% efficiency even at -10°F. National Grid serves the area with rates around 16.5¢/kWh, while the region receives 3.7 peak sun hours daily. Solar installations benefit from lower installation costs than NYC, with typical 7kW systems costing \$18,000-21,000 before incentives. The city's industrial heritage provides many homes with existing 200-amp electrical service, reducing solar interconnection costs. Buffalo's participation in New York's Climate Smart Communities program provides additional rebates for energy efficiency improvements, while the relatively affordable housing market makes percentage returns on energy investments particularly attractive.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Rochester</h3>
+    <p>Rochester's moderate climate and RG&E utility service create excellent conditions for comprehensive energy efficiency upgrades. The city receives 3.8 peak sun hours daily with electricity rates of 17.2¢/kWh, producing solar payback periods of 7-8 years. Rochester's housing stock, predominantly single-family homes built before 1960, presents significant weatherization opportunities that complement solar and HVAC investments. The city's Neighbors Building Neighborhoods program provides additional financing assistance for energy improvements. Local installation costs are 10-15% below state averages, while the region's skilled workforce ensures quality installations. Rochester's participation in the 2030 Districts initiative creates additional incentives for energy reduction projects, making it an ideal location for comprehensive home energy improvements.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Syracuse</h3>
+    <p>Syracuse benefits from National Grid service and receives 3.6 peak sun hours daily, with electricity rates around 16.8¢/kWh creating solid solar economics. The city's harsh winters with over 100 inches of annual snowfall make efficient heating systems crucial, driving strong demand for heat pump installations and weatherization improvements. Syracuse's lower cost of living translates to installation costs 8-12% below state averages, improving project payback periods. The city's Climate Action Plan supports residential energy efficiency through streamlined permitting and additional rebate programs. Local incentives include sales tax exemptions for solar equipment and expedited interconnection processes. Syracuse University's clean energy research partnerships have created a knowledgeable local installation industry, ensuring high-quality workmanship and competitive pricing for homeowners.</p>
+  </div>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+<div class="space-y-6 my-6">
+  <div>
+    <h3 class="text-xl font-bold mb-2">How much do solar panels cost in New York?</h3>
+    <p>Solar panel installations in New York typically cost \$2.85-3.25 per watt before incentives, meaning a standard 7kW system ranges from \$19,950-22,750. After applying the 30% federal tax credit and NY-Sun rebates, net costs drop to \$12,000-16,000. Installation costs vary by region, with NYC commanding premium pricing due to complexity and labor costs, while upstate installations run 10-15% less. Additional factors affecting cost include roof complexity, electrical upgrades, and permitting requirements. Most homeowners see 6-8 year payback periods with 25-year savings exceeding \$35,000-45,000 based on current electricity rates.</p>
+  </div>
+  <div>
+    <h3 class="text-xl font-bold mb-2">What SEER rating is recommended for New York?</h3>
+    <p>For New York's climate, SEER ratings of 16-`;
+---
+
+<Layout title="New York Solar & HVAC Guide - Costs, Incentives & ROI | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">New York</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        New York Solar & HVAC Guide
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Complete guide for New York homeowners - solar panels, HVAC systems, costs, savings, and incentives
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">☀️ 3.8 sun hours/day</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 18.1¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ ConEd</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>

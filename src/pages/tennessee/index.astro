@@ -1,0 +1,184 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+
+const content = `<h2>Overview</h2>
+<p>Tennessee presents exceptional opportunities for both solar energy and HVAC system optimization, making it an ideal state for homeowners looking to reduce energy costs and increase property value. With an average of 4.6 sun hours per day and relatively affordable electricity rates at 10.8¢ per kilowatt-hour, Tennessee offers a balanced energy landscape that favors renewable energy investments. The Tennessee Valley Authority (TVA), serving as the primary utility provider for much of the state, has been increasingly supportive of renewable energy initiatives and offers various programs to incentivize energy efficiency improvements.</p>
+
+<p>The state's humid subtropical climate creates unique energy demands that make both solar panels and efficient HVAC systems particularly valuable investments. Tennessee experiences hot, humid summers that drive significant cooling costs, while moderate winters require heating systems that can handle occasional temperature drops. This climate profile means HVAC systems typically account for 50-60% of annual energy consumption, creating substantial opportunities for savings through both solar energy generation and high-efficiency heating and cooling equipment.</p>
+
+<p>Tennessee homeowners can expect significant long-term savings by combining solar panels with modern HVAC systems. The state's favorable net metering policies, combined with federal tax incentives and local utility rebates, create a compelling financial case for renewable energy adoption. Additionally, the growing focus on energy independence and environmental sustainability has made Tennessee increasingly attractive for clean energy investments, with property values showing consistent increases for homes equipped with solar and efficient HVAC systems.</p>
+
+<h2>Solar Panels in Tennessee</h2>
+<h3>Solar Resource and Production</h3>
+<p>Tennessee receives excellent solar irradiance throughout the year, with annual averages ranging from 4.2 to 5.0 peak sun hours depending on location. The western and central regions of the state, including Memphis and Nashville areas, typically see higher solar production potential compared to the mountainous eastern regions. Peak production months occur from April through September, when systems can generate 15-20% above annual averages. Even during winter months, Tennessee's solar resources remain productive, with December and January still providing 60-70% of peak summer production levels.</p>
+
+<p>A typical residential solar installation in Tennessee, sized at 6-8kW, can be expected to generate between 7,200-9,600 kWh annually. This production level can offset 70-90% of average household electricity consumption, depending on home size and energy usage patterns. The state's relatively low frequency of severe weather events and minimal shading from atmospheric particles contribute to consistent year-round solar performance. Additionally, Tennessee's moderate temperatures during peak sun hours help maintain panel efficiency, as solar panels perform better in cooler conditions despite needing strong sunlight.</p>
+
+<h3>Average Solar Costs in Tennessee</h3>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Size</th>
+      <th class="border px-4 py-2 text-left">Equipment Cost</th>
+      <th class="border px-4 py-2 text-left">Installation</th>
+      <th class="border px-4 py-2 text-left">Total Before</th>
+      <th class="border px-4 py-2 text-left">After 30% Credit</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border px-4 py-2">5kW</td>
+      <td class="border px-4 py-2">\$11,500</td>
+      <td class="border px-4 py-2">\$3,500</td>
+      <td class="border px-4 py-2">\$15,000</td>
+      <td class="border px-4 py-2">\$10,500</td>
+      <td class="border px-4 py-2">\$650</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">7kW</td>
+      <td class="border px-4 py-2">\$16,100</td>
+      <td class="border px-4 py-2">\$4,900</td>
+      <td class="border px-4 py-2">\$21,000</td>
+      <td class="border px-4 py-2">\$14,700</td>
+      <td class="border px-4 py-2">\$910</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">10kW</td>
+      <td class="border px-4 py-2">\$23,000</td>
+      <td class="border px-4 py-2">\$7,000</td>
+      <td class="border px-4 py-2">\$30,000</td>
+      <td class="border px-4 py-2">\$21,000</td>
+      <td class="border px-4 py-2">\$1,300</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>HVAC Systems in Tennessee</h2>
+<h3>Climate Considerations</h3>
+<p>Tennessee's humid subtropical climate demands HVAC systems capable of handling both significant cooling loads during summer months and moderate heating requirements in winter. Summer temperatures regularly reach 85-90°F with high humidity levels, creating heat index values that can exceed 100°F. This combination of heat and humidity means air conditioning systems must work harder to maintain comfort, making high-efficiency units essential for cost-effective operation. The cooling season typically extends from May through September, with peak demand occurring during July and August.</p>
+
+<p>For Tennessee homes, HVAC professionals typically recommend air conditioning systems with SEER ratings of 16-18 for optimal efficiency and cost-effectiveness. Heat pumps are particularly well-suited to Tennessee's climate, as they can provide both efficient cooling and heating while operating effectively in the state's moderate winter temperatures. During winter months, when temperatures rarely drop below 20°F for extended periods, heat pumps can maintain high efficiency while providing comfortable heating. For homes in mountainous regions where temperatures may be more extreme, dual-fuel systems combining heat pumps with gas furnaces offer optimal year-round efficiency.</p>
+
+<h3>HVAC Costs and Savings</h3>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Type</th>
+      <th class="border px-4 py-2 text-left">Installation Cost</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+      <th class="border px-4 py-2 text-left">Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border px-4 py-2">16 SEER Heat Pump</td>
+      <td class="border px-4 py-2">\$4,500-6,500</td>
+      <td class="border px-4 py-2">\$350-500</td>
+      <td class="border px-4 py-2">9-15 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">18 SEER Heat Pump</td>
+      <td class="border px-4 py-2">\$5,500-7,500</td>
+      <td class="border px-4 py-2">\$450-650</td>
+      <td class="border px-4 py-2">8-12 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">Dual-Fuel System</td>
+      <td class="border px-4 py-2">\$6,500-9,000</td>
+      <td class="border px-4 py-2">\$500-750</td>
+      <td class="border px-4 py-2">9-14 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">Geothermal System</td>
+      <td class="border px-4 py-2">\$12,000-18,000</td>
+      <td class="border px-4 py-2">\$800-1,200</td>
+      <td class="border px-4 py-2">10-15 years</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Tennessee Incentives & Rebates</h2>
+<p>Tennessee offers several valuable incentives that make solar and HVAC investments particularly attractive. The most significant benefit is the federal solar Investment Tax Credit (ITC), which allows homeowners to deduct 30% of the total cost of solar panel installation from their federal taxes. This credit applies to all system components, including panels, inverters, mounting equipment, and installation labor. For a typical \$20,000 solar installation, this credit provides \$6,000 in tax savings, and any unused credit can be carried forward to future tax years.</p>
+
+<ul>
+<li><strong>Federal Solar Investment Tax Credit (ITC):</strong> The 30% federal tax credit remains available through 2032, then decreases to 26% in 2033 and 22% in 2034. This credit has no cap and applies to both residential and commercial installations. Homeowners must have sufficient tax liability to claim the full credit, but unused portions can be carried forward for up to five years.</li>
+<li><strong>Property Tax Exemption:</strong> Tennessee offers a property tax exemption for solar energy systems, meaning the added value from solar panels won't increase your property tax assessment. This exemption applies to both the equipment and installation costs, providing ongoing savings throughout the system's lifetime.</li>
+<li><strong>TVA Energy Right Programs:</strong> The Tennessee Valley Authority offers various rebates for energy-efficient HVAC systems, including up to \$500 for qualifying heat pumps and air conditioning systems. TVA also provides rebates for smart thermostats, ductwork improvements, and other efficiency upgrades that can complement solar installations.</li>
+<li><strong>Net Metering Policies:</strong> Most Tennessee utilities offer net metering programs that allow solar system owners to receive credit for excess electricity generated. While policies vary by utility, most provide retail rate credits for surplus generation, effectively using the grid as a battery for solar energy storage.</li>
+<li><strong>Local Utility Rebates:</strong> Many local utilities throughout Tennessee offer additional rebates for HVAC upgrades and energy efficiency improvements. Memphis Light, Gas & Water, Nashville Electric Service, and Chattanooga Electric Power Company all provide various incentive programs that can be combined with federal tax credits.</li>
+</ul>
+
+<h2>Major Cities in Tennessee</h2>
+<div class="grid md:grid-cols-2 gap-6 my-6">
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Nashville</h3>
+    <p>Nashville presents excellent opportunities for solar energy with average annual production of 1,350 kWh per installed kW. Nashville Electric Service offers net metering and various efficiency rebates, making solar particularly attractive. The city's growing focus on sustainability has created a supportive environment for renewable energy adoption. Typical residential solar installations range from \$15,000-25,000 before incentives, with payback periods of 8-12 years. Nashville's moderate climate makes 16-18 SEER heat pumps ideal, with installation costs ranging from \$4,500-7,000. The city's urban heat island effect increases cooling demands, making high-efficiency HVAC systems essential for comfort and cost control.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Memphis</h3>
+    <p>Memphis enjoys some of Tennessee's highest solar irradiance levels, with annual production potential of 1,400+ kWh per installed kW. Memphis Light, Gas & Water provides competitive net metering rates and efficiency rebates. The city's flat terrain and minimal shading make it ideal for solar installations. Residential systems typically cost \$14,000-24,000 before incentives, with 7-11 year payback periods. Memphis's hot, humid summers create high cooling demands, making 17-19 SEER systems recommended for optimal efficiency. Heat pumps work exceptionally well in Memphis's mild winters, with dual-fuel systems providing backup for rare extreme cold events.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Knoxville</h3>
+    <p>Knoxville's location in the Tennessee Valley provides good solar resources despite some topographical challenges, averaging 1,300 kWh per installed kW annually. The University of Tennessee's renewable energy research creates local expertise and support for solar adoption. TVA's strong presence in Knoxville ensures access to various efficiency programs and rebates. Solar installations typically range from \$16,000-26,000 before incentives. The area's variable terrain may require higher heating capacity, making 16-18 SEER heat pumps with auxiliary heat ideal. Knoxville's elevation moderates summer temperatures slightly, but high-efficiency HVAC systems remain important for year-round comfort and efficiency.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Chattanooga</h3>
+    <p>Chattanooga has emerged as a leader in renewable energy adoption, with strong municipal support for solar installations and energy efficiency. The city receives excellent solar irradiance, producing 1,380+ kWh per installed kW annually. Chattanooga Electric Power Company offers competitive programs for solar customers and HVAC upgrades. The city's "Gig City" fiber network supports smart home integration with solar and HVAC systems. Residential solar costs range from \$15,000-25,000 before incentives, with attractive 8-12 year paybacks. Chattanooga's river valley location creates humid conditions that favor high-efficiency heat pumps rated 17-19 SEER for optimal performance and comfort.</p>
+  </div>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+<div class="space-y-6 my-6">
+  <div>
+    <h3 class="text-xl font-bold mb-2">How much do solar panels cost in Tennessee?</h3>
+    <p>Solar panel costs in Tennessee typically range from \$2.50-3.50 per watt before incentives, translating to \$15,000-25,000 for average residential installations of 6-8kW. After applying the 30% federal tax credit, net costs drop to \$10,500-17,500. Installation costs vary by location, with urban areas like Nashville and Memphis often having more competitive pricing due to higher installer density. Additional factors affecting cost include roof complexity, electrical upgrades needed, and equipment quality. Most Tennessee homeowners see payback periods of 8-14 years, with 25-year warranties providing long-term value and energy savings exceeding \$30,000 over system lifetime.</p>
+  </div>
+  <div>
+    <h3 class="text-xl font-bold mb-2">What SEER rating is recommended for Tennessee?</h3>
+    <p>For Tennessee's humid subtropical climate, HVAC professionals typically recommend SEER ratings of 16-18 for optimal balance of efficiency and cost-effectiveness. Higher SEER ratings of 19-21 can provide additional savings in areas with particularly high cooling demands or extended summer seasons. Heat pumps are especially well-suited to Tennessee, as they provide both efficient cooling and heating while operating effectively in the state's moderate winter temperatures. For homes in mountainous regions where winter temperatures may drop more significantly, dual-fuel systems combining heat pumps with gas furnaces offer optimal year-round efficiency and comfort.</p>
+  </div>
+  <div>
+    <h3 class="text-xl font-bold mb-2">Does Tennessee have net metering for solar?</h3>
+    <p>Yes, Tennessee utilities generally offer net metering programs, though specific policies vary by provider. TVA-served utilities typically provide retail rate credits for excess solar generation, while some municipal utilities offer slightly different compensation structures. Most programs allow monthly rollover of credits, with annual true-ups settling any remaining balance. Net metering makes solar installations more financially attractive by essentially using the electrical grid as battery storage, allowing homeowners to use their solar production`;
+---
+
+<Layout title="Tennessee Solar & HVAC Guide - Costs, Incentives & ROI | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">Tennessee</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Tennessee Solar & HVAC Guide
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Complete guide for Tennessee homeowners - solar panels, HVAC systems, costs, savings, and incentives
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">☀️ 4.6 sun hours/day</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 10.8¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ TVA</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>

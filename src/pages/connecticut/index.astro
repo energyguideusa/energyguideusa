@@ -1,0 +1,180 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import LeadForm from '../../components/LeadForm.astro';
+
+const content = `<h2>Overview</h2>
+<p>Connecticut presents an exceptional opportunity for homeowners looking to invest in solar panels and upgrade their HVAC systems. With an average of 4.2 sun hours per day, the Constitution State receives sufficient solar irradiance to make solar panel installations highly profitable. Connecticut residents pay some of the highest electricity rates in the nation at 21.6¢ per kilowatt-hour, making solar energy an attractive alternative that can significantly reduce monthly utility bills. Eversource Energy serves as the primary utility provider for most of the state, offering various programs and net metering policies that benefit solar customers.</p>
+
+<p>The state's climate characteristics make it ideal for both solar energy production and energy-efficient HVAC systems. Connecticut experiences four distinct seasons with cold winters and warm, humid summers, creating substantial heating and cooling demands throughout the year. This climate pattern means homeowners can benefit greatly from high-efficiency HVAC systems paired with solar power generation. The combination of high electricity rates, favorable solar policies, and significant seasonal energy demands creates a perfect storm for substantial energy savings through solar and HVAC upgrades.</p>
+
+<p>Connecticut's commitment to renewable energy, including the state's Renewable Portfolio Standard requiring 48% renewable energy by 2030, has created a supportive environment for solar adoption. The state offers numerous incentives, rebates, and financing options that make solar and HVAC investments more accessible to homeowners. With proper system sizing and installation, Connecticut homeowners can expect to see payback periods of 6-8 years for solar installations and 8-12 years for high-efficiency HVAC systems, while enjoying decades of reduced energy costs.</p>
+
+<h2>Solar Panels in Connecticut</h2>
+<h3>Solar Resource and Production</h3>
+<p>Connecticut receives an average solar irradiance of 4.2 peak sun hours daily, which translates to approximately 1,533 peak sun hours annually. While this may seem modest compared to southwestern states, Connecticut's solar resource is more than adequate for profitable solar installations. The state's solar irradiance varies seasonally, with peak production occurring during the summer months of June through August, when daily peak sun hours can reach 5.5-6.0 hours. Winter months typically see reduced production with 2.5-3.0 daily peak sun hours, but the high electricity rates ensure that even winter production provides substantial value.</p>
+
+<p>A typical 8kW residential solar system in Connecticut can produce approximately 9,600-10,400 kWh annually, which covers 70-90% of an average household's electricity consumption. The state's net metering policy allows homeowners to receive full retail credit for excess solar production, making oversized systems economically viable. Connecticut's relatively mild temperatures actually benefit solar panel efficiency, as photovoltaic panels perform better in cooler conditions compared to extremely hot climates. This means that spring and fall often provide optimal production conditions with comfortable temperatures and adequate sunlight.</p>
+
+<h3>Average Solar Costs in Connecticut</h3>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Size</th>
+      <th class="border px-4 py-2 text-left">Equipment Cost</th>
+      <th class="border px-4 py-2 text-left">Installation</th>
+      <th class="border px-4 py-2 text-left">Total Before</th>
+      <th class="border px-4 py-2 text-left">After 30% Credit</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border px-4 py-2">5kW</td>
+      <td class="border px-4 py-2">\$10,500</td>
+      <td class="border px-4 py-2">\$3,500</td>
+      <td class="border px-4 py-2">\$14,000</td>
+      <td class="border px-4 py-2">\$9,800</td>
+      <td class="border px-4 py-2">\$1,350</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">8kW</td>
+      <td class="border px-4 py-2">\$16,800</td>
+      <td class="border px-4 py-2">\$5,200</td>
+      <td class="border px-4 py-2">\$22,000</td>
+      <td class="border px-4 py-2">\$15,400</td>
+      <td class="border px-4 py-2">\$2,160</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">10kW</td>
+      <td class="border px-4 py-2">\$21,000</td>
+      <td class="border px-4 py-2">\$6,500</td>
+      <td class="border px-4 py-2">\$27,500</td>
+      <td class="border px-4 py-2">\$19,250</td>
+      <td class="border px-4 py-2">\$2,700</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>HVAC Systems in Connecticut</h2>
+<h3>Climate Considerations</h3>
+<p>Connecticut's humid continental climate presents unique challenges for HVAC systems, requiring equipment that can efficiently handle both heating and cooling demands. The state experiences average winter temperatures ranging from 20°F to 40°F, with occasional periods dropping below 0°F, necessitating robust heating capabilities. Summer temperatures typically range from 70°F to 85°F with high humidity levels, creating substantial cooling and dehumidification requirements. This climate profile makes heat pumps an increasingly popular choice, as modern cold-climate heat pumps can efficiently operate in temperatures as low as -15°F while providing both heating and cooling functions.</p>
+
+<p>For Connecticut homes, HVAC professionals typically recommend systems with SEER ratings of 16-20 for air conditioning units and HSPF ratings of 9.0-10.0 for heat pumps. These efficiency ratings ensure optimal performance while minimizing energy consumption during peak demand periods. Due to the state's heating-dominant climate, homeowners should prioritize heating efficiency over cooling efficiency when selecting HVAC equipment. Central air conditioning systems with variable-speed compressors and multi-stage heat pumps are particularly well-suited for Connecticut's climate, as they can adjust capacity based on real-time demand while maintaining consistent indoor comfort levels.</p>
+
+<h3>HVAC Costs and Savings</h3>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Type</th>
+      <th class="border px-4 py-2 text-left">Installation Cost</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+      <th class="border px-4 py-2 text-left">Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border px-4 py-2">High-Efficiency Heat Pump (16 SEER)</td>
+      <td class="border px-4 py-2">\$8,500-\$12,000</td>
+      <td class="border px-4 py-2">\$800-\$1,200</td>
+      <td class="border px-4 py-2">8-12 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">Ductless Mini-Split System</td>
+      <td class="border px-4 py-2">\$6,000-\$9,000</td>
+      <td class="border px-4 py-2">\$600-\$900</td>
+      <td class="border px-4 py-2">7-10 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">High-Efficiency Gas Furnace (95% AFUE)</td>
+      <td class="border px-4 py-2">\$4,500-\$7,000</td>
+      <td class="border px-4 py-2">\$400-\$700</td>
+      <td class="border px-4 py-2">9-14 years</td>
+    </tr>
+    <tr>
+      <td class="border px-4 py-2">Central AC with Heat Pump</td>
+      <td class="border px-4 py-2">\$10,000-\$15,000</td>
+      <td class="border px-4 py-2">\$1,000-\$1,500</td>
+      <td class="border px-4 py-2">8-12 years</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Connecticut Incentives & Rebates</h2>
+<p>Connecticut offers one of the most comprehensive incentive packages in the nation for solar and energy-efficient HVAC systems. The cornerstone of these incentives is the federal solar Investment Tax Credit (ITC), which provides a 30% tax credit for solar installations through 2032. This credit applies to the total system cost, including equipment, installation, and associated electrical work. For a typical \$20,000 solar installation, homeowners can claim a \$6,000 federal tax credit, significantly reducing the net system cost.</p>
+
+<ul>
+<li><strong>Federal 30% Solar Tax Credit:</strong> Available through 2032, this credit can be carried forward if the tax liability is insufficient in the installation year. The credit covers solar panels, inverters, mounting equipment, installation labor, and electrical upgrades necessary for the solar system. Homeowners must own their solar system to qualify, and the credit applies to both primary and secondary residences.</li>
+<li><strong>SMART-E Loan Program:</strong> Connecticut's Residential Solar Investment Program offers low-interest financing for solar installations. The program provides loans up to \$40,000 with interest rates as low as 1.99% for qualified borrowers. This financing option makes solar accessible to homeowners who want to avoid upfront costs while still owning their system and claiming tax credits.</li>
+<li><strong>Eversource Rebates and Programs:</strong> Eversource offers substantial rebates for high-efficiency HVAC equipment through their Home Energy Solutions program. Rebates include up to \$1,500 for ENERGY STAR certified heat pumps, \$1,000 for high-efficiency central air conditioning systems, and \$750 for smart thermostats. The utility also provides free energy audits and weatherization services.</li>
+<li><strong>Connecticut Green Bank Financing:</strong> The nation's first green bank offers residential financing programs for solar and energy efficiency upgrades. Their CPACE program provides long-term financing tied to the property rather than the homeowner, making upgrades transferable to new owners and enabling larger projects.</li>
+<li><strong>Net Metering Policy:</strong> Connecticut's net metering program provides full retail credit for excess solar production, allowing homeowners to offset 100% of their electricity consumption. Systems up to 20kW qualify for net metering, and excess credits can be carried forward indefinitely, providing maximum value for solar production.</li>
+</ul>
+
+<h2>Major Cities in Connecticut</h2>
+<div class="grid md:grid-cols-2 gap-6 my-6">
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Bridgeport</h3>
+    <p>Bridgeport, Connecticut's largest city, offers excellent opportunities for solar and HVAC investments due to its coastal location and urban density. The city receives average solar irradiance levels consistent with the state average, while its proximity to Long Island Sound moderates temperature extremes. Eversource serves most residential customers in Bridgeport, providing access to all state incentive programs. The average home solar installation in Bridgeport costs \$18,000-\$25,000 before incentives, with typical payback periods of 6-8 years. Local contractors are readily available, and the city has streamlined permitting processes for solar installations. HVAC considerations include the need for dehumidification due to coastal humidity and systems rated for occasional severe weather events.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">New Haven</h3>
+    <p>New Haven presents unique solar and HVAC opportunities as a college town with diverse housing stock ranging from historic homes to modern developments. The city's solar potential is excellent, with many neighborhoods featuring optimal south-facing roof orientations. Yale University's presence has created a strong network of energy-conscious contractors and suppliers. Solar installations in New Haven typically cost \$17,000-\$24,000 before incentives, with the city offering expedited permitting for residential solar projects. HVAC needs vary significantly based on building age, with older homes often benefiting from ductless mini-split systems that don't require extensive ductwork modifications. The city's Green Building Standards encourage energy-efficient upgrades, and local rebates may be available for qualifying projects.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Hartford</h3>
+    <p>As Connecticut's capital city, Hartford offers robust solar and HVAC opportunities supported by strong state programs and urban infrastructure. The city receives excellent solar exposure, particularly in suburban areas with newer construction and optimal roof conditions. Hartford's solar installations typically cost \$16,000-\$23,000 before incentives, with the state's presence ensuring streamlined permitting and inspection processes. The city's diverse housing stock creates varied HVAC needs, from high-efficiency systems in government buildings to residential retrofits in older neighborhoods. Hartford Electric Light Company and Eversource both serve the metropolitan area, providing comprehensive rebate programs. The city actively promotes renewable energy adoption through local ordinances and fast-track permitting for solar installations.</p>
+  </div>
+  <div class="border rounded-lg p-6">
+    <h3 class="text-xl font-bold mb-3">Stamford</h3>
+    <p>Stamford's proximity to New York City and high property values make solar and HVAC investments particularly attractive due to substantial long-term savings potential. The city's coastal location provides excellent solar exposure while moderating extreme temperatures. Solar installations in Stamford typically cost \$19,000-\$27,000 before incentives, reflecting higher local labor costs but also greater energy savings due to premium electricity rates. The city's building codes emphasize energy efficiency, making high-performance HVAC systems standard in new construction and renovations. Stamford offers expedited permitting for renewable energy projects and has established relationships with certified solar installers. The affluent community often opts for premium equipment, including battery storage systems and smart HVAC controls that maximize energy independence and comfort.</p>
+  </div>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+<div class="space-y-6 my-6">
+  <div>
+    <h3 class="text-xl font-bold mb-2">How much do solar panels cost in Connecticut?</h3>
+    <p>Solar panel costs in Connecticut typically range from \$2.75 to \$3.50 per watt before incentives, making a standard 8kW residential system cost approximately \$22,000-\$28,000. After applying the 30% federal tax credit, homeowners pay \$15,400-\$19,600 net cost. Additional state incentives and utility rebates can further reduce costs by \$2,000-\$4,000. Installation costs vary based on roof complexity, electrical upgrades needed, and equipment selection. Premium panels and microinverters increase costs but provide better performance and longer warranties. Most Connecticut homeowners see payback periods of 6-8 years, with systems producing savings for 25+ years.</p>
+  </div>
+  <div>
+    <h3 class="text-xl font-bold mb-2">What SEER rating is recommended for Connecticut?</h3>
+    <p>For Connecticut's climate, HVAC professionals recommend minimum SEER ratings of 16-18 for central air conditioning systems, with premium systems offering 20+ SEER ratings for maximum efficiency. Heat pump systems should have HSPF ratings of 9.0-10.0 for optimal heating performance`;
+---
+
+<Layout title="Connecticut Solar & HVAC Guide - Costs, Incentives & ROI | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">Connecticut</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Connecticut Solar & HVAC Guide
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Complete guide for Connecticut homeowners - solar panels, HVAC systems, costs, savings, and incentives
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">☀️ 4.2 sun hours/day</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 21.6¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ Eversource</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>
