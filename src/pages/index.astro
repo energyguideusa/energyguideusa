@@ -2,7 +2,6 @@
 import Layout from '../layouts/Layout.astro';
 import LeadForm from '../components/LeadForm.astro';
 ---
-
 <Layout title="Energy Guide USA - Your State-by-State Guide to Solar & HVAC">
   <!-- Hero Section -->
   <section class="bg-[#2562eb] text-white py-20">
@@ -32,7 +31,6 @@ import LeadForm from '../components/LeadForm.astro';
             Compare quotes from multiple installers and save an average of $3,000-6,000 on your installation.
           </p>
         </div>
-
         <div class="bg-white p-6 rounded-lg shadow-md">
           <div class="text-4xl mb-4">📍</div>
           <h3 class="text-xl font-bold mb-3">Local Expertise</h3>
@@ -40,7 +38,6 @@ import LeadForm from '../components/LeadForm.astro';
             Get recommendations specific to your state's climate, incentives, and energy costs.
           </p>
         </div>
-
         <div class="bg-white p-6 rounded-lg shadow-md">
           <div class="text-4xl mb-4">✓</div>
           <h3 class="text-xl font-bold mb-3">Certified Installers</h3>
@@ -57,20 +54,58 @@ import LeadForm from '../components/LeadForm.astro';
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-12">Select Your State</h2>
       
-      <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
-        <a href="/alabama" class="bg-blue-600 text-white p-4 rounded-lg text-center hover:bg-blue-700 transition">Alabama</a>
-        <a href="/alaska" class="bg-blue-600 text-white p-4 rounded-lg text-center hover:bg-blue-700 transition">Alaska</a>
-        <a href="/arizona" class="bg-blue-600 text-white p-4 rounded-lg text-center hover:bg-blue-700 transition">Arizona</a>
-        <a href="/california" class="bg-blue-600 text-white p-4 rounded-lg text-center hover:bg-blue-700 transition">California</a>
-        <a href="/texas" class="bg-blue-600 text-white p-4 rounded-lg text-center hover:bg-blue-700 transition">Texas</a>
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
+        <a href="/alabama" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Alabama</a>
+        <a href="/alaska" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Alaska</a>
+        <a href="/arizona" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Arizona</a>
+        <a href="/arkansas" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Arkansas</a>
+        <a href="/california" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">California</a>
+        <a href="/colorado" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Colorado</a>
+        <a href="/connecticut" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Connecticut</a>
+        <a href="/delaware" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Delaware</a>
+        <a href="/florida" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Florida</a>
+        <a href="/georgia" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Georgia</a>
+        <a href="/hawaii" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Hawaii</a>
+        <a href="/idaho" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Idaho</a>
+        <a href="/illinois" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Illinois</a>
+        <a href="/indiana" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Indiana</a>
+        <a href="/iowa" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Iowa</a>
+        <a href="/kansas" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Kansas</a>
+        <a href="/kentucky" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Kentucky</a>
+        <a href="/louisiana" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Louisiana</a>
+        <a href="/maine" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Maine</a>
+        <a href="/maryland" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Maryland</a>
+        <a href="/massachusetts" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Massachusetts</a>
+        <a href="/michigan" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Michigan</a>
+        <a href="/minnesota" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Minnesota</a>
+        <a href="/mississippi" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Mississippi</a>
+        <a href="/missouri" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Missouri</a>
+        <a href="/montana" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Montana</a>
+        <a href="/nebraska" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Nebraska</a>
+        <a href="/nevada" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Nevada</a>
+        <a href="/new-hampshire" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">New Hampshire</a>
+        <a href="/new-jersey" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">New Jersey</a>
+        <a href="/new-mexico" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">New Mexico</a>
+        <a href="/new-york" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">New York</a>
+        <a href="/north-carolina" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">North Carolina</a>
+        <a href="/north-dakota" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">North Dakota</a>
+        <a href="/ohio" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Ohio</a>
+        <a href="/oklahoma" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Oklahoma</a>
+        <a href="/oregon" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Oregon</a>
+        <a href="/pennsylvania" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Pennsylvania</a>
+        <a href="/rhode-island" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Rhode Island</a>
+        <a href="/south-carolina" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">South Carolina</a>
+        <a href="/south-dakota" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">South Dakota</a>
+        <a href="/tennessee" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Tennessee</a>
+        <a href="/texas" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Texas</a>
+        <a href="/utah" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Utah</a>
+        <a href="/vermont" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Vermont</a>
+        <a href="/virginia" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Virginia</a>
+        <a href="/washington" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Washington</a>
+        <a href="/west-virginia" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">West Virginia</a>
+        <a href="/wisconsin" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Wisconsin</a>
+        <a href="/wyoming" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Wyoming</a>
       </div>
-    </div>
-  </section>
-
-  <!-- Lead Form Section -->
- <section id="get-quotes" class="py-16 bg-[#2562eb]">
-    <div class="max-w-2xl mx-auto px-4">
-      <LeadForm />
     </div>
   </section>
 
@@ -91,6 +126,13 @@ import LeadForm from '../components/LeadForm.astro';
           <div class="text-gray-600">Certified Installers</div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Lead Form -->
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
     </div>
   </section>
 </Layout>
