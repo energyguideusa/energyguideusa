@@ -1,0 +1,97 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import LeadForm from '../../../components/LeadForm.astro';
+
+const content = `<h2>Solar & HVAC in Albany, New York</h2>
+<p>Albany, New York presents excellent opportunities for solar energy adoption and efficient HVAC systems. With electricity rates at 16.1¢ per kWh through National Grid, residents pay significantly above the national average, making solar panels an attractive investment for the city's 99,224 residents. The cold climate means heating costs dominate energy bills, creating substantial potential savings when combining solar power with efficient heating systems.</p>
+
+<p>Despite Albany's cold winters, the region receives adequate sunlight for solar energy production, particularly during spring and summer months when air conditioning demands peak. The combination of high electricity rates, generous federal and state incentives, and National Grid's net metering program creates favorable conditions for both solar installations and high-efficiency HVAC upgrades. For Albany's average 1,680 square foot homes, these improvements can dramatically reduce energy costs while increasing property values.</p>
+
+<h2>Solar Panel Costs in Albany</h2>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Size</th>
+      <th class="border px-4 py-2 text-left">Cost Before Credit</th>
+      <th class="border px-4 py-2 text-left">After 30% Credit</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="border px-4 py-2">5kW</td><td class="border px-4 py-2">\$15,000</td><td class="border px-4 py-2">\$10,500</td><td class="border px-4 py-2">\$965</td></tr>
+    <tr><td class="border px-4 py-2">6kW</td><td class="border px-4 py-2">\$18,000</td><td class="border px-4 py-2">\$12,600</td><td class="border px-4 py-2">\$1,158</td></tr>
+    <tr><td class="border px-4 py-2">8kW</td><td class="border px-4 py-2">\$24,000</td><td class="border px-4 py-2">\$16,800</td><td class="border px-4 py-2">\$1,544</td></tr>
+    <tr><td class="border px-4 py-2">10kW</td><td class="border px-4 py-2">\$30,000</td><td class="border px-4 py-2">\$21,000</td><td class="border px-4 py-2">\$1,930</td></tr>
+  </tbody>
+</table>
+
+<p>Solar installation costs in Albany typically range from \$3.00 to \$3.50 per watt before incentives. The average Albany home requires a 6-8kW system to offset significant portions of their electricity usage. With Albany County's average annual sunshine of 2,100 hours and National Grid's favorable net metering policies, most systems achieve payback periods of 8-11 years. The combination of the 30% federal tax credit and New York State's various solar incentives makes solar particularly attractive for Albany homeowners.</p>
+
+<h2>HVAC Systems for Albany</h2>
+<p>Albany's cold climate demands robust heating systems capable of handling winter temperatures that regularly drop below freezing. For optimal efficiency, homeowners should consider heat pumps with SEER ratings of 16-18 and HSPF ratings of 9-10 or higher. Cold-climate heat pumps, particularly those with variable-speed compressors, work effectively down to -15°F, making them suitable for Albany's winters while providing efficient cooling during summer months.</p>
+
+<p>Gas furnaces remain popular in Albany, with AFUE ratings of 90% or higher recommended for maximum efficiency. When paired with central air conditioning systems rated 16 SEER or higher, these combinations provide year-round comfort. For homes without existing ductwork, mini-split systems offer excellent zoned heating and cooling, with cold-climate models maintaining efficiency even during Albany's harsh winters. Proper insulation and air sealing are crucial for any HVAC system in Albany's climate, as the average 1,680 square foot home can lose significant energy through poorly sealed building envelopes.</p>
+
+<h2>Albany Energy Incentives</h2>
+<p>Albany residents benefit from multiple solar incentives that significantly reduce installation costs. The federal solar Investment Tax Credit provides 30% of system costs through 2032, while New York State offers additional rebates through NYSERDA programs. The NY-Sun Incentive Program provides cash rebates based on system size, typically ranging from \$0.20 to \$0.40 per watt for residential installations.</p>
+
+<p>National Grid participates in New York's net metering program, allowing solar customers to receive full retail credit for excess electricity sent to the grid. The utility also offers energy efficiency rebates for HVAC upgrades, including up to \$1,000 for high-efficiency heat pumps and \$500-800 for qualifying furnaces and air conditioners. EmPower New York provides additional assistance for income-qualified households, offering free weatherization and reduced-cost energy efficiency upgrades. Property tax exemptions for solar installations mean the added property value from solar panels won't increase local tax assessments.</p>
+
+<h2>Neighborhoods in Albany</h2>
+<p>Albany's diverse neighborhoods present varying opportunities for solar and HVAC installations. The Center Square and Park South neighborhoods feature many historic homes with unique architectural considerations requiring careful solar panel placement and specialized HVAC solutions that preserve historic character while improving efficiency. These areas often benefit from mini-split systems that don't require extensive ductwork modifications.</p>
+
+<p>The Pine Hills neighborhood, popular with families and professionals, features many single-family homes ideal for traditional rooftop solar installations and central HVAC systems. Newer developments in areas like Buckingham Pond and Beverwyck offer excellent solar potential with modern electrical systems and proper roof orientations. The Helderberg neighborhood's larger lots provide options for ground-mounted solar arrays when roof conditions aren't optimal. Throughout Albany, tree coverage can impact solar production, making professional site assessments crucial for determining the best installation approach for each specific location.</p>
+
+<h2>FAQs for Albany</h2>
+<div class="space-y-4">
+  <div><h3 class="font-bold">How much do solar panels cost in Albany?</h3><p>Solar panels in Albany cost between \$15,000-30,000 before incentives, depending on system size. After the 30% federal tax credit and state rebates, homeowners typically pay \$10,500-21,000. With Albany's 16.1¢/kWh electricity rates, most systems save \$900-1,900 annually, achieving payback in 8-11 years.</p></div>
+  
+  <div><h3 class="font-bold">What's the best HVAC for Albany's cold climate?</h3><p>Cold-climate heat pumps with HSPF ratings of 9+ work effectively in Albany's winters while providing efficient cooling. Gas furnaces with 90%+ AFUE ratings paired with 16+ SEER air conditioners are also excellent choices. Mini-split systems offer efficient zoned comfort for homes without existing ductwork.</p></div>
+  
+  <div><h3 class="font-bold">Does National Grid offer solar rebates?</h3><p>National Grid participates in New York's net metering program, providing full retail credit for excess solar production. While they don't offer direct solar rebates, National Grid customers benefit from state incentives through NYSERDA and receive credits at the full 16.1¢/kWh rate for solar electricity sent to the grid.</p></div>
+  
+  <div><h3 class="font-bold">How long do solar panels last in Albany's climate?</h3><p>Solar panels typically last 25-30 years in Albany's climate, with most manufacturers offering 20-25 year production warranties. The panels are designed to withstand snow loads, ice, and temperature fluctuations common in upstate New York. Regular maintenance and snow removal help optimize performance during winter months.</p></div>
+  
+  <div><h3 class="font-bold">What size HVAC system do I need for an Albany home?</h3><p>The average 1,680 square foot Albany home typically requires 2.5-4 ton cooling capacity and 80,000-120,000 BTU heating capacity, depending on insulation, windows, and layout. Professional load calculations account for Albany's climate conditions, with heating demands being the primary sizing factor due to cold winters.</p></div>
+</div>`;
+---
+
+<Layout title="Albany, New York Solar & HVAC Guide | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/new-york" class="text-blue-600 hover:underline">New York</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">Albany</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Albany Solar & HVAC Guide
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Solar panels and HVAC systems for Albany, New York homeowners
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">📍 Albany County</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 16.1¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ National Grid</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,97 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import LeadForm from '../../../components/LeadForm.astro';
+
+const content = `<h2>Solar & HVAC in Scottsdale, Arizona</h2>
+<p>Scottsdale's hot-dry climate and abundant sunshine make it one of the most favorable locations in the United States for solar energy systems. With over 300 days of sunshine annually and minimal cloud cover, residents can maximize their solar panel efficiency while reducing dependence on traditional grid electricity. The city's electricity rate of 12.9¢/kWh through Salt River Project (SRP) provides substantial savings opportunities for homeowners who invest in solar systems, especially given the high energy demands created by Scottsdale's extreme summer temperatures that regularly exceed 115°F.</p>
+
+<p>The combination of Scottsdale's intense heat and dry climate creates unique opportunities for integrated solar and HVAC solutions. While the hot-dry conditions mean HVAC systems work overtime during summer months, the same intense sunlight that drives up cooling costs also provides exceptional solar generation potential. SRP's net metering programs and time-of-use rates make solar particularly attractive for Scottsdale's 241,361 residents, as peak electricity demand coincides with peak solar production hours, maximizing the value of every kilowatt-hour generated.</p>
+
+<h2>Solar Panel Costs in Scottsdale</h2>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Size</th>
+      <th class="border px-4 py-2 text-left">Cost Before Credit</th>
+      <th class="border px-4 py-2 text-left">After 30% Credit</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="border px-4 py-2">5kW</td><td class="border px-4 py-2">\$15,500</td><td class="border px-4 py-2">\$10,850</td><td class="border px-4 py-2">\$945</td></tr>
+    <tr><td class="border px-4 py-2">6kW</td><td class="border px-4 py-2">\$18,600</td><td class="border px-4 py-2">\$13,020</td><td class="border px-4 py-2">\$1,134</td></tr>
+    <tr><td class="border px-4 py-2">8kW</td><td class="border px-4 py-2">\$24,800</td><td class="border px-4 py-2">\$17,360</td><td class="border px-4 py-2">\$1,512</td></tr>
+    <tr><td class="border px-4 py-2">10kW</td><td class="border px-4 py-2">\$31,000</td><td class="border px-4 py-2">\$21,700</td><td class="border px-4 py-2">\$1,890</td></tr>
+  </tbody>
+</table>
+
+<p>Solar panel costs in Scottsdale average \$3.10 per watt installed, which is competitive with Arizona's statewide average. The annual savings calculations are based on Scottsdale's exceptional solar irradiance of 6.57 peak sun hours daily and SRP's current rate structure. Most Scottsdale homes with average electricity usage of 2,380 sq ft require 8-10kW systems to offset their annual consumption, particularly given the high cooling loads during summer months when temperatures consistently exceed 110°F from May through September.</p>
+
+<h2>HVAC Systems for Scottsdale</h2>
+<p>Scottsdale's hot-dry climate demands high-efficiency HVAC systems capable of handling extreme temperature differentials while managing low humidity levels effectively. The ideal HVAC system for Scottsdale homes should feature a minimum SEER rating of 16, though 18+ SEER systems provide optimal efficiency given the extended cooling season that runs from April through October. Two-stage or variable-speed air conditioners work exceptionally well in this climate, as they can operate efficiently during moderate heat while ramping up capacity during peak summer conditions.</p>
+
+<p>Heat pump systems are increasingly popular in Scottsdale due to their heating efficiency during the mild winter months and advanced cooling capabilities. Dual-fuel systems combining heat pumps with gas furnace backup provide optimal year-round comfort and efficiency. Given the dry climate, evaporative cooling systems remain viable for shoulder seasons, though most homeowners prefer central air conditioning for consistent comfort. Proper system sizing is crucial in Scottsdale - oversized units cycle inefficiently in the dry heat, while undersized systems struggle during peak summer conditions when outdoor temperatures reach 118°F.</p>
+
+<h2>Scottsdale Energy Incentives</h2>
+<p>Scottsdale residents benefit from multiple layers of solar incentives that significantly reduce installation costs. The federal solar Investment Tax Credit (ITC) provides a 30% credit on total system costs through 2032, stepping down to 26% in 2033 and 22% in 2034. Arizona offers additional benefits including no sales tax on solar equipment purchases and property tax exemptions on solar installations, ensuring that adding solar panels won't increase property tax assessments.</p>
+
+<p>Salt River Project provides specific incentives for solar customers through their net metering program and Schedule E-27 time-of-use rates that reward solar production during peak demand periods. SRP's Customer Generation Price Schedule allows solar customers to sell excess power back to the grid, though rates vary seasonally. Additionally, many Scottsdale residents qualify for SRP's energy efficiency rebates on high-efficiency HVAC systems, with rebates up to \$1,000 for qualifying heat pumps and air conditioners that meet ENERGY STAR requirements and minimum SEER ratings.</p>
+
+<h2>Neighborhoods in Scottsdale</h2>
+<p>Scottsdale's diverse neighborhoods each present unique considerations for solar and HVAC installations. Old Town Scottsdale, with its historic homes and downtown proximity, often requires careful solar panel placement to comply with historic district guidelines while maximizing sun exposure. The upscale Paradise Valley area features large custom homes averaging 3,500+ sq ft that benefit from larger 10-12kW solar systems and zoned HVAC systems for optimal comfort control.</p>
+
+<p>North Scottsdale neighborhoods like DC Ranch and Desert Ridge feature newer construction with optimal south-facing roof orientations and modern electrical systems ideal for solar installations. These areas commonly have 2,500-3,000 sq ft homes that perform well with 8-10kW solar systems. Central Scottsdale areas including Arcadia and the Biltmore corridor present opportunities for solar retrofits on mid-century homes, though some properties may require electrical upgrades. The Gainey Ranch area's luxury homes often feature tile roofs that require specialized solar mounting systems but provide excellent long-term solar platform stability.</p>
+
+<h2>FAQs for Scottsdale</h2>
+<div class="space-y-4">
+  <div><h3 class="font-bold">How much do solar panels cost in Scottsdale?</h3><p>Solar panels in Scottsdale cost an average of \$3.10 per watt installed, meaning a typical 8kW system costs \$24,800 before incentives or \$17,360 after the 30% federal tax credit. With SRP's electricity rates at 12.9¢/kWh and exceptional sun exposure, most systems pay for themselves within 8-10 years while providing 25+ years of energy savings.</p></div>
+  
+  <div><h3 class="font-bold">Best HVAC for Scottsdale climate?</h3><p>The best HVAC systems for Scottsdale's hot-dry climate are high-efficiency air conditioners with SEER ratings of 16+ or heat pump systems with variable-speed technology. Two-stage systems excel in this climate by operating efficiently during moderate heat while providing full capacity during extreme summer conditions. Proper sizing is crucial - systems should be calculated for 118°F design temperatures with adequate capacity for Scottsdale's extended cooling season.</p></div>
+  
+  <div><h3 class="font-bold">Does SRP offer solar rebates?</h3><p>SRP doesn't offer direct cash rebates for solar installations, but provides net metering through their Customer Generation Price Schedule, allowing solar customers to sell excess power back to the grid. SRP's time-of-use rates can benefit solar customers, and they offer rebates up to \$1,000 for high-efficiency HVAC equipment that pairs well with solar systems. The most significant incentive remains the 30% federal tax credit combined with Arizona's solar-friendly tax policies.</p></div>
+
+  <div><h3 class="font-bold">How much electricity does a typical Scottsdale home use?</h3><p>The average 2,380 sq ft Scottsdale home uses approximately 14,000-16,000 kWh annually, with peak usage during summer months when cooling costs can exceed \$300 monthly. This high usage, driven by air conditioning needs during 100+ degree weather for 5+ months annually, makes solar particularly attractive for reducing electricity bills that can reach \$2,000+ per year.</p></div>
+
+  <div><h3 class="font-bold">What solar panel brands work best in Scottsdale's heat?</h3><p>High-quality solar panels from manufacturers like SunPower, LG, and Canadian Solar perform exceptionally well in Scottsdale's intense heat and UV exposure. Panels with low temperature coefficients and robust warranties are essential, as rooftop temperatures can exceed 160°F during summer. Monocrystalline panels generally outperform polycrystalline options in extreme heat conditions and provide better long-term reliability in Scottsdale's challenging climate.</p></div>
+</div>`;
+---
+
+<Layout title="Scottsdale, Arizona Solar & HVAC Guide | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/arizona" class="text-blue-600 hover:underline">Arizona</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">Scottsdale</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Scottsdale Solar & HVAC Guide
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Solar panels and HVAC systems for Scottsdale, Arizona homeowners
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">📍 Maricopa County</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 12.9¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ SRP</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>
