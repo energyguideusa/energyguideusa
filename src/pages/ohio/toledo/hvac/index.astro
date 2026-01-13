@@ -1,13 +1,15 @@
 ---
-import Layout from '../../../layouts/Layout.astro';
-import LeadForm from '../../../components/LeadForm.astro';
+import Layout from '../../../../layouts/Layout.astro';
+import LeadForm from '../../../../components/LeadForm.astro';
 
 const content = `<h2>HVAC Systems in Toledo</h2>
-<p>Toledo's cold climate presents unique challenges for homeowners and businesses looking to maintain comfortable indoor temperatures year-round. With harsh winters where temperatures regularly drop below freezing and moderate summers, residents need robust heating systems that can handle extended cold periods while providing efficient cooling during warmer months. The city's 270,871 residents rely heavily on their HVAC systems, particularly during Toledo's bitter winter months when heating costs can comprise 40-60% of total energy bills.</p>
 
-<p>Energy efficiency becomes crucial when considering Toledo Edison's electricity rate of 12.7¢/kWh, which is slightly above the national average. For Toledo homeowners, this means that upgrading to a high-efficiency HVAC system can result in substantial annual savings. A typical Toledo household spends approximately \$1,800-2,400 annually on heating and cooling, making proper system selection and maintenance essential for managing energy costs. Given the climate demands, dual-fuel systems and high-efficiency heat pumps with backup heating are increasingly popular choices among Lucas County residents.</p>
+<p>Toledo, Ohio's cold climate presents unique challenges for the city's 270,871 residents when it comes to heating and cooling their homes. With harsh winters featuring temperatures often dropping below freezing and hot, humid summers, Toledo homeowners need reliable HVAC systems that can handle extreme temperature swings efficiently. The city's location in Lucas County along Lake Erie creates additional humidity concerns, making proper ventilation and dehumidification critical components of any effective HVAC system.</p>
+
+<p>Energy costs play a significant role in HVAC decision-making for Toledo residents, with Toledo Edison providing electricity at 12.7¢/kWh. While this rate is relatively moderate compared to national averages, the extended heating season means Toledo homes typically see heating costs account for 40-60% of their annual energy bills. This makes selecting an efficient heating system particularly important, as even small improvements in efficiency can result in substantial savings over the system's 15-20 year lifespan. Smart Toledo homeowners prioritize high-efficiency systems that can effectively handle the city's demanding climate while keeping energy costs manageable.</p>
 
 <h2>HVAC Installation Costs in Toledo</h2>
+
 <table class="min-w-full bg-white border my-6">
   <thead class="bg-gray-100">
     <tr>
@@ -18,34 +20,40 @@ const content = `<h2>HVAC Systems in Toledo</h2>
     </tr>
   </thead>
   <tbody>
-    <tr><td class="border px-4 py-2">16 SEER AC</td><td class="border px-4 py-2">\$5,500-7,500</td><td class="border px-4 py-2">\$200-350/year</td><td class="border px-4 py-2">8-12 years</td></tr>
-    <tr><td class="border px-4 py-2">18 SEER AC</td><td class="border px-4 py-2">\$6,800-9,000</td><td class="border px-4 py-2">\$350-500/year</td><td class="border px-4 py-2">7-10 years</td></tr>
-    <tr><td class="border px-4 py-2">Heat Pump</td><td class="border px-4 py-2">\$7,200-10,000</td><td class="border px-4 py-2">\$450-650/year</td><td class="border px-4 py-2">6-9 years</td></tr>
+    <tr><td class="border px-4 py-2">16 SEER AC + 90% AFUE Furnace</td><td class="border px-4 py-2">\$5,500-7,500</td><td class="border px-4 py-2">\$200-350 vs older systems</td><td class="border px-4 py-2">8-12 years</td></tr>
+    <tr><td class="border px-4 py-2">18 SEER AC + 95% AFUE Furnace</td><td class="border px-4 py-2">\$6,800-9,000</td><td class="border px-4 py-2">\$300-450 vs older systems</td><td class="border px-4 py-2">6-10 years</td></tr>
+    <tr><td class="border px-4 py-2">Heat Pump System (Cold Climate)</td><td class="border px-4 py-2">\$7,200-10,000</td><td class="border px-4 py-2">\$400-600 vs standard systems</td><td class="border px-4 py-2">7-11 years</td></tr>
   </tbody>
 </table>
 
 <h2>Best HVAC Systems for Toledo Climate</h2>
-<p>For Toledo's cold climate, heating efficiency takes priority over cooling efficiency, though both are important. The most effective systems for Lucas County homes include dual-fuel heat pumps with 16+ SEER cooling ratings and 9.0+ HSPF heating efficiency. These systems use the heat pump for mild weather and switch to gas furnace backup when temperatures drop below 25-30°F, which occurs frequently during Toledo winters. Gas furnaces with 90%+ AFUE ratings paired with 16+ SEER air conditioning units provide excellent performance, with many Toledo contractors recommending 95% AFUE condensing furnaces for maximum efficiency. For homes without natural gas access, cold-climate heat pumps rated for operation down to -15°F, such as those with variable-speed compressors and enhanced vapor injection, offer reliable heating even during Toledo's coldest days while providing efficient cooling during summer months.</p>
+
+<p>For Toledo's cold climate, the most effective HVAC systems must excel at heating performance while providing adequate cooling for summer months. High-efficiency gas furnaces with 90-95% AFUE ratings paired with 16-18 SEER air conditioning units represent the traditional gold standard for Toledo homes. However, modern cold-climate heat pumps are becoming increasingly popular, offering year-round efficiency even when temperatures drop to -10°F or lower. These systems should feature variable-speed technology and two-stage operation to handle Toledo's temperature extremes effectively. Given that heating represents roughly 70% of HVAC energy usage in Toledo, prioritizing heating efficiency over cooling efficiency typically yields better long-term savings. Systems should also include proper humidification capabilities to combat winter dryness and robust air filtration to handle seasonal allergens from the surrounding agricultural areas.</p>
 
 <h2>HVAC Rebates in Toledo</h2>
-<p>Toledo residents have access to multiple rebate programs that can significantly reduce HVAC installation costs. Federal tax credits offer up to \$2,000 for qualifying heat pumps (16+ SEER, 8.5+ HSPF) and up to \$600 for central air conditioning units (16+ SEER) through 2032. Ohio's Home Energy Efficiency Program provides additional rebates ranging from \$300-800 for high-efficiency systems, while Toledo Edison offers seasonal rebates of \$200-500 for ENERGY STAR certified equipment installed by participating contractors. The utility also provides special financing programs with 0% APR for qualified HVAC upgrades. Additionally, Lucas County homeowners may qualify for the federal 30% tax credit on geothermal heat pump systems, which can save thousands on installation costs. Low-income households can access weatherization assistance programs that may cover complete HVAC system replacements at no cost through the Ohio Development Services Agency.</p>
+
+<p>Toledo residents have access to multiple rebate programs that can significantly reduce HVAC installation costs. Federal tax credits offer up to \$2,000 for qualifying heat pumps and up to \$1,200 for high-efficiency air conditioners and furnaces installed through 2032. Ohio's energy efficiency programs provide additional rebates, with amounts varying by system type and efficiency ratings. Toledo Edison offers specific rebates for electric heat pump installations, typically ranging from \$300-800 depending on the system's efficiency rating. The utility also provides rebates for programmable thermostats (\$25-75) and energy audits that can identify HVAC improvements. Additionally, Toledo residents may qualify for low-interest financing programs through Ohio's residential energy efficiency loan program, making high-efficiency HVAC upgrades more accessible. Combining federal, state, and utility rebates can reduce total installation costs by \$1,500-3,500 for qualifying systems.</p>
 
 <h2>Choosing an HVAC Contractor in Toledo</h2>
-<p>Selecting the right HVAC contractor in Toledo requires careful consideration of several factors specific to Ohio's requirements and local climate challenges. Verify that contractors hold valid Ohio mechanical contractor licenses and EPA certifications for refrigerant handling, as unlicensed work can void warranties and create safety hazards. Look for contractors with extensive experience in cold-climate installations who understand Toledo's unique heating demands and can properly size systems for local weather patterns. Top contractors should offer comprehensive warranties (10+ years on equipment, 2+ years on labor) and provide 24/7 emergency service, which is crucial during Toledo's harsh winters when system failures can be dangerous. Request references from recent Lucas County customers and check Better Business Bureau ratings. Reputable contractors will perform detailed load calculations, explain rebate opportunities, and provide written estimates with specific equipment model numbers. Avoid contractors who quote over the phone or pressure you to sign immediately, and always verify they're insured and bonded before allowing work to begin.</p>
+
+<p>Selecting the right HVAC contractor in Toledo requires careful evaluation of several critical factors specific to the local market and climate challenges. Contractors should hold proper Ohio licensing, carry comprehensive insurance, and demonstrate extensive experience with cold-climate HVAC systems. Look for contractors who are certified by major manufacturers like Carrier, Trane, or Lennox, as this ensures access to warranty coverage and technical support. Emergency service availability is particularly important in Toledo, where equipment failures during winter can create dangerous situations. Quality contractors will provide detailed written estimates, perform thorough load calculations to properly size equipment, and offer comprehensive warranties on both equipment and installation work. Check Better Business Bureau ratings, Google reviews, and ask for local references from recent customers. Reputable Toledo HVAC contractors will also be knowledgeable about local rebate programs and can help navigate the application process to maximize your savings.</p>
 
 <h2>Frequently Asked Questions</h2>
+
 <div class="space-y-4 my-6">
   <div>
-    <h3 class="text-lg font-bold mb-2">How much do hvac systems cost in Toledo?</h3>
-    <p>Complete HVAC system replacement in Toledo typically costs \$8,000-15,000 for most homes, with high-efficiency systems ranging \$12,000-18,000. Furnace-only replacements cost \$3,500-7,000, while central air conditioning installations run \$4,500-8,500. Heat pump systems cost \$7,200-12,000 installed. Prices vary based on home size, system efficiency, and installation complexity. Toledo's cold climate often requires robust heating systems, which can increase costs compared to milder regions.</p>
+    <h3 class="text-lg font-bold mb-2">How much do HVAC systems cost in Toledo?</h3>
+    <p>Complete HVAC system replacement in Toledo typically ranges from \$5,500-10,000, depending on system type, efficiency ratings, and home size. A standard 16 SEER AC unit with 90% AFUE furnace costs \$5,500-7,500 installed, while high-efficiency heat pump systems range from \$7,200-10,000. With Toledo Edison's 12.7¢/kWh rate, higher efficiency systems typically pay for themselves within 6-12 years through energy savings.</p>
   </div>
+  
   <div>
     <h3 class="text-lg font-bold mb-2">What rebates are available in Toledo?</h3>
-    <p>Toledo residents can combine federal tax credits (up to \$2,000 for heat pumps), Ohio state rebates (\$300-800), and Toledo Edison utility rebates (\$200-500) for potential savings of \$1,000-3,300 on qualifying high-efficiency systems. Geothermal installations qualify for 30% federal tax credits with no cap. Low-income households may access free weatherization programs through Ohio Development Services Agency that cover complete system replacements.</p>
+    <p>Toledo residents can access federal tax credits up to \$2,000 for heat pumps and \$1,200 for high-efficiency AC/furnaces, Ohio state energy efficiency rebates varying by system type, and Toledo Edison utility rebates of \$300-800 for qualifying heat pump installations. Combined rebates can reduce installation costs by \$1,500-3,500, with additional low-interest financing available through Ohio's residential energy programs.</p>
   </div>
+  
   <div>
     <h3 class="text-lg font-bold mb-2">How do I choose a contractor in Toledo?</h3>
-    <p>Choose licensed Ohio mechanical contractors with EPA certifications, strong local references, and experience with cold-climate systems. Verify insurance, check BBB ratings, and ensure they offer comprehensive warranties and emergency service. Quality contractors perform load calculations, explain available rebates, and provide detailed written estimates. Avoid door-to-door sales or contractors requiring full payment upfront. Always get multiple quotes from established Toledo-area businesses.</p>
+    <p>Choose Ohio-licensed contractors with cold-climate experience, manufacturer certifications, comprehensive insurance, and strong local references. Verify Better Business Bureau ratings, ensure they provide detailed written estimates with proper load calculations, offer equipment and labor warranties, and provide 24/7 emergency service. Quality Toledo contractors will also assist with rebate applications and demonstrate knowledge of local climate challenges and energy efficiency programs.</p>
   </div>
 </div>`;
 ---
