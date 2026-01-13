@@ -1,0 +1,103 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import LeadForm from '../../../components/LeadForm.astro';
+
+const content = `<h2>HVAC Systems in Tucson</h2>
+<p>Tucson's hot-dry desert climate presents unique challenges for HVAC systems, with temperatures regularly exceeding 100°F during summer months and minimal humidity year-round. The city's 542,629 residents in Pima County rely heavily on air conditioning from May through October, making efficient cooling systems essential for comfort and health. Unlike humid climates, Tucson's dry air allows evaporative cooling to be highly effective, though traditional refrigerated air conditioning remains the most reliable option for consistent temperature control during extreme heat periods.</p>
+
+<p>Energy costs significantly impact HVAC decisions in Tucson, with Tucson Electric Power (TEP) charging an average of 12.4¢ per kWh. During peak summer months, cooling costs can account for 60-70% of a typical household's electric bill, making energy-efficient HVAC systems a smart investment. The extreme temperature differential between outdoor heat and desired indoor comfort levels means systems work harder and longer than in moderate climates, emphasizing the importance of proper sizing, high SEER ratings, and quality installation to minimize operating costs while maintaining reliability.</p>
+
+<h2>HVAC Installation Costs in Tucson</h2>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Type</th>
+      <th class="border px-4 py-2 text-left">Installation Cost</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+      <th class="border px-4 py-2 text-left">Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="border px-4 py-2">16 SEER AC</td><td class="border px-4 py-2">\$5,500-7,500</td><td class="border px-4 py-2">\$200-400 vs 13 SEER</td><td class="border px-4 py-2">8-12 years</td></tr>
+    <tr><td class="border px-4 py-2">18 SEER AC</td><td class="border px-4 py-2">\$6,800-9,000</td><td class="border px-4 py-2">\$400-600 vs 13 SEER</td><td class="border px-4 py-2">6-10 years</td></tr>
+    <tr><td class="border px-4 py-2">Heat Pump</td><td class="border px-4 py-2">\$7,200-10,000</td><td class="border px-4 py-2">\$500-800 annually</td><td class="border px-4 py-2">5-8 years</td></tr>
+  </tbody>
+</table>
+
+<h2>Best HVAC Systems for Tucson Climate</h2>
+<p>For Tucson's hot-dry climate, high-efficiency air conditioning systems with SEER ratings of 16 or higher provide the best value, with 18-20 SEER units offering optimal performance for the extended cooling season. Heat pumps work exceptionally well in Tucson due to mild winters, providing efficient heating when needed while delivering superior cooling performance. Variable-speed systems are particularly beneficial, as they can adjust capacity to handle the extreme temperature swings between day and night common in desert climates. While heating needs are minimal with only 1,800 heating degree days annually compared to 4,000+ cooling degree days, a dual-fuel system combining a heat pump with a gas furnace backup ensures comfort during rare freezing periods while maximizing efficiency year-round.</p>
+
+<h2>HVAC Rebates in Tucson</h2>
+<p>Tucson residents can access substantial rebates for HVAC upgrades through multiple programs. Federal tax credits offer up to \$2,000 for heat pumps and up to \$600 for central air conditioners meeting efficiency requirements through 2032. Arizona's tax credit program provides additional incentives for energy-efficient equipment. TEP offers rebates up to \$1,200 for qualifying high-efficiency air conditioners and heat pumps, with specific requirements including SEER ratings of 15+ and proper installation verification. The utility also provides rebates for programmable thermostats (\$25-75) and duct sealing services (\$200-400), which are particularly valuable in Tucson's climate where efficient air distribution is crucial for managing cooling costs during the extended summer season.</p>
+
+<h2>Choosing an HVAC Contractor in Tucson</h2>
+<p>Selecting the right HVAC contractor in Tucson requires attention to desert-specific experience and proper licensing. Ensure contractors hold current Arizona Registrar of Contractors licenses in classifications L-39 (Air Conditioning/Refrigeration) and verify their standing through the state database. Look for contractors with extensive experience in Tucson's unique climate challenges, including expertise in proper system sizing for extreme heat, knowledge of local building codes, and familiarity with TEP rebate programs. Quality contractors should provide detailed load calculations, offer multiple system options with clear efficiency comparisons, and provide comprehensive warranties covering both equipment and labor. Emergency service availability is crucial given Tucson's climate, so choose contractors offering 24/7 repair services during peak summer months when system failures can create dangerous conditions.</p>
+
+<h2>Frequently Asked Questions</h2>
+<div class="space-y-4 my-6">
+  <div>
+    <h3 class="text-lg font-bold mb-2">How much do hvac systems cost in Tucson?</h3>
+    <p>HVAC system costs in Tucson range from \$5,500-\$10,000 for complete installations, with high-efficiency 16 SEER systems averaging \$6,500, 18 SEER systems around \$7,900, and heat pumps \$8,600. Prices vary based on home size, with typical 1,500-2,000 sq ft homes requiring 3-4 ton units. Additional costs include ductwork modifications (\$1,500-3,000), electrical upgrades (\$500-1,200), and permits (\$150-300). TEP rebates can reduce costs by \$400-1,200, making high-efficiency systems more affordable with better long-term savings in Tucson's climate.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">What rebates are available in Tucson?</h3>
+    <p>Tucson residents can stack multiple rebates for significant savings: Federal tax credits provide up to \$2,000 for heat pumps and \$600 for AC units through 2032. TEP offers rebates up to \$1,200 for high-efficiency systems (15+ SEER), \$400 for duct sealing, and \$75 for smart thermostats. Arizona state programs provide additional incentives for energy-efficient equipment. Combined rebates can total \$2,000-4,000, substantially reducing upfront costs while ensuring long-term energy savings in Tucson's demanding climate.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">How do I choose a contractor in Tucson?</h3>
+    <p>Choose licensed Arizona contractors (L-39 classification) with desert climate experience and strong local reputation. Verify licensing through Arizona ROC, check Better Business Bureau ratings, and read Google reviews focusing on summer performance and emergency service. Quality contractors provide Manual J load calculations, multiple system quotes with efficiency comparisons, comprehensive warranties (10+ years equipment, 2+ years labor), and 24/7 emergency service. Get 3-4 quotes, ensure TEP rebate familiarity, and confirm proper permitting processes for Tucson installations.</p>
+  </div>
+</div>`;
+---
+
+<Layout title="HVAC Systems in Tucson, Arizona - Costs, Installation & Rebates | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/arizona" class="text-blue-600 hover:underline">Arizona</a>
+        <span class="mx-2">/</span>
+        <a href="/arizona/tucson" class="text-blue-600 hover:underline">Tucson</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">HVAC Systems</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        HVAC Systems in Tucson, Arizona
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Complete guide to HVAC system installation, repair, costs, and energy efficiency for Tucson homeowners
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">📍 Pima County</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 12.4¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ TEP</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section class="bg-gray-50 py-12 my-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Need More Information?</h2>
+      <p class="mb-6 text-gray-600">Check out our complete guide for Tucson</p>
+      <a href="/arizona/tucson" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition inline-block">
+        View Tucson Complete Guide
+      </a>
+    </div>
+  </section>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>

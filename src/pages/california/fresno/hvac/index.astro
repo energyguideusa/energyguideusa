@@ -1,0 +1,103 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import LeadForm from '../../../components/LeadForm.astro';
+
+const content = `<h2>HVAC Systems in Fresno</h2>
+<p>Fresno's hot-dry climate presents unique challenges for HVAC systems, with summer temperatures regularly exceeding 100°F and minimal humidity year-round. The city's 542,107 residents face extreme cooling demands from May through October, making efficient air conditioning essential for comfort and health. Unlike humid climates, Fresno's dry conditions allow evaporative cooling to be highly effective during moderate temperatures, but traditional refrigerated air conditioning becomes necessary during peak summer heat.</p>
+
+<p>Energy costs significantly impact HVAC decisions in Fresno, with PG&E's electricity rate of 18.5¢/kWh making system efficiency crucial for managing utility bills. The hot-dry climate means cooling costs can account for 60-70% of summer electricity usage, making high-efficiency systems a smart investment. Winter heating needs are moderate, with temperatures rarely dropping below freezing, allowing heat pumps to operate efficiently year-round and providing both heating and cooling in one system.</p>
+
+<h2>HVAC Installation Costs in Fresno</h2>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Type</th>
+      <th class="border px-4 py-2 text-left">Installation Cost</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+      <th class="border px-4 py-2 text-left">Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="border px-4 py-2">16 SEER AC</td><td class="border px-4 py-2">\$5,500-7,500</td><td class="border px-4 py-2">\$300-450 vs 13 SEER</td><td class="border px-4 py-2">8-10 years</td></tr>
+    <tr><td class="border px-4 py-2">18 SEER AC</td><td class="border px-4 py-2">\$6,800-9,000</td><td class="border px-4 py-2">\$500-700 vs 13 SEER</td><td class="border px-4 py-2">7-9 years</td></tr>
+    <tr><td class="border px-4 py-2">Heat Pump</td><td class="border px-4 py-2">\$7,200-10,000</td><td class="border px-4 py-2">\$600-850 vs standard</td><td class="border px-4 py-2">6-8 years</td></tr>
+  </tbody>
+</table>
+
+<h2>Best HVAC Systems for Fresno Climate</h2>
+<p>For Fresno's hot-dry climate, high-efficiency systems with SEER ratings of 16 or higher are recommended to manage the intense cooling demands cost-effectively. Heat pumps are particularly well-suited for Fresno, as they can efficiently cool during scorching summers and provide adequate heating during mild winters without the need for separate systems. Variable-speed compressors excel in this climate by running longer at lower speeds during extreme heat, maintaining consistent comfort while reducing energy spikes. Two-stage cooling systems also perform excellently, operating at lower capacity during moderate heat and full capacity during peak temperatures. Given Fresno's 4-6 month cooling season with temperatures above 90°F, investing in 18+ SEER systems typically pays for itself through reduced electricity costs, especially with PG&E's tiered pricing structure that penalizes high usage.</p>
+
+<h2>HVAC Rebates in Fresno</h2>
+<p>Fresno residents can access substantial rebates for HVAC upgrades through multiple programs. Federal tax credits offer 30% of installation costs (up to specific limits) for qualifying high-efficiency heat pumps and air conditioners installed through 2032. California's TECH Clean California program provides point-of-sale rebates up to \$3,000 for heat pump installations, with additional incentives for low-income households. PG&E offers rebates ranging from \$200-800 for qualifying high-efficiency systems, with higher rebates for ENERGY STAR certified equipment. The San Joaquin Valley Air Pollution Control District also provides incentives for replacing older, inefficient systems, particularly benefiting residents in disadvantaged communities. Additionally, Fresno County participates in California's Energy Savings Assistance Program, offering free weatherization and HVAC improvements for qualifying low-income residents.</p>
+
+<h2>Choosing an HVAC Contractor in Fresno</h2>
+<p>Selecting the right HVAC contractor in Fresno requires verifying proper California contractor licensing (C-20 for warm-air heating, ventilation, and air-conditioning) and ensuring they're bonded and insured. Look for contractors with extensive experience in hot-dry climates who understand the unique challenges of Fresno's extreme temperatures and can recommend appropriate system sizing and efficiency ratings. Quality contractors should provide detailed written estimates, offer comprehensive warranties (typically 5-10 years on equipment, 1-2 years on labor), and be available for emergency service during Fresno's brutal summer months when system failures can be dangerous. Check Better Business Bureau ratings, Google reviews, and ask for local references, as established Fresno contractors will have a track record of satisfied customers throughout the area. Ensure they pull proper permits, follow local building codes, and can service the brands they install, as prompt service is critical when temperatures exceed 105°F.</p>
+
+<h2>Frequently Asked Questions</h2>
+<div class="space-y-4 my-6">
+  <div>
+    <h3 class="text-lg font-bold mb-2">How much do HVAC systems cost in Fresno?</h3>
+    <p>Complete HVAC system replacement in Fresno typically costs \$5,500-10,000 depending on system type and efficiency. A basic 16 SEER central air system runs \$5,500-7,500 installed, while high-efficiency 18+ SEER heat pumps cost \$7,200-10,000. Given Fresno's extreme heat and PG&E's 18.5¢/kWh rates, investing in higher-efficiency systems typically saves \$500-850 annually, making the payback period 6-10 years.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">What rebates are available in Fresno?</h3>
+    <p>Fresno residents can access federal tax credits worth 30% of installation costs, California's TECH program rebates up to \$3,000 for heat pumps, PG&E rebates of \$200-800 for efficient systems, and San Joaquin Valley Air District incentives for replacing old equipment. Combined rebates can reduce system costs by \$1,500-4,000, making high-efficiency upgrades more affordable.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">How do I choose a contractor in Fresno?</h3>
+    <p>Choose licensed California contractors (C-20 license) with strong local references and experience in hot-dry climates. Verify insurance, bonding, and Better Business Bureau ratings. Quality Fresno contractors provide detailed written estimates, comprehensive warranties, emergency service availability, and understand proper system sizing for extreme heat conditions. Always get multiple quotes and ensure they pull permits and follow local codes.</p>
+  </div>
+</div>`;
+---
+
+<Layout title="HVAC Systems in Fresno, California - Costs, Installation & Rebates | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/california" class="text-blue-600 hover:underline">California</a>
+        <span class="mx-2">/</span>
+        <a href="/california/fresno" class="text-blue-600 hover:underline">Fresno</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">HVAC Systems</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        HVAC Systems in Fresno, California
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Complete guide to HVAC system installation, repair, costs, and energy efficiency for Fresno homeowners
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">📍 Fresno County</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 18.5¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ PG&E</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section class="bg-gray-50 py-12 my-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Need More Information?</h2>
+      <p class="mb-6 text-gray-600">Check out our complete guide for Fresno</p>
+      <a href="/california/fresno" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition inline-block">
+        View Fresno Complete Guide
+      </a>
+    </div>
+  </section>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>

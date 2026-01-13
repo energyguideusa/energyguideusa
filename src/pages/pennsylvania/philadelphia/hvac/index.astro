@@ -1,0 +1,103 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import LeadForm from '../../../components/LeadForm.astro';
+
+const content = `<h2>HVAC Systems in Philadelphia</h2>
+<p>Philadelphia's cold-mixed climate presents unique challenges for HVAC systems, with hot, humid summers requiring robust air conditioning and cold winters demanding reliable heating solutions. With over 1.6 million residents relying on efficient climate control year-round, Philadelphia homeowners face significant energy costs averaging 13.9¢/kWh through PECO, making system efficiency crucial for managing utility bills. The city's temperature swings from summer highs in the 80s-90s°F to winter lows often below freezing create demanding conditions that require versatile, well-designed HVAC systems.</p>
+
+<p>The cold-mixed climate zone means Philadelphia homes need systems capable of both effective cooling during humid summers and consistent heating through harsh winters. With PECO's electricity rates at 13.9¢/kWh—slightly above the national average—investing in high-efficiency HVAC equipment becomes even more important for long-term savings. Properly sized and installed systems not only ensure comfort during Philadelphia's weather extremes but also help control the substantial energy costs that can reach \$1,500-2,500 annually for typical homes in the region.</p>
+
+<h2>HVAC Installation Costs in Philadelphia</h2>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Type</th>
+      <th class="border px-4 py-2 text-left">Installation Cost</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+      <th class="border px-4 py-2 text-left">Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="border px-4 py-2">16 SEER AC</td><td class="border px-4 py-2">\$5,500-7,500</td><td class="border px-4 py-2">\$280-420 vs 13 SEER</td><td class="border px-4 py-2">8-12 years</td></tr>
+    <tr><td class="border px-4 py-2">18 SEER AC</td><td class="border px-4 py-2">\$6,800-9,000</td><td class="border px-4 py-2">\$450-600 vs 13 SEER</td><td class="border px-4 py-2">10-14 years</td></tr>
+    <tr><td class="border px-4 py-2">Heat Pump</td><td class="border px-4 py-2">\$7,200-10,000</td><td class="border px-4 py-2">\$650-900 vs gas furnace</td><td class="border px-4 py-2">8-12 years</td></tr>
+  </tbody>
+</table>
+
+<h2>Best HVAC Systems for Philadelphia Climate</h2>
+<p>For Philadelphia's cold-mixed climate, dual-fuel heat pump systems offer optimal efficiency, combining electric heat pump operation during mild weather with gas furnace backup when temperatures drop below 25-30°F. Look for heat pumps with SEER ratings of 16-18 and HSPF ratings of 9.0 or higher to maximize efficiency during both cooling and heating seasons. Traditional split systems with 16+ SEER air conditioning paired with 90%+ AFUE gas furnaces also perform well, providing reliable heating during Philadelphia's coldest months while efficiently cooling during hot, humid summers. Variable-speed systems are particularly beneficial in Philadelphia's fluctuating climate, automatically adjusting output to maintain consistent comfort while reducing energy consumption during shoulder seasons when temperatures moderate.</p>
+
+<h2>HVAC Rebates in Philadelphia</h2>
+<p>Philadelphia homeowners can access multiple rebate programs to offset HVAC installation costs. Federal tax credits provide up to \$2,000 for qualifying heat pumps and \$600 for high-efficiency air conditioners installed through 2032. Pennsylvania's Act 129 program, administered through PECO, offers rebates of \$300-800 for ENERGY STAR certified air conditioners and heat pumps, plus additional incentives for smart thermostats (\$75-100). PECO's Energy Efficiency Programs provide rebates up to \$1,200 for qualifying heat pump installations and \$400-600 for high-efficiency central air systems. Low-income households may qualify for additional assistance through Pennsylvania's LIHEAP Crisis Program and Weatherization Assistance Program, which can cover significant portions of HVAC replacement costs for eligible residents.</p>
+
+<h2>Choosing an HVAC Contractor in Philadelphia</h2>
+<p>Selecting a qualified HVAC contractor in Philadelphia requires verifying proper Pennsylvania licensing, EPA certifications, and local permits compliance. Look for contractors with extensive experience in Philadelphia's specific climate challenges, including knowledge of local building codes and experience with both heating and cooling system installations. Reputable contractors should provide detailed written estimates, offer comprehensive warranties (10+ years on equipment, 2+ years on labor), and maintain 24/7 emergency service capabilities crucial during Philadelphia's extreme weather periods. Check Better Business Bureau ratings, Google reviews, and request references from recent customers. Ensure contractors perform proper load calculations using Manual J protocols, as Philadelphia's varying home ages and construction types require precise sizing to achieve optimal efficiency and comfort in the cold-mixed climate zone.</p>
+
+<h2>Frequently Asked Questions</h2>
+<div class="space-y-4 my-6">
+  <div>
+    <h3 class="text-lg font-bold mb-2">How much do hvac systems cost in Philadelphia?</h3>
+    <p>Complete HVAC system installations in Philadelphia typically range from \$8,000-15,000 for average-sized homes (1,500-2,500 sq ft). High-efficiency heat pump systems cost \$7,200-12,000, while traditional AC/furnace combinations run \$6,500-11,000. Factors affecting cost include home size, existing ductwork condition, equipment efficiency ratings, and installation complexity. Philadelphia's older housing stock often requires additional electrical or structural modifications, potentially adding \$1,500-3,000 to installation costs.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">What rebates are available in Philadelphia?</h3>
+    <p>Philadelphia residents can combine federal tax credits (up to \$2,000 for heat pumps), PECO rebates (\$300-1,200 for qualifying systems), and Pennsylvania state programs for maximum savings. Total available incentives can reach \$3,000-4,000 for high-efficiency installations. PECO's Act 129 program offers additional rebates for ENERGY STAR equipment, while low-income households may qualify for Pennsylvania's LIHEAP weatherization programs covering substantial installation costs.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">How do I choose a contractor in Philadelphia?</h3>
+    <p>Verify Pennsylvania HVAC licensing, EPA certifications, and current insurance coverage. Seek contractors with 10+ years Philadelphia experience, strong local references, and comprehensive warranties. Ensure they perform Manual J load calculations, provide detailed written estimates, and offer 24/7 emergency service. Check Better Business Bureau ratings, online reviews, and confirm they're familiar with local rebate programs and permit requirements specific to Philadelphia County.</p>
+  </div>
+</div>`;
+---
+
+<Layout title="HVAC Systems in Philadelphia, Pennsylvania - Costs, Installation & Rebates | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/pennsylvania" class="text-blue-600 hover:underline">Pennsylvania</a>
+        <span class="mx-2">/</span>
+        <a href="/pennsylvania/philadelphia" class="text-blue-600 hover:underline">Philadelphia</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">HVAC Systems</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        HVAC Systems in Philadelphia, Pennsylvania
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Complete guide to HVAC system installation, repair, costs, and energy efficiency for Philadelphia homeowners
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">📍 Philadelphia County</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 13.9¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ PECO</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section class="bg-gray-50 py-12 my-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Need More Information?</h2>
+      <p class="mb-6 text-gray-600">Check out our complete guide for Philadelphia</p>
+      <a href="/pennsylvania/philadelphia" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition inline-block">
+        View Philadelphia Complete Guide
+      </a>
+    </div>
+  </section>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>

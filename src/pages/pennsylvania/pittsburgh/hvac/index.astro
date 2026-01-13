@@ -1,0 +1,103 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import LeadForm from '../../../components/LeadForm.astro';
+
+const content = `<h2>HVAC Systems in Pittsburgh</h2>
+<p>Pittsburgh's cold climate presents unique challenges for HVAC systems, with winter temperatures frequently dropping below freezing and summers reaching into the 80s. The city's 302,971 residents in Allegheny County rely heavily on heating systems for approximately six months of the year, making efficient heating solutions crucial for comfort and cost control. With Duquesne Light's electricity rate of 12.8¢/kWh, Pittsburgh homeowners pay slightly above the national average, making energy-efficient HVAC systems a smart long-term investment.</p>
+
+<p>The region's climate demands HVAC systems capable of handling significant heating loads while providing adequate cooling during humid summers. Pittsburgh's variable weather patterns, including sudden temperature swings and high humidity, require systems that can maintain consistent indoor comfort year-round. Given the extended heating season and moderate electricity costs, homeowners should prioritize systems with high heating efficiency ratings and consider dual-fuel options that can switch between electric and gas heating based on outdoor temperatures and fuel costs.</p>
+
+<h2>HVAC Installation Costs in Pittsburgh</h2>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Type</th>
+      <th class="border px-4 py-2 text-left">Installation Cost</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+      <th class="border px-4 py-2 text-left">Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="border px-4 py-2">16 SEER AC</td><td class="border px-4 py-2">\$5,500-7,500</td><td class="border px-4 py-2">\$180-250</td><td class="border px-4 py-2">8-12 years</td></tr>
+    <tr><td class="border px-4 py-2">18 SEER AC</td><td class="border px-4 py-2">\$6,800-9,000</td><td class="border px-4 py-2">\$280-380</td><td class="border px-4 py-2">7-10 years</td></tr>
+    <tr><td class="border px-4 py-2">Heat Pump</td><td class="border px-4 py-2">\$7,200-10,000</td><td class="border px-4 py-2">\$420-650</td><td class="border px-4 py-2">6-9 years</td></tr>
+  </tbody>
+</table>
+
+<h2>Best HVAC Systems for Pittsburgh Climate</h2>
+<p>For Pittsburgh's cold climate, heat pumps with SEER ratings of 16-18 and HSPF ratings of 9.0 or higher offer the best year-round efficiency. Cold-climate heat pumps are particularly well-suited for Pittsburgh, as they can effectively heat homes even when temperatures drop to -10°F. These systems work efficiently down to very low temperatures and automatically switch to backup heating only when necessary. Given Pittsburgh's heating-dominant climate, homeowners should prioritize heating efficiency over cooling efficiency, though a minimum 16 SEER rating ensures adequate summer comfort. Dual-fuel systems combining a heat pump with a natural gas furnace provide optimal efficiency and cost savings, switching to gas heating when outdoor temperatures make electric heating less economical. For homes without existing ductwork, ductless mini-split systems offer zoned comfort control and high efficiency, with cold-climate models performing well in Pittsburgh's winter conditions.</p>
+
+<h2>HVAC Rebates in Pittsburgh</h2>
+<p>Pittsburgh residents can access multiple rebate programs to offset HVAC installation costs. Federal tax credits provide up to \$2,000 for qualifying heat pumps and up to \$600 for central air conditioning systems installed through 2032. Pennsylvania's Act 129 energy efficiency programs, administered through Duquesne Light, offer rebates of \$300-800 for ENERGY STAR certified heat pumps and \$200-500 for high-efficiency central air conditioning units. The state's weatherization assistance programs provide additional incentives for low-income households, potentially covering entire system replacements. Duquesne Light customers can also participate in demand response programs that provide bill credits for allowing temporary temperature adjustments during peak demand periods. Additionally, the federal 30% tax credit for geothermal heat pumps remains available through 2032, making ground-source heat pumps an attractive option for long-term energy savings despite higher upfront costs.</p>
+
+<h2>Choosing an HVAC Contractor in Pittsburgh</h2>
+<p>When selecting an HVAC contractor in Pittsburgh, verify they hold current Pennsylvania contractor licenses and EPA certifications for refrigerant handling. Look for contractors with extensive experience in cold-climate systems, particularly heat pumps and dual-fuel installations, as these require specialized knowledge for optimal performance in Pittsburgh's weather conditions. Request detailed written estimates that include equipment specifications, labor costs, permits, and warranty information. Reputable contractors should offer manufacturer warranties of 5-10 years on equipment and at least one year on installation labor. Check Better Business Bureau ratings and online reviews, paying attention to feedback about emergency service response times during Pittsburgh's harsh winters. Ensure the contractor provides 24/7 emergency service, as heating system failures during cold snaps require immediate attention. Ask about maintenance plans and service agreements, which are crucial for maintaining efficiency and preventing breakdowns. Finally, verify the contractor is authorized to handle rebate paperwork for utility and state programs, as this can significantly impact your total project cost.</p>
+
+<h2>Frequently Asked Questions</h2>
+<div class="space-y-4 my-6">
+  <div>
+    <h3 class="text-lg font-bold mb-2">How much do hvac systems cost in Pittsburgh?</h3>
+    <p>HVAC system costs in Pittsburgh range from \$5,500-7,500 for a standard 16 SEER central air conditioning unit, \$7,200-10,000 for a heat pump system, and \$8,000-12,000 for a complete heating and cooling replacement. Installation costs vary based on home size, existing ductwork conditions, and system complexity. High-efficiency systems cost 15-25% more upfront but provide significant savings on Pittsburgh's heating bills due to the extended winter season.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">What rebates are available in Pittsburgh?</h3>
+    <p>Pittsburgh residents can access federal tax credits up to \$2,000 for heat pumps and \$600 for central AC, plus Pennsylvania Act 129 rebates of \$300-800 through Duquesne Light for ENERGY STAR equipment. Additional weatherization assistance is available for qualifying low-income households. Geothermal systems qualify for a 30% federal tax credit through 2032, potentially saving thousands on installation costs.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">How do I choose a contractor in Pittsburgh?</h3>
+    <p>Choose contractors with current Pennsylvania licenses, EPA certifications, and specific experience with cold-climate systems. Verify they offer 24/7 emergency service, provide detailed written estimates, and can handle rebate applications. Check BBB ratings and customer reviews, ensuring they offer comprehensive warranties on both equipment and installation labor. Look for contractors who provide maintenance agreements to keep systems running efficiently through Pittsburgh's demanding climate conditions.</p>
+  </div>
+</div>`;
+---
+
+<Layout title="HVAC Systems in Pittsburgh, Pennsylvania - Costs, Installation & Rebates | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/pennsylvania" class="text-blue-600 hover:underline">Pennsylvania</a>
+        <span class="mx-2">/</span>
+        <a href="/pennsylvania/pittsburgh" class="text-blue-600 hover:underline">Pittsburgh</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">HVAC Systems</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        HVAC Systems in Pittsburgh, Pennsylvania
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Complete guide to HVAC system installation, repair, costs, and energy efficiency for Pittsburgh homeowners
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">📍 Allegheny County</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 12.8¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ Duquesne Light</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section class="bg-gray-50 py-12 my-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Need More Information?</h2>
+      <p class="mb-6 text-gray-600">Check out our complete guide for Pittsburgh</p>
+      <a href="/pennsylvania/pittsburgh" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition inline-block">
+        View Pittsburgh Complete Guide
+      </a>
+    </div>
+  </section>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>

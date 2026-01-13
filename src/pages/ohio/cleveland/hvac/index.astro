@@ -1,0 +1,103 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import LeadForm from '../../../components/LeadForm.astro';
+
+const content = `<h2>HVAC Systems in Cleveland</h2>
+<p>Cleveland's cold climate presents unique challenges for HVAC systems, with residents experiencing harsh winters where temperatures regularly drop below freezing and summers that can reach the mid-80s. With a population of 372,624 in Cuyahoga County, Cleveland homeowners rely heavily on efficient heating systems during the extended winter months, making heating costs the primary concern for most households. The city's proximity to Lake Erie creates additional humidity and temperature fluctuations that demand robust, reliable HVAC systems capable of maintaining consistent indoor comfort year-round.</p>
+
+<p>Energy costs in Cleveland average 13.1¢/kWh through Cleveland Power, making energy efficiency a critical factor when selecting HVAC systems. Given that heating accounts for approximately 60-70% of annual energy usage in Cleveland homes, investing in high-efficiency systems can result in substantial savings. The cold climate means homeowners should prioritize heating efficiency over cooling efficiency, though modern systems need to handle both effectively. Proper system sizing and installation become crucial factors, as oversized systems waste energy while undersized systems struggle during Cleveland's coldest winter days.</p>
+
+<h2>HVAC Installation Costs in Cleveland</h2>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Type</th>
+      <th class="border px-4 py-2 text-left">Installation Cost</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+      <th class="border px-4 py-2 text-left">Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="border px-4 py-2">16 SEER AC</td><td class="border px-4 py-2">\$5,500-7,500</td><td class="border px-4 py-2">\$180-250/year</td><td class="border px-4 py-2">8-12 years</td></tr>
+    <tr><td class="border px-4 py-2">18 SEER AC</td><td class="border px-4 py-2">\$6,800-9,000</td><td class="border px-4 py-2">\$280-380/year</td><td class="border px-4 py-2">7-10 years</td></tr>
+    <tr><td class="border px-4 py-2">Heat Pump</td><td class="border px-4 py-2">\$7,200-10,000</td><td class="border px-4 py-2">\$450-650/year</td><td class="border px-4 py-2">6-8 years</td></tr>
+  </tbody>
+</table>
+
+<h2>Best HVAC Systems for Cleveland Climate</h2>
+<p>For Cleveland's cold climate, dual-fuel heat pump systems offer the best year-round efficiency, combining electric heat pump operation during milder weather with gas furnace backup when temperatures drop below 25°F. Look for heat pumps with SEER ratings of 16-18 and HSPF ratings of 9.0 or higher. Gas furnaces should have AFUE ratings of at least 90%, with 95%+ efficiency units providing the best value given Cleveland's extended heating season. Variable-speed systems excel in Cleveland's fluctuating weather, providing precise temperature control and improved humidity management during the humid summer months influenced by Lake Erie. For homes without existing ductwork, ductless mini-split systems with cold-climate heat pumps rated for operation down to -15°F offer excellent zoning capabilities and efficiency.</p>
+
+<h2>HVAC Rebates in Cleveland</h2>
+<p>Cleveland residents can access multiple rebate programs to offset HVAC upgrade costs. Federal tax credits provide up to \$2,000 for qualifying heat pumps and up to \$1,200 for high-efficiency gas furnaces installed through 2032. Ohio's Home Energy Assistance Program offers additional rebates of \$300-800 for ENERGY STAR certified systems. Cleveland Power provides rebates up to \$400 for high-efficiency heat pumps and \$200 for programmable thermosats. The Inflation Reduction Act also includes point-of-sale rebates for qualifying households, potentially reducing upfront costs by \$8,000 for heat pump installations. Additionally, Cleveland's Residential Energy Efficiency Program offers low-interest loans up to \$15,000 for comprehensive HVAC upgrades, making high-efficiency systems more accessible to homeowners throughout Cuyahoga County.</p>
+
+<h2>Choosing an HVAC Contractor in Cleveland</h2>
+<p>Selecting the right HVAC contractor in Cleveland requires verifying Ohio HVAC licensing through the Ohio Department of Commerce, ensuring liability insurance coverage of at least \$500,000, and confirming Better Business Bureau ratings. Look for contractors with specific experience in Cleveland's climate challenges, including proper load calculations for Lake Erie's weather patterns and expertise with backup heating systems for extreme cold. Quality contractors should provide detailed written estimates, offer equipment warranties of 5-10 years, and provide 24/7 emergency service during Cleveland's harsh winters. Check references from recent customers, verify manufacturer certifications for major brands, and ensure the contractor pulls proper permits through the City of Cleveland. Avoid door-to-door solicitors and always get multiple quotes, as reputable Cleveland HVAC contractors typically schedule estimates in advance and provide comprehensive system evaluations rather than high-pressure sales tactics.</p>
+
+<h2>Frequently Asked Questions</h2>
+<div class="space-y-4 my-6">
+  <div>
+    <h3 class="text-lg font-bold mb-2">How much do hvac systems cost in Cleveland?</h3>
+    <p>Complete HVAC system replacement in Cleveland typically costs \$8,000-15,000 for average homes, with high-efficiency heat pump systems ranging \$10,000-18,000 installed. Gas furnace replacements cost \$4,500-8,000, while central air conditioning units range \$5,500-9,000. Ductless mini-split systems cost \$3,000-5,000 per zone. Prices vary based on home size, system efficiency, and installation complexity, with Cleveland's older housing stock sometimes requiring additional electrical or ductwork modifications.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">What rebates are available in Cleveland?</h3>
+    <p>Cleveland residents can access federal tax credits up to \$2,000 for heat pumps, Ohio state rebates of \$300-800 for ENERGY STAR systems, and Cleveland Power rebates up to \$400 for qualifying equipment. The Inflation Reduction Act provides additional point-of-sale rebates up to \$8,000 for eligible households. Combined rebates can reduce total installation costs by \$2,000-4,000 for most Cleveland homeowners, with low-income households potentially qualifying for even greater savings.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">How do I choose a contractor in Cleveland?</h3>
+    <p>Verify Ohio HVAC licensing, check Better Business Bureau ratings, and confirm insurance coverage. Look for contractors with Cleveland-specific experience, 24/7 emergency service, and manufacturer certifications. Get multiple written estimates, check recent customer references, and ensure they provide comprehensive load calculations. Avoid high-pressure sales tactics and verify they pull proper City of Cleveland permits for all installations.</p>
+  </div>
+</div>`;
+---
+
+<Layout title="HVAC Systems in Cleveland, Ohio - Costs, Installation & Rebates | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/ohio" class="text-blue-600 hover:underline">Ohio</a>
+        <span class="mx-2">/</span>
+        <a href="/ohio/cleveland" class="text-blue-600 hover:underline">Cleveland</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">HVAC Systems</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        HVAC Systems in Cleveland, Ohio
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Complete guide to HVAC system installation, repair, costs, and energy efficiency for Cleveland homeowners
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">📍 Cuyahoga County</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 13.1¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ Cleveland Power</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section class="bg-gray-50 py-12 my-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Need More Information?</h2>
+      <p class="mb-6 text-gray-600">Check out our complete guide for Cleveland</p>
+      <a href="/ohio/cleveland" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition inline-block">
+        View Cleveland Complete Guide
+      </a>
+    </div>
+  </section>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>

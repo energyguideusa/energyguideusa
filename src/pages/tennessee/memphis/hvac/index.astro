@@ -1,0 +1,103 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import LeadForm from '../../../components/LeadForm.astro';
+
+const content = `<h2>HVAC Systems in Memphis</h2>
+<p>Memphis's hot-humid climate presents unique challenges for HVAC systems, with summer temperatures regularly exceeding 90°F and humidity levels that can make the air feel oppressive. The city's 633,104 residents in Shelby County rely heavily on air conditioning from May through September, making efficient cooling systems essential for comfort and manageable energy bills. With Memphis Light, Gas & Water (MLGW) providing electricity at 10.6¢/kWh, homeowners need to carefully consider system efficiency to control rising utility costs during peak summer months.</p>
+
+<p>The hot-humid climate means HVAC systems must not only cool effectively but also remove substantial moisture from the air. This dual demand places extra stress on equipment and increases energy consumption significantly. Unlike drier climates where evaporative cooling can provide relief, Memphis homeowners need robust refrigeration-based systems with proper dehumidification capabilities. The mild winters allow for heat pump installations that can provide year-round efficiency, though backup heating may be necessary during occasional cold snaps when temperatures drop below the heat pump's effective operating range.</p>
+
+<h2>HVAC Installation Costs in Memphis</h2>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Type</th>
+      <th class="border px-4 py-2 text-left">Installation Cost</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+      <th class="border px-4 py-2 text-left">Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="border px-4 py-2">16 SEER AC</td><td class="border px-4 py-2">\$5,500-7,500</td><td class="border px-4 py-2">\$200-400 vs 13 SEER</td><td class="border px-4 py-2">8-12 years</td></tr>
+    <tr><td class="border px-4 py-2">18 SEER AC</td><td class="border px-4 py-2">\$6,800-9,000</td><td class="border px-4 py-2">\$350-550 vs 13 SEER</td><td class="border px-4 py-2">10-15 years</td></tr>
+    <tr><td class="border px-4 py-2">Heat Pump</td><td class="border px-4 py-2">\$7,200-10,000</td><td class="border px-4 py-2">\$400-700 annually</td><td class="border px-4 py-2">7-10 years</td></tr>
+  </tbody>
+</table>
+
+<h2>Best HVAC Systems for Memphis Climate</h2>
+<p>For Memphis's hot-humid conditions, high-efficiency systems with SEER ratings of 16 or higher are recommended to handle the intense cooling demands while managing electricity costs at MLGW's 10.6¢/kWh rate. Variable-speed air handlers paired with two-stage compressors provide superior humidity control, which is crucial during Memphis's muggy summers. Heat pumps with SEER ratings of 18+ and HSPF ratings above 9.0 offer the best year-round efficiency, as Memphis's mild winters (average low of 40°F) rarely challenge modern heat pump technology. For homes requiring more than 4 tons of cooling capacity, consider zoned systems with multiple smaller units rather than one oversized system, as this provides better humidity control and energy efficiency. Cooling needs typically account for 70-80% of annual HVAC energy usage in Memphis, making high-efficiency air conditioning the priority investment.</p>
+
+<h2>HVAC Rebates in Memphis</h2>
+<p>Memphis homeowners can access several rebate programs to offset HVAC upgrade costs. Federal tax credits provide up to 30% of equipment and installation costs for qualifying high-efficiency systems through 2032, with heat pumps and central air conditioners meeting ENERGY STAR requirements eligible for these incentives. Tennessee's Clean Energy Grant Program occasionally offers additional rebates for residential HVAC upgrades, though funding varies by year. MLGW provides rebates up to \$300 for ENERGY STAR certified air conditioning systems and up to \$500 for qualifying heat pumps when installed by participating contractors. The utility also offers free energy audits that can identify additional savings opportunities and may qualify homeowners for enhanced rebate programs. Combining federal, state, and utility rebates can reduce total system costs by \$1,500-3,000 for qualifying high-efficiency installations.</p>
+
+<h2>Choosing an HVAC Contractor in Memphis</h2>
+<p>Selecting the right HVAC contractor in Memphis requires verifying Tennessee contractor licensing, EPA refrigerant handling certification, and manufacturer certifications for specific equipment brands. Look for contractors with at least 5 years of local experience who understand Memphis's specific climate challenges, including proper system sizing for humidity control and knowledge of local building codes. Reputable contractors should provide detailed written estimates, offer multiple equipment options with efficiency comparisons, and guarantee proper load calculations using Manual J methodology. Verify insurance coverage, Better Business Bureau ratings, and recent customer references. Priority should go to contractors offering comprehensive warranties (10+ years on equipment, 2+ years on labor), 24/7 emergency service during Memphis's brutal summer months, and maintenance programs to ensure peak efficiency. Avoid contractors who provide estimates without inspecting your home or push oversized systems, as proper sizing is critical for humidity control in Memphis's climate.</p>
+
+<h2>Frequently Asked Questions</h2>
+<div class="space-y-4 my-6">
+  <div>
+    <h3 class="text-lg font-bold mb-2">How much do hvac systems cost in Memphis?</h3>
+    <p>HVAC system costs in Memphis range from \$5,500-7,500 for a standard 16 SEER central air system up to \$12,000-15,000 for premium heat pump installations with variable-speed technology. For Memphis's typical 1,800-2,200 square foot homes, expect to invest \$7,000-10,000 for a quality system that can handle the hot-humid climate effectively. Installation costs are slightly below national averages due to competitive local market, but don't sacrifice quality for price given Memphis's demanding climate conditions.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">What rebates are available in Memphis?</h3>
+    <p>Memphis homeowners can access federal tax credits worth 30% of system costs through 2032, MLGW rebates up to \$500 for qualifying heat pumps and \$300 for ENERGY STAR air conditioners, plus occasional Tennessee state programs. Combined rebates typically total \$1,500-3,000 for high-efficiency installations. MLGW also provides free energy audits and may offer additional incentives for customers participating in demand response programs during peak summer periods.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">How do I choose a contractor in Memphis?</h3>
+    <p>Choose Memphis HVAC contractors with Tennessee state licensing, EPA certification, and manufacturer credentials. Verify at least 5 years local experience, comprehensive insurance, and strong BBB ratings. Quality contractors provide detailed written estimates, perform proper load calculations, offer multiple equipment options, and provide warranties of 10+ years on equipment and 2+ years on labor. Prioritize contractors offering 24/7 emergency service and maintenance programs, as Memphis's extreme summer heat makes reliable service critical.</p>
+  </div>
+</div>`;
+---
+
+<Layout title="HVAC Systems in Memphis, Tennessee - Costs, Installation & Rebates | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/tennessee" class="text-blue-600 hover:underline">Tennessee</a>
+        <span class="mx-2">/</span>
+        <a href="/tennessee/memphis" class="text-blue-600 hover:underline">Memphis</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">HVAC Systems</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        HVAC Systems in Memphis, Tennessee
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Complete guide to HVAC system installation, repair, costs, and energy efficiency for Memphis homeowners
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">📍 Shelby County</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 10.6¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ MLGW</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section class="bg-gray-50 py-12 my-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Need More Information?</h2>
+      <p class="mb-6 text-gray-600">Check out our complete guide for Memphis</p>
+      <a href="/tennessee/memphis" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition inline-block">
+        View Memphis Complete Guide
+      </a>
+    </div>
+  </section>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>

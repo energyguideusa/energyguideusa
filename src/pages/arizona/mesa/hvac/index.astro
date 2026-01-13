@@ -1,0 +1,103 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import LeadForm from '../../../components/LeadForm.astro';
+
+const content = `<h2>HVAC Systems in Mesa</h2>
+<p>Mesa's hot-dry desert climate presents unique challenges for HVAC systems, with summer temperatures regularly exceeding 110°F and minimal humidity year-round. The city's 504,258 residents rely heavily on air conditioning from April through October, making efficient cooling systems essential for comfort and manageable energy bills. With SRP's electricity rate of 12.9¢/kWh, Mesa homeowners can expect annual cooling costs between \$1,200-\$2,400 depending on home size and system efficiency.</p>
+
+<p>The extreme heat and low humidity in Maricopa County require HVAC systems designed specifically for desert conditions. Unlike humid climates where dehumidification is crucial, Mesa's dry air allows evaporative cooling to supplement traditional refrigerated air conditioning effectively. High-efficiency systems with SEER ratings of 16 or higher are recommended to combat the intense cooling demands while keeping electricity costs reasonable given SRP's rate structure and Mesa's extended cooling season.</p>
+
+<h2>HVAC Installation Costs in Mesa</h2>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Type</th>
+      <th class="border px-4 py-2 text-left">Installation Cost</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+      <th class="border px-4 py-2 text-left">Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="border px-4 py-2">16 SEER AC</td><td class="border px-4 py-2">\$5,500-7,500</td><td class="border px-4 py-2">\$200-400 vs 13 SEER</td><td class="border px-4 py-2">8-12 years</td></tr>
+    <tr><td class="border px-4 py-2">18 SEER AC</td><td class="border px-4 py-2">\$6,800-9,000</td><td class="border px-4 py-2">\$400-600 vs 13 SEER</td><td class="border px-4 py-2">7-10 years</td></tr>
+    <tr><td class="border px-4 py-2">Heat Pump</td><td class="border px-4 py-2">\$7,200-10,000</td><td class="border px-4 py-2">\$500-800 vs standard AC</td><td class="border px-4 py-2">6-9 years</td></tr>
+  </tbody>
+</table>
+
+<h2>Best HVAC Systems for Mesa Climate</h2>
+<p>For Mesa's hot-dry climate, high-efficiency air conditioning systems with SEER ratings of 18-22 provide optimal performance and energy savings. Heat pumps are increasingly popular as they offer efficient cooling in summer and cost-effective heating during Mesa's mild winters when temperatures drop to 40-50°F. Variable-speed systems excel in desert conditions by maintaining consistent temperatures while reducing energy consumption during the long cooling season. Consider dual-fuel systems combining heat pumps with gas furnaces for maximum efficiency year-round. Evaporative cooling can supplement traditional AC systems effectively due to Mesa's low humidity, potentially reducing cooling costs by 30-50% during shoulder seasons when temperatures are between 85-95°F.</p>
+
+<h2>HVAC Rebates in Mesa</h2>
+<p>Mesa residents can access substantial savings through multiple rebate programs when upgrading HVAC systems. The federal tax credit provides 30% of installation costs up to \$2,000 for heat pumps and up to \$600 for high-efficiency AC units through 2032. Arizona offers additional state tax credits up to \$1,000 for ENERGY STAR certified systems. SRP provides generous rebates including \$1,200 for ENERGY STAR heat pumps, \$300-600 for high-efficiency air conditioners, and \$200 for smart thermostats. SRP customers can also participate in the Cool Cash program offering up to \$2,400 in rebates for premium efficiency equipment. These combined incentives can reduce total installation costs by \$2,000-4,000, making high-efficiency systems highly cost-effective for Mesa homeowners.</p>
+
+<h2>Choosing an HVAC Contractor in Mesa</h2>
+<p>Selecting the right HVAC contractor in Mesa requires verifying proper Arizona licensing through the Registrar of Contractors and ensuring they carry adequate insurance and bonding. Look for contractors with extensive experience in desert climate installations who understand Mesa's unique cooling demands and dust challenges. Request detailed written estimates with equipment specifications, warranty information, and installation timelines. Choose contractors offering comprehensive warranties covering both parts and labor for at least 5-10 years. Verify they provide 24/7 emergency service, crucial during Mesa's extreme summer heat when AC failures can be dangerous. Check Better Business Bureau ratings, Google reviews, and ask for local references from recent Mesa installations. Ensure they're certified to install your preferred equipment brands and qualified to help navigate SRP rebate applications to maximize your savings.</p>
+
+<h2>Frequently Asked Questions</h2>
+<div class="space-y-4 my-6">
+  <div>
+    <h3 class="text-lg font-bold mb-2">How much do hvac systems cost in Mesa?</h3>
+    <p>HVAC system costs in Mesa range from \$5,500-7,500 for standard 16 SEER units to \$7,200-10,000 for high-efficiency heat pumps. Installation includes equipment, labor, permits, and ductwork modifications. With available rebates from SRP (\$300-2,400), federal tax credits (up to \$2,000), and Arizona state credits (up to \$1,000), net costs can be reduced to \$3,500-7,000. Annual operating costs at SRP's 12.9¢/kWh rate typically run \$1,200-2,400 depending on home size and system efficiency.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">What rebates are available in Mesa?</h3>
+    <p>Mesa residents served by SRP can access multiple rebate programs: SRP Cool Cash rebates up to \$2,400 for premium efficiency equipment, \$1,200 for ENERGY STAR heat pumps, \$300-600 for high-efficiency AC units, and \$200 for smart thermostats. Federal tax credits provide 30% of costs up to \$2,000 for heat pumps and \$600 for AC units through 2032. Arizona offers state tax credits up to \$1,000 for ENERGY STAR systems. Combined savings can reach \$4,000-5,000 on qualifying installations.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">How do I choose a contractor in Mesa?</h3>
+    <p>Choose Mesa HVAC contractors with valid Arizona ROC licensing, proper insurance, and desert climate experience. Verify Better Business Bureau ratings, check recent Google reviews, and request local Mesa references. Ensure they offer comprehensive warranties (5-10 years), 24/7 emergency service, and detailed written estimates. Look for contractors certified in your preferred equipment brands who can assist with SRP rebate applications. Get multiple quotes and compare equipment specifications, not just prices, as higher-efficiency systems often provide better long-term value in Mesa's climate.</p>
+  </div>
+</div>`;
+---
+
+<Layout title="HVAC Systems in Mesa, Arizona - Costs, Installation & Rebates | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/arizona" class="text-blue-600 hover:underline">Arizona</a>
+        <span class="mx-2">/</span>
+        <a href="/arizona/mesa" class="text-blue-600 hover:underline">Mesa</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">HVAC Systems</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        HVAC Systems in Mesa, Arizona
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Complete guide to HVAC system installation, repair, costs, and energy efficiency for Mesa homeowners
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">📍 Maricopa County</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 12.9¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ SRP</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section class="bg-gray-50 py-12 my-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Need More Information?</h2>
+      <p class="mb-6 text-gray-600">Check out our complete guide for Mesa</p>
+      <a href="/arizona/mesa" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition inline-block">
+        View Mesa Complete Guide
+      </a>
+    </div>
+  </section>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>

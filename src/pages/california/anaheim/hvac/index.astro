@@ -1,0 +1,103 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import LeadForm from '../../../components/LeadForm.astro';
+
+const content = `<h2>HVAC Systems in Anaheim</h2>
+<p>Anaheim's Mediterranean climate presents unique HVAC challenges for the city's 346,824 residents. With hot, dry summers averaging 85°F and mild winters rarely dropping below 45°F, homeowners primarily need robust cooling systems rather than heating solutions. The extended cooling season from May through October means air conditioning systems work overtime, making energy efficiency crucial given Southern California Edison's (SCE) electricity rate of 22.8¢/kWh—significantly higher than the national average of 16.7¢/kWh.</p>
+
+<p>The combination of Orange County's Mediterranean climate and elevated energy costs makes selecting the right HVAC system critical for long-term comfort and affordability. High-efficiency systems that excel in cooling performance while minimizing energy consumption offer the best value proposition for Anaheim homeowners. With minimal heating requirements, residents can focus on maximizing cooling efficiency and exploring heat pump options that provide both heating and cooling capabilities at superior energy efficiency levels compared to traditional systems.</p>
+
+<h2>HVAC Installation Costs in Anaheim</h2>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Type</th>
+      <th class="border px-4 py-2 text-left">Installation Cost</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+      <th class="border px-4 py-2 text-left">Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="border px-4 py-2">16 SEER AC</td><td class="border px-4 py-2">\$5,500-7,500</td><td class="border px-4 py-2">\$420-580 vs 13 SEER</td><td class="border px-4 py-2">8-12 years</td></tr>
+    <tr><td class="border px-4 py-2">18 SEER AC</td><td class="border px-4 py-2">\$6,800-9,000</td><td class="border px-4 py-2">\$680-920 vs 13 SEER</td><td class="border px-4 py-2">7-10 years</td></tr>
+    <tr><td class="border px-4 py-2">Heat Pump</td><td class="border px-4 py-2">\$7,200-10,000</td><td class="border px-4 py-2">\$750-1,100 annually</td><td class="border px-4 py-2">6-9 years</td></tr>
+  </tbody>
+</table>
+
+<h2>Best HVAC Systems for Anaheim Climate</h2>
+<p>For Anaheim's Mediterranean climate, high-efficiency cooling systems with SEER ratings of 16 or higher provide optimal performance and energy savings. Given the extended cooling season and minimal heating requirements, variable-speed heat pumps with SEER ratings of 18-20 offer the best year-round efficiency. These systems excel in consistent temperature control while consuming 30-40% less energy than traditional single-stage units. Central air conditioning systems with SEER 16-18 ratings represent the sweet spot for most Anaheim homes, balancing upfront costs with long-term energy savings. For the occasional winter heating needs, heat pumps operate efficiently down to 40°F, making them ideal for Anaheim's mild winters while providing superior cooling performance during the demanding summer months.</p>
+
+<h2>HVAC Rebates in Anaheim</h2>
+<p>Anaheim residents can access substantial rebates through multiple programs when upgrading their HVAC systems. The federal Inflation Reduction Act provides tax credits up to \$2,000 for heat pumps with 16+ SEER ratings and up to \$8,000 for heat pump installations based on income eligibility. California's Tech Clean CA program offers additional rebates of \$1,000-3,000 for qualifying heat pump installations. Southern California Edison provides rebates ranging from \$75-800 for high-efficiency air conditioners and heat pumps, with higher rebates for ENERGY STAR certified systems. The California Public Utilities Commission's Energy Savings Assistance Program offers free HVAC replacement for income-qualified households. Combined, these programs can reduce system costs by \$3,000-8,000, making high-efficiency upgrades highly affordable for Anaheim homeowners.</p>
+
+<h2>Choosing an HVAC Contractor in Anaheim</h2>
+<p>Selecting a qualified HVAC contractor in Anaheim requires verification of California State License Board (CSLB) licensing with active C-20 HVAC contractor classification. Reputable contractors should carry liability insurance, workers' compensation coverage, and provide detailed written estimates including equipment specifications, labor costs, and timeline. Look for contractors with extensive experience in Orange County's Mediterranean climate who understand local building codes and permit requirements. Quality contractors offer comprehensive warranties covering both equipment (5-12 years) and installation labor (2-5 years). Verify contractor credentials through the Better Business Bureau, Google reviews, and local references. Emergency service availability is crucial given Anaheim's hot summers, so prioritize contractors offering 24/7 emergency repair services and prompt response times for system failures during peak cooling season.</p>
+
+<h2>Frequently Asked Questions</h2>
+<div class="space-y-4 my-6">
+  <div>
+    <h3 class="text-lg font-bold mb-2">How much do hvac systems cost in Anaheim?</h3>
+    <p>Complete HVAC system replacement in Anaheim typically costs \$5,500-10,000 depending on system type and efficiency. High-efficiency 16 SEER central air systems average \$5,500-7,500 installed, while premium 18+ SEER heat pumps range \$7,200-10,000. Labor costs in Orange County average \$150-200 per hour, with installation requiring 8-16 hours depending on system complexity. Additional costs include permits (\$150-300), ductwork modifications (\$1,500-3,500), and electrical upgrades (\$500-1,500) if required.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">What rebates are available in Anaheim?</h3>
+    <p>Anaheim residents can access federal tax credits up to \$2,000-8,000 through the Inflation Reduction Act, California Tech Clean CA rebates of \$1,000-3,000 for heat pumps, and SCE utility rebates of \$75-800 for high-efficiency systems. Income-qualified households may receive free HVAC replacement through California's Energy Savings Assistance Program. Total available rebates can reach \$3,000-8,000, significantly reducing system upgrade costs when combined with contractor financing options.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">How do I choose a contractor in Anaheim?</h3>
+    <p>Choose contractors with active California C-20 HVAC licensing, comprehensive insurance coverage, and proven Orange County experience. Verify credentials through CSLB license lookup, BBB ratings, and customer reviews. Quality contractors provide detailed written estimates, equipment warranties of 5-12 years, installation warranties of 2-5 years, and emergency service availability. Request multiple quotes from licensed contractors and verify all permits and inspections are included in the installation process.</p>
+  </div>
+</div>`;
+---
+
+<Layout title="HVAC Systems in Anaheim, California - Costs, Installation & Rebates | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/california" class="text-blue-600 hover:underline">California</a>
+        <span class="mx-2">/</span>
+        <a href="/california/anaheim" class="text-blue-600 hover:underline">Anaheim</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">HVAC Systems</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        HVAC Systems in Anaheim, California
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Complete guide to HVAC system installation, repair, costs, and energy efficiency for Anaheim homeowners
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">📍 Orange County</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 22.8¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ SCE</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section class="bg-gray-50 py-12 my-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Need More Information?</h2>
+      <p class="mb-6 text-gray-600">Check out our complete guide for Anaheim</p>
+      <a href="/california/anaheim" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition inline-block">
+        View Anaheim Complete Guide
+      </a>
+    </div>
+  </section>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>

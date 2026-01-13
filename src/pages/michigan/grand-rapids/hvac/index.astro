@@ -1,0 +1,103 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import LeadForm from '../../../components/LeadForm.astro';
+
+const content = `<h2>HVAC Systems in Grand Rapids</h2>
+<p>Grand Rapids, Michigan's cold climate presents unique HVAC challenges for the city's 198,917 residents in Kent County. With harsh winters featuring sub-freezing temperatures and moderate summers, homeowners need robust heating systems that can handle extended cold periods while maintaining energy efficiency. The city's continental climate demands HVAC systems capable of providing reliable heating for up to 6-7 months annually, making system reliability and cold-weather performance critical factors in equipment selection.</p>
+
+<p>Energy costs significantly impact HVAC decisions in Grand Rapids, with Consumers Energy providing electricity at 15.8¢/kWh—slightly above the national average. This rate makes energy-efficient HVAC systems particularly valuable, as heating costs can account for 40-60% of annual utility bills during Michigan's long winters. Smart system selection and proper sizing become essential for managing these costs while ensuring adequate comfort throughout the year's extreme temperature variations.</p>
+
+<h2>HVAC Installation Costs in Grand Rapids</h2>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Type</th>
+      <th class="border px-4 py-2 text-left">Installation Cost</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+      <th class="border px-4 py-2 text-left">Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="border px-4 py-2">16 SEER AC + 90% AFUE Furnace</td><td class="border px-4 py-2">\$5,500-7,500</td><td class="border px-4 py-2">\$200-350/year</td><td class="border px-4 py-2">8-12 years</td></tr>
+    <tr><td class="border px-4 py-2">18 SEER AC + 95% AFUE Furnace</td><td class="border px-4 py-2">\$6,800-9,000</td><td class="border px-4 py-2">\$350-500/year</td><td class="border px-4 py-2">7-10 years</td></tr>
+    <tr><td class="border px-4 py-2">Cold Climate Heat Pump</td><td class="border px-4 py-2">\$7,200-10,000</td><td class="border px-4 py-2">\$400-650/year</td><td class="border px-4 py-2">6-9 years</td></tr>
+  </tbody>
+</table>
+
+<h2>Best HVAC Systems for Grand Rapids Climate</h2>
+<p>For Grand Rapids' cold climate, high-efficiency gas furnaces paired with 16+ SEER air conditioning units offer the most practical solution for most homes. A 95% AFUE (Annual Fuel Utilization Efficiency) furnace provides excellent heating performance during harsh winters while minimizing natural gas consumption. For air conditioning needs during the moderate summer months, a 16-18 SEER system provides adequate cooling efficiency without over-investing in cooling capacity that sees limited use. Cold climate heat pumps represent an increasingly viable option, with modern units maintaining efficiency down to -15°F, though backup heating is still recommended for extreme cold snaps that can reach -20°F or lower in Grand Rapids.</p>
+
+<h2>HVAC Rebates in Grand Rapids</h2>
+<p>Grand Rapids residents can access multiple rebate programs to offset HVAC installation costs. Federal tax credits provide 30% of installation costs (up to \$2,000 for heat pumps, \$600 for high-efficiency air conditioners) through 2032, with no lifetime limit. Michigan's Home Energy Loan Program offers low-interest financing for energy-efficient HVAC upgrades. Consumers Energy provides substantial rebates including \$300-800 for ENERGY STAR certified heat pumps, \$50-300 for high-efficiency air conditioners, and up to \$400 for smart thermostats. Additional rebates are available through the Michigan Saves program, which offers 0% financing for qualifying HVAC improvements. These combined incentives can reduce total system costs by \$1,000-3,000, making high-efficiency equipment more accessible to Grand Rapids homeowners.</p>
+
+<h2>Choosing an HVAC Contractor in Grand Rapids</h2>
+<p>Selecting the right HVAC contractor in Grand Rapids requires verifying Michigan mechanical contractor licensing through the Department of Licensing and Regulatory Affairs. Look for contractors with specific experience in cold-climate installations and knowledge of local building codes. Essential qualifications include proper insurance coverage, manufacturer certifications (especially for warranty coverage), and membership in professional organizations like ACCA (Air Conditioning Contractors of America). Quality contractors should provide detailed written estimates, perform proper load calculations using Manual J methodology, and offer comprehensive warranties covering both labor and equipment. Emergency service availability is crucial in Grand Rapids' harsh winters—ensure your contractor provides 24/7 heating repair services. Request references from recent customers and verify Better Business Bureau ratings. Top contractors will also stay current on rebate programs and help navigate the application process to maximize your savings.</p>
+
+<h2>Frequently Asked Questions</h2>
+<div class="space-y-4 my-6">
+  <div>
+    <h3 class="text-lg font-bold mb-2">How much do hvac systems cost in Grand Rapids?</h3>
+    <p>Complete HVAC system replacement in Grand Rapids typically costs \$8,000-15,000 for a 2,000 square foot home. This includes a high-efficiency furnace (\$3,500-6,000), central air conditioning (\$4,000-7,000), and installation labor (\$1,500-2,500). Premium cold-climate heat pump systems range from \$12,000-18,000 installed. Factors affecting cost include home size, existing ductwork condition, equipment efficiency ratings, and installation complexity. With available rebates and tax credits, net costs can be reduced by \$2,000-4,000.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">What rebates are available in Grand Rapids?</h3>
+    <p>Grand Rapids residents can access federal tax credits (30% of cost up to equipment limits), Consumers Energy rebates (\$50-800 depending on equipment), and Michigan Saves financing programs. Combined incentives typically provide \$1,500-3,500 in savings. Heat pump installations qualify for the highest rebates, while high-efficiency furnaces and smart thermostats also receive substantial incentives. Many rebates require ENERGY STAR certification and professional installation by licensed contractors.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">How do I choose a contractor in Grand Rapids?</h3>
+    <p>Verify Michigan mechanical contractor licensing, check Better Business Bureau ratings, and confirm proper insurance coverage. Look for contractors with cold-climate experience, manufacturer certifications, and positive customer reviews. Quality contractors provide detailed written estimates, perform proper load calculations, offer comprehensive warranties, and provide 24/7 emergency service. Request multiple quotes and ensure the contractor helps with rebate applications to maximize your savings.</p>
+  </div>
+</div>`;
+---
+
+<Layout title="HVAC Systems in Grand Rapids, Michigan - Costs, Installation & Rebates | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/michigan" class="text-blue-600 hover:underline">Michigan</a>
+        <span class="mx-2">/</span>
+        <a href="/michigan/grand-rapids" class="text-blue-600 hover:underline">Grand Rapids</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">HVAC Systems</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        HVAC Systems in Grand Rapids, Michigan
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Complete guide to HVAC system installation, repair, costs, and energy efficiency for Grand Rapids homeowners
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">📍 Kent County</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 15.8¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ Consumers</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section class="bg-gray-50 py-12 my-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Need More Information?</h2>
+      <p class="mb-6 text-gray-600">Check out our complete guide for Grand Rapids</p>
+      <a href="/michigan/grand-rapids" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition inline-block">
+        View Grand Rapids Complete Guide
+      </a>
+    </div>
+  </section>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>

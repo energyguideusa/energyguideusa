@@ -1,0 +1,103 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import LeadForm from '../../../components/LeadForm.astro';
+
+const content = `<h2>HVAC Systems in Chicago</h2>
+<p>Chicago's cold continental climate presents unique challenges for HVAC systems, with average winter temperatures dropping well below freezing and summer highs reaching into the 80s and 90s. The city's 2.7 million residents require robust heating systems capable of handling temperatures that can plummet to -20°F or lower during polar vortex events. With electricity rates at 13.4¢/kWh through ComEd, Chicago homeowners must balance the need for reliable climate control with energy efficiency to manage heating costs that can easily exceed \$200-300 monthly during peak winter months.</p>
+
+<p>The extreme temperature swings in Chicago demand HVAC systems that excel primarily in heating efficiency, as heating costs typically account for 60-70% of annual energy bills. While air conditioning is necessary for summer comfort, the heating season extends from October through April, making furnace efficiency and heat pump performance in cold weather critical considerations. Smart Chicago homeowners are increasingly investing in high-efficiency systems and proper insulation to combat the city's harsh winters while keeping energy costs manageable under ComEd's rate structure.</p>
+
+<h2>HVAC Installation Costs in Chicago</h2>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Type</th>
+      <th class="border px-4 py-2 text-left">Installation Cost</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+      <th class="border px-4 py-2 text-left">Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="border px-4 py-2">16 SEER AC + 90% AFUE Furnace</td><td class="border px-4 py-2">\$5,500-7,500</td><td class="border px-4 py-2">\$400-600/year</td><td class="border px-4 py-2">8-12 years</td></tr>
+    <tr><td class="border px-4 py-2">18 SEER AC + 95% AFUE Furnace</td><td class="border px-4 py-2">\$6,800-9,000</td><td class="border px-4 py-2">\$600-900/year</td><td class="border px-4 py-2">7-10 years</td></tr>
+    <tr><td class="border px-4 py-2">Cold Climate Heat Pump</td><td class="border px-4 py-2">\$7,200-10,000</td><td class="border px-4 py-2">\$800-1,200/year</td><td class="border px-4 py-2">6-9 years</td></tr>
+  </tbody>
+</table>
+
+<h2>Best HVAC Systems for Chicago Climate</h2>
+<p>For Chicago's cold climate, the most effective HVAC systems prioritize heating efficiency over cooling performance. High-efficiency condensing furnaces with 90-98% AFUE ratings paired with 16+ SEER air conditioners provide the best value, as heating demands far exceed cooling needs. Cold-climate heat pumps have become increasingly viable, with models from Mitsubishi, Carrier, and Lennox maintaining efficiency down to -15°F. These systems can provide 200-300% efficiency compared to electric resistance heating, making them cost-effective even at ComEd's 13.4¢/kWh rate. For optimal performance, look for heat pumps with variable-speed compressors and backup heating elements. Ductless mini-split systems work well for additions or homes without existing ductwork, while geothermal systems offer the highest efficiency but require significant upfront investment of \$15,000-25,000.</p>
+
+<h2>HVAC Rebates in Chicago</h2>
+<p>Chicago residents can access multiple rebate programs to offset HVAC installation costs. Federal tax credits provide 30% of the cost (up to \$2,000) for heat pumps and up to \$1,200 for high-efficiency furnaces and air conditioners through 2032. The Illinois Home Weatherization Assistance Program offers additional rebates of \$500-2,000 for qualifying systems. ComEd's Energy Efficiency Program provides rebates of \$200-800 for ENERGY STAR certified equipment, with higher rebates for smart thermostats (\$75-125) and ductless mini-splits (\$300-500 per indoor unit). Income-qualified residents can access enhanced rebates through ComEd's targeted programs. The city of Chicago also offers property tax incentives for renewable energy systems including geothermal heat pumps. When combined, these programs can reduce total installation costs by 20-40%, making high-efficiency systems much more affordable for Chicago homeowners.</p>
+
+<h2>Choosing an HVAC Contractor in Chicago</h2>
+<p>Selecting a qualified HVAC contractor in Chicago requires verifying proper licensing through the Illinois Department of Public Health and checking for EPA Section 608 certification for refrigerant handling. Look for contractors with extensive cold-climate experience who understand Chicago's unique challenges, including proper equipment sizing for extreme temperatures and knowledge of local building codes. Top contractors should offer comprehensive warranties (10+ years on equipment, 2+ years on labor), provide detailed load calculations using Manual J procedures, and have 24/7 emergency service availability during harsh winter months. Check Better Business Bureau ratings, Google reviews, and ask for local references from recent customers. Reputable contractors will provide detailed written estimates, explain rebate opportunities, and offer financing options. Avoid door-to-door sales or unusually low bids, and ensure contractors pull proper permits and provide proof of bonding and insurance coverage of at least \$1 million in liability protection.</p>
+
+<h2>Frequently Asked Questions</h2>
+<div class="space-y-4 my-6">
+  <div>
+    <h3 class="text-lg font-bold mb-2">How much do hvac systems cost in Chicago?</h3>
+    <p>Complete HVAC system replacement in Chicago typically costs \$6,000-12,000 for standard efficiency units, \$8,000-15,000 for high-efficiency systems, and \$12,000-20,000 for premium cold-climate heat pumps or geothermal systems. Factors affecting cost include home size, ductwork condition, equipment efficiency ratings, and installation complexity. With Chicago's harsh winters, investing in higher-efficiency heating equipment often pays for itself through reduced ComEd bills within 7-10 years.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">What rebates are available in Chicago?</h3>
+    <p>Chicago residents can access federal tax credits (30% for heat pumps, up to \$1,200 for furnaces/AC), ComEd rebates (\$200-800 for ENERGY STAR equipment), Illinois weatherization program rebates (\$500-2,000), and city property tax incentives for geothermal systems. Combined rebates can total \$2,000-5,000 depending on equipment type and household income qualification. Smart thermostat rebates of \$75-125 are also available through ComEd's program.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">How do I choose a contractor in Chicago?</h3>
+    <p>Choose contractors with Illinois licensing, EPA certification, and extensive cold-climate experience in Chicago. Verify insurance coverage, check BBB ratings and recent customer reviews, and obtain multiple detailed written estimates. Look for contractors offering comprehensive warranties (10+ years equipment, 2+ years labor), 24/7 emergency service, and knowledge of local rebate programs. Avoid door-to-door sales and ensure proper permits are obtained for all installations.</p>
+  </div>
+</div>`;
+---
+
+<Layout title="HVAC Systems in Chicago, Illinois - Costs, Installation & Rebates | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/illinois" class="text-blue-600 hover:underline">Illinois</a>
+        <span class="mx-2">/</span>
+        <a href="/illinois/chicago" class="text-blue-600 hover:underline">Chicago</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">HVAC Systems</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        HVAC Systems in Chicago, Illinois
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Complete guide to HVAC system installation, repair, costs, and energy efficiency for Chicago homeowners
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">📍 Cook County</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 13.4¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ ComEd</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section class="bg-gray-50 py-12 my-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Need More Information?</h2>
+      <p class="mb-6 text-gray-600">Check out our complete guide for Chicago</p>
+      <a href="/illinois/chicago" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition inline-block">
+        View Chicago Complete Guide
+      </a>
+    </div>
+  </section>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>

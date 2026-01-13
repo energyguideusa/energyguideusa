@@ -1,0 +1,103 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import LeadForm from '../../../components/LeadForm.astro';
+
+const content = `<h2>HVAC Systems in Aurora</h2>
+<p>Aurora, Colorado's cold-dry climate presents unique challenges for HVAC systems, requiring robust heating capabilities for harsh winters and efficient cooling for hot summer days. With a population of 386,261 residents in Arapahoe County, Aurora experiences temperature swings from sub-zero winter lows to 90°F+ summer highs, combined with low humidity levels year-round. This climate demands HVAC systems that can handle extreme temperature variations while managing the dry air that can cause comfort and health issues for residents.</p>
+
+<p>Energy efficiency becomes crucial for Aurora homeowners, especially with Xcel Energy's electricity rate of 12.5¢/kWh. The cold-dry climate means heating costs typically dominate energy bills, accounting for 40-60% of annual utility expenses. Modern high-efficiency HVAC systems can significantly reduce these costs while providing better comfort control. Aurora's elevation of 5,471 feet also affects HVAC performance, requiring systems sized appropriately for the thinner air and potential altitude-related efficiency considerations.</p>
+
+<h2>HVAC Installation Costs in Aurora</h2>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Type</th>
+      <th class="border px-4 py-2 text-left">Installation Cost</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+      <th class="border px-4 py-2 text-left">Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="border px-4 py-2">16 SEER AC</td><td class="border px-4 py-2">\$5,500-7,500</td><td class="border px-4 py-2">\$180-240/year</td><td class="border px-4 py-2">8-10 years</td></tr>
+    <tr><td class="border px-4 py-2">18 SEER AC</td><td class="border px-4 py-2">\$6,800-9,000</td><td class="border px-4 py-2">\$280-350/year</td><td class="border px-4 py-2">7-9 years</td></tr>
+    <tr><td class="border px-4 py-2">Heat Pump</td><td class="border px-4 py-2">\$7,200-10,000</td><td class="border px-4 py-2">\$420-580/year</td><td class="border px-4 py-2">6-8 years</td></tr>
+  </tbody>
+</table>
+
+<h2>Best HVAC Systems for Aurora Climate</h2>
+<p>For Aurora's cold-dry climate, dual-fuel heat pump systems offer the best year-round efficiency, switching between electric heat pump operation in mild weather and gas furnace backup during extreme cold snaps below 25°F. Look for heat pumps with cold-climate ratings and variable-speed compressors that maintain efficiency in sub-freezing temperatures. A minimum 16 SEER rating is recommended, though 18+ SEER systems provide better long-term savings given Aurora's temperature extremes. Gas furnaces should have AFUE ratings of 90% or higher, with two-stage or modulating burners for consistent comfort. The dry climate also necessitates whole-home humidification systems to maintain 30-50% relative humidity, preventing respiratory issues and static electricity while protecting wood furniture and flooring from cracking.</p>
+
+<h2>HVAC Rebates in Aurora</h2>
+<p>Aurora residents can access substantial HVAC rebates through multiple programs. Federal tax credits offer 30% of installation costs (up to \$2,000) for qualifying heat pumps through 2032, plus up to \$600 for high-efficiency air conditioners. Colorado's state rebate program provides additional incentives of \$200-800 for ENERGY STAR certified systems. Xcel Energy offers the most significant local rebates: \$400-1,200 for qualifying heat pumps, \$50-200 for high-efficiency air conditioners, and \$400-600 for furnaces with 92%+ AFUE ratings. Income-qualified customers can access enhanced rebates up to \$1,800 through Xcel's Energy Efficiency programs. Smart thermostats qualify for \$50-100 rebates, and whole-home air sealing can earn additional incentives of \$200-400 when combined with HVAC upgrades.</p>
+
+<h2>Choosing an HVAC Contractor in Aurora</h2>
+<p>Selecting a qualified HVAC contractor in Aurora requires verifying Colorado state licensing and local Aurora business permits. Look for contractors with North American Technician Excellence (NATE) certification and manufacturer certifications for the brands they install. Experience with high-altitude installations and cold-climate systems is crucial, as Aurora's 5,471-foot elevation affects equipment performance. Request detailed Manual J load calculations to ensure proper system sizing for your specific home. Quality contractors provide comprehensive warranties (10+ years on equipment, 2+ years on labor) and offer 24/7 emergency service during Aurora's harsh winter months. Check Better Business Bureau ratings and Google reviews, specifically looking for feedback about warranty service and system performance during extreme weather events. Obtain multiple detailed quotes that include equipment specifications, installation scope, permit costs, and post-installation commissioning procedures.</p>
+
+<h2>Frequently Asked Questions</h2>
+<div class="space-y-4 my-6">
+  <div>
+    <h3 class="text-lg font-bold mb-2">How much do hvac systems cost in Aurora?</h3>
+    <p>HVAC system costs in Aurora range from \$5,500-15,000 depending on system type and home size. A standard 3-ton gas furnace and AC unit costs \$6,500-9,500 installed, while high-efficiency heat pump systems run \$8,000-12,000. Luxury variable-speed systems with smart controls can reach \$15,000+. Aurora's altitude and extreme weather require robust equipment, typically adding \$500-1,000 to base costs compared to lower-elevation areas.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">What rebates are available in Aurora?</h3>
+    <p>Aurora residents can stack multiple rebates for maximum savings: Federal tax credits up to \$2,000 for heat pumps, Colorado state rebates of \$200-800, and Xcel Energy rebates up to \$1,200. Combined rebates can total \$2,000-4,000 for qualifying high-efficiency systems. Income-qualified customers receive enhanced rebates through Xcel's programs. Additional rebates available for smart thermostats (\$50-100) and whole-home weatherization (\$200-400).</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">How do I choose a contractor in Aurora?</h3>
+    <p>Choose Aurora HVAC contractors with Colorado state licensing, NATE certification, and high-altitude installation experience. Verify insurance, check BBB ratings, and read local reviews focusing on winter emergency service. Quality contractors provide Manual J load calculations, detailed warranties (10+ years equipment, 2+ years labor), and 24/7 emergency service. Get multiple quotes and verify they include permits, proper sizing calculations, and post-installation system commissioning.</p>
+  </div>
+</div>`;
+---
+
+<Layout title="HVAC Systems in Aurora, Colorado - Costs, Installation & Rebates | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/colorado" class="text-blue-600 hover:underline">Colorado</a>
+        <span class="mx-2">/</span>
+        <a href="/colorado/aurora" class="text-blue-600 hover:underline">Aurora</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">HVAC Systems</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        HVAC Systems in Aurora, Colorado
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Complete guide to HVAC system installation, repair, costs, and energy efficiency for Aurora homeowners
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">📍 Arapahoe County</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 12.5¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ Xcel Energy</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section class="bg-gray-50 py-12 my-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Need More Information?</h2>
+      <p class="mb-6 text-gray-600">Check out our complete guide for Aurora</p>
+      <a href="/colorado/aurora" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition inline-block">
+        View Aurora Complete Guide
+      </a>
+    </div>
+  </section>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>

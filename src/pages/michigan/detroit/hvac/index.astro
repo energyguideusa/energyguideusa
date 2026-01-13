@@ -1,0 +1,103 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import LeadForm from '../../../components/LeadForm.astro';
+
+const content = `<h2>HVAC Systems in Detroit</h2>
+<p>Detroit's cold continental climate presents unique challenges for HVAC systems, with harsh winters averaging 25°F and humid summers reaching 83°F. The city's 639,111 residents in Wayne County face significant heating demands from October through April, making efficient heating systems crucial for comfort and energy savings. With DTE Energy's electricity rate at 16.2¢/kWh—slightly above the national average—Detroit homeowners must carefully consider system efficiency to manage rising utility costs.</p>
+
+<p>The Motor City's aging housing stock, much built before modern insulation standards, requires robust HVAC systems capable of handling extreme temperature swings. Detroit residents spend approximately 60% of their energy budget on heating and cooling, making system efficiency critical. High-efficiency heat pumps and furnaces can significantly reduce energy consumption, while proper sizing and installation ensure optimal performance during Detroit's frigid winters and muggy summers.</p>
+
+<h2>HVAC Installation Costs in Detroit</h2>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Type</th>
+      <th class="border px-4 py-2 text-left">Installation Cost</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+      <th class="border px-4 py-2 text-left">Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="border px-4 py-2">16 SEER AC</td><td class="border px-4 py-2">\$5,500-7,500</td><td class="border px-4 py-2">\$150-250</td><td class="border px-4 py-2">8-12 years</td></tr>
+    <tr><td class="border px-4 py-2">18 SEER AC</td><td class="border px-4 py-2">\$6,800-9,000</td><td class="border px-4 py-2">\$300-450</td><td class="border px-4 py-2">6-10 years</td></tr>
+    <tr><td class="border px-4 py-2">Heat Pump</td><td class="border px-4 py-2">\$7,200-10,000</td><td class="border px-4 py-2">\$400-650</td><td class="border px-4 py-2">5-8 years</td></tr>
+  </tbody>
+</table>
+
+<h2>Best HVAC Systems for Detroit Climate</h2>
+<p>For Detroit's cold climate, dual-fuel heat pump systems paired with natural gas furnaces offer optimal efficiency and reliability. These systems use the heat pump for moderate temperatures and automatically switch to gas heating when temperatures drop below 25°F. Look for heat pumps with HSPF ratings of 9.0 or higher and SEER ratings of at least 16. High-efficiency gas furnaces with AFUE ratings of 90% or above provide reliable backup heating during Detroit's coldest months. Variable-speed systems adjust output to match demand, improving comfort while reducing energy consumption by up to 30%. Given Detroit's heating-dominated climate, investing in superior heating performance takes priority over maximum cooling efficiency, though adequate air conditioning remains essential for summer comfort and indoor air quality.</p>
+
+<h2>HVAC Rebates in Detroit</h2>
+<p>Detroit residents can access substantial rebates for HVAC upgrades through multiple programs. Federal tax credits offer up to \$2,000 for heat pumps and \$600 for high-efficiency air conditioners meeting ENERGY STAR requirements. Michigan's energy efficiency programs provide additional rebates up to \$500 for qualifying systems. DTE Energy customers receive significant rebates including \$400-800 for ENERGY STAR heat pumps, \$200-400 for high-efficiency air conditioners, and \$100-300 for smart thermostats. DTE also offers 0% financing for up to 60 months on qualifying equipment. The Michigan Saves program provides low-interest loans for energy improvements, while Detroit's Property Assessed Clean Energy (PACE) financing allows homeowners to finance upgrades through property tax assessments. Combining these incentives can reduce upfront costs by \$1,500-3,000, significantly improving payback periods for efficient systems.</p>
+
+<h2>Choosing an HVAC Contractor in Detroit</h2>
+<p>Selecting a qualified HVAC contractor in Detroit requires careful vetting to ensure proper installation and service. Verify Michigan mechanical contractor licensing, Better Business Bureau ratings, and NATE (North American Technician Excellence) certifications. Experienced Detroit contractors understand local building codes, permit requirements, and climate-specific installation practices. Request detailed written estimates comparing equipment options, efficiency ratings, and warranty coverage. Quality contractors perform Manual J load calculations to properly size systems for your home's specific needs. Look for contractors offering comprehensive warranties covering both equipment and labor for at least five years. Emergency service availability during Detroit's harsh winters is crucial—choose contractors providing 24/7 support. Check references from recent customers and verify insurance coverage. Reputable contractors explain rebate programs, assist with paperwork, and provide ongoing maintenance services to protect your investment.</p>
+
+<h2>Frequently Asked Questions</h2>
+<div class="space-y-4 my-6">
+  <div>
+    <h3 class="text-lg font-bold mb-2">How much do hvac systems cost in Detroit?</h3>
+    <p>Complete HVAC system replacements in Detroit typically cost \$8,000-15,000 for average homes. High-efficiency heat pump systems range \$10,000-18,000, while gas furnace and AC combinations cost \$7,500-13,000. Installation complexity, home size, and efficiency ratings significantly impact pricing. Detroit's competitive market and available rebates help offset costs, with net prices often \$2,000-4,000 lower after incentives.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">What rebates are available in Detroit?</h3>
+    <p>Detroit residents access federal tax credits up to \$2,000, DTE Energy rebates up to \$800, and Michigan program incentives up to \$500. Smart thermostat rebates provide additional \$50-100 savings. Combined rebates and financing through Michigan Saves and DTE programs can reduce upfront costs by \$2,000-4,000 while offering low-interest financing options.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">How do I choose a contractor in Detroit?</h3>
+    <p>Verify Michigan mechanical contractor licensing, NATE certifications, and BBB ratings. Request multiple detailed estimates, check recent customer references, and confirm comprehensive warranty coverage. Choose contractors experienced with Detroit's climate challenges, permit processes, and rebate programs. Ensure 24/7 emergency service availability and ongoing maintenance support for optimal system performance.</p>
+  </div>
+</div>`;
+---
+
+<Layout title="HVAC Systems in Detroit, Michigan - Costs, Installation & Rebates | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/michigan" class="text-blue-600 hover:underline">Michigan</a>
+        <span class="mx-2">/</span>
+        <a href="/michigan/detroit" class="text-blue-600 hover:underline">Detroit</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">HVAC Systems</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        HVAC Systems in Detroit, Michigan
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Complete guide to HVAC system installation, repair, costs, and energy efficiency for Detroit homeowners
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">📍 Wayne County</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 16.2¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ DTE Energy</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section class="bg-gray-50 py-12 my-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Need More Information?</h2>
+      <p class="mb-6 text-gray-600">Check out our complete guide for Detroit</p>
+      <a href="/michigan/detroit" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition inline-block">
+        View Detroit Complete Guide
+      </a>
+    </div>
+  </section>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>

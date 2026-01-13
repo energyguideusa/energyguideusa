@@ -1,0 +1,103 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import LeadForm from '../../../components/LeadForm.astro';
+
+const content = `<h2>HVAC Systems in Oakland</h2>
+<p>Oakland's Mediterranean climate, characterized by warm, dry summers and mild, wet winters, presents unique HVAC challenges for its 440,646 residents. With summer temperatures regularly reaching the mid-80s and winter lows rarely dropping below 40°F, Oakland homeowners need efficient cooling systems that can handle extended dry periods while providing adequate heating during the cooler months. The city's proximity to San Francisco Bay creates microclimates throughout Alameda County, with hills and valleys experiencing different temperature patterns that affect HVAC system selection and sizing requirements.</p>
+
+<p>Energy efficiency is particularly crucial in Oakland due to PG&E's high electricity rates of 28.1¢/kWh, making it essential for homeowners to invest in high-efficiency HVAC systems to control operating costs. The Mediterranean climate's distinct seasons mean that while air conditioning usage peaks during summer months, heating demands remain relatively low compared to other regions, allowing for strategic system choices like heat pumps that can efficiently handle both heating and cooling needs while taking advantage of the mild winter temperatures.</p>
+
+<h2>HVAC Installation Costs in Oakland</h2>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Type</th>
+      <th class="border px-4 py-2 text-left">Installation Cost</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+      <th class="border px-4 py-2 text-left">Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="border px-4 py-2">16 SEER AC</td><td class="border px-4 py-2">\$5,500-7,500</td><td class="border px-4 py-2">\$280-420 vs 14 SEER</td><td class="border px-4 py-2">8-12 years</td></tr>
+    <tr><td class="border px-4 py-2">18 SEER AC</td><td class="border px-4 py-2">\$6,800-9,000</td><td class="border px-4 py-2">\$450-650 vs 14 SEER</td><td class="border px-4 py-2">7-10 years</td></tr>
+    <tr><td class="border px-4 py-2">Heat Pump</td><td class="border px-4 py-2">\$7,200-10,000</td><td class="border px-4 py-2">\$500-800 annually</td><td class="border px-4 py-2">6-9 years</td></tr>
+  </tbody>
+</table>
+
+<h2>Best HVAC Systems for Oakland Climate</h2>
+<p>For Oakland's Mediterranean climate, heat pump systems are often the optimal choice, providing both heating and cooling with exceptional efficiency ratings of 18-22 SEER for cooling and 9-10 HSPF for heating. These systems excel in Oakland's mild winter conditions, maintaining efficiency even when temperatures drop to the 40s. For homes requiring traditional split systems, a minimum 16 SEER rating is recommended, though 18 SEER units provide better long-term value given PG&E's high electricity rates. Variable-speed systems work particularly well in Oakland's climate, adjusting output to match the moderate temperature swings typical of Mediterranean weather patterns. During Oakland's dry summers, evaporative cooling can supplement traditional AC systems in certain neighborhoods, particularly in the inland areas where humidity levels remain consistently low.</p>
+
+<h2>HVAC Rebates in Oakland</h2>
+<p>Oakland residents have access to multiple rebate programs that significantly reduce HVAC installation costs. The federal tax credit provides 30% of installation costs (up to \$2,000) for qualifying heat pumps through 2032, while high-efficiency central air conditioners receive up to \$600. California's Tech Clean program offers additional rebates of \$3,000-5,000 for heat pump installations, depending on system efficiency and household income. PG&E provides rebates ranging from \$500-2,500 for ENERGY STAR certified systems, with higher amounts for heat pumps and variable-speed units. Low-income households in Oakland may qualify for the Energy Savings Assistance Program, which provides free HVAC system replacements. Bay Area Air Quality Management District also offers incentives for replacing older, inefficient systems, particularly in environmental justice communities throughout Alameda County.</p>
+
+<h2>Choosing an HVAC Contractor in Oakland</h2>
+<p>When selecting an HVAC contractor in Oakland, verify they hold a valid California C-20 HVAC license and are bonded and insured. Look for contractors with specific experience in Mediterranean climate installations and knowledge of local building codes in Alameda County. Quality contractors should provide detailed load calculations using Manual J methodology, accounting for Oakland's unique microclimate conditions and your home's specific orientation and insulation levels. Request multiple quotes and ensure each includes equipment specifications, warranty information, and timeline details. Established Oakland contractors typically offer 24/7 emergency service, crucial during heat waves when temperatures can exceed 90°F for extended periods. Check Better Business Bureau ratings, Google reviews, and ask for recent local references. The best contractors will also help navigate PG&E rebate applications and ensure proper permitting with Oakland's building department.</p>
+
+<h2>Frequently Asked Questions</h2>
+<div class="space-y-4 my-6">
+  <div>
+    <h3 class="text-lg font-bold mb-2">How much do hvac systems cost in Oakland?</h3>
+    <p>Complete HVAC system installations in Oakland typically range from \$5,500-15,000, depending on system type and home size. Basic 16 SEER central air conditioning systems cost \$5,500-7,500, while high-efficiency heat pumps range from \$7,200-10,000. Premium variable-speed systems with smart thermostats can reach \$12,000-15,000. Oakland's high labor costs and permit requirements add approximately 15-20% to installation costs compared to other California markets. However, available rebates can reduce net costs by \$2,000-6,000.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">What rebates are available in Oakland?</h3>
+    <p>Oakland residents can access federal tax credits up to \$2,000 for heat pumps, California Tech Clean rebates of \$3,000-5,000, and PG&E rebates of \$500-2,500 for qualifying ENERGY STAR systems. The Bay Area Air Quality Management District offers additional incentives for replacing older units. Low-income households may qualify for free system replacements through California's Energy Savings Assistance Program. Combined, these programs can provide \$4,000-8,000 in total incentives.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">How do I choose a contractor in Oakland?</h3>
+    <p>Select contractors with valid California C-20 licenses, liability insurance, and strong local references in Alameda County. Verify they understand Oakland's Mediterranean climate requirements and can perform proper load calculations. Request detailed written estimates including equipment specifications, warranties, and timeline. Check online reviews, Better Business Bureau ratings, and confirm they offer emergency service during Oakland's summer heat waves. Ensure they're experienced with local permit processes and rebate applications.</p>
+  </div>
+</div>`;
+---
+
+<Layout title="HVAC Systems in Oakland, California - Costs, Installation & Rebates | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/california" class="text-blue-600 hover:underline">California</a>
+        <span class="mx-2">/</span>
+        <a href="/california/oakland" class="text-blue-600 hover:underline">Oakland</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">HVAC Systems</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        HVAC Systems in Oakland, California
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Complete guide to HVAC system installation, repair, costs, and energy efficiency for Oakland homeowners
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">📍 Alameda County</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 28.1¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ PG&E</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section class="bg-gray-50 py-12 my-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Need More Information?</h2>
+      <p class="mb-6 text-gray-600">Check out our complete guide for Oakland</p>
+      <a href="/california/oakland" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition inline-block">
+        View Oakland Complete Guide
+      </a>
+    </div>
+  </section>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>

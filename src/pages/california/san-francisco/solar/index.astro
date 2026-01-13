@@ -1,0 +1,104 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import LeadForm from '../../../components/LeadForm.astro';
+
+const content = `<h2>Solar Panel Installation in San Francisco</h2>
+<p>San Francisco's Mediterranean climate makes it an excellent location for solar panel installation, with mild, dry summers and moderate winters providing consistent sunlight throughout the year. The city receives approximately 260 sunny days annually, generating substantial solar energy potential for the 873,965 residents across San Francisco County. With PG&E's current electricity rates at 31.8¢/kWh—among the highest in the nation—homeowners can achieve significant savings by switching to solar power.</p>
+
+<p>The combination of high electricity costs and abundant sunshine creates ideal conditions for solar investment in San Francisco. PG&E's Time-of-Use rates make solar panels particularly valuable, as they generate peak power during expensive daytime hours when utility rates are highest. San Francisco's progressive environmental policies and strong commitment to renewable energy also provide additional support for residential solar installations, making it easier for homeowners to navigate permitting and interconnection processes.</p>
+
+<h2>Solar Panel Costs in San Francisco</h2>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Size</th>
+      <th class="border px-4 py-2 text-left">Total Cost</th>
+      <th class="border px-4 py-2 text-left">After 30% Credit</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+      <th class="border px-4 py-2 text-left">Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="border px-4 py-2">5kW</td><td class="border px-4 py-2">\$17,500</td><td class="border px-4 py-2">\$12,250</td><td class="border px-4 py-2">\$1,908</td><td class="border px-4 py-2">6.4 years</td></tr>
+    <tr><td class="border px-4 py-2">6kW</td><td class="border px-4 py-2">\$21,000</td><td class="border px-4 py-2">\$14,700</td><td class="border px-4 py-2">\$2,290</td><td class="border px-4 py-2">6.4 years</td></tr>
+    <tr><td class="border px-4 py-2">8kW</td><td class="border px-4 py-2">\$28,000</td><td class="border px-4 py-2">\$19,600</td><td class="border px-4 py-2">\$3,053</td><td class="border px-4 py-2">6.4 years</td></tr>
+  </tbody>
+</table>
+
+<h2>Solar Incentives in San Francisco</h2>
+<p>San Francisco residents have access to multiple solar incentives that significantly reduce installation costs. The federal solar Investment Tax Credit (ITC) provides a 30% tax credit on the total system cost, including equipment and installation, through 2032. California offers additional state-level incentives through the California Solar Initiative and Self-Generation Incentive Program, which can provide cash rebates for battery storage systems. PG&E participates in California's Net Energy Metering (NEM) program, allowing solar customers to receive credits for excess electricity sent back to the grid at retail rates. The city of San Francisco also expedites solar permits and has streamlined its inspection processes, reducing soft costs associated with installation. Property tax exemptions ensure that adding solar panels won't increase your property tax assessment, while the increased home value from solar installation remains tax-free.</p>
+
+<h2>Best Solar Companies in San Francisco</h2>
+<p>When selecting a solar installer in San Francisco, prioritize companies with proper California Contractors State License Board (CSLB) certification and specific experience with San Francisco's unique architectural requirements, including Victorian homes and challenging roof configurations. Look for installers who are certified by major panel manufacturers and have extensive experience with PG&E's interconnection requirements. Quality installers should offer comprehensive warranties covering equipment (typically 20-25 years for panels, 10-15 years for inverters) and workmanship (minimum 10 years). Verify that contractors carry proper insurance, provide detailed proposals with system specifications, and offer transparent pricing. Check references from recent San Francisco installations and ensure the company handles all permitting and PG&E interconnection paperwork. Top-tier installers will also provide monitoring systems and ongoing maintenance support to maximize your system's performance over its 25+ year lifespan.</p>
+
+<h2>Solar ROI in San Francisco</h2>
+<p>Solar panel installations in San Francisco typically achieve payback periods of 6-7 years due to the city's high electricity rates of 31.8¢/kWh. A typical 6kW system costing \$14,700 after the federal tax credit will generate approximately \$2,290 in annual savings, resulting in a 6.4-year payback period. Over 25 years, homeowners can expect total savings of \$40,000-\$60,000, depending on system size and energy usage patterns. The return on investment becomes even more attractive when considering PG&E's historical rate increases of 3-5% annually, while solar production costs remain fixed. With San Francisco's strong real estate market, solar installations typically add \$15,000-\$20,000 to home values, providing immediate equity benefits. The combination of high utility rates, abundant sunshine, generous incentives, and increasing property values makes San Francisco one of the most financially attractive markets for residential solar investment in California.</p>
+
+<h2>Frequently Asked Questions</h2>
+<div class="space-y-4 my-6">
+  <div>
+    <h3 class="text-lg font-bold mb-2">How much do solar panels cost in San Francisco?</h3>
+    <p>Solar panel systems in San Francisco typically range from \$3.50-\$4.00 per watt before incentives. A standard 6kW residential system costs approximately \$21,000 before the federal tax credit, or \$14,700 after the 30% credit. Final costs depend on roof complexity, equipment quality, and specific installation requirements. San Francisco's competitive solar market and streamlined permitting help keep costs reasonable despite the city's premium real estate market.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">What rebates are available in San Francisco?</h3>
+    <p>San Francisco residents can access the federal 30% Investment Tax Credit through 2032, California's Net Energy Metering program through PG&E, and the Self-Generation Incentive Program for battery storage systems. The city offers expedited permitting and waived fees for solar installations. Property tax exemptions ensure solar additions don't increase assessments. These combined incentives can reduce total system costs by 30-40%.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">How do I choose a contractor in San Francisco?</h3>
+    <p>Select contractors with valid California CSLB licenses, NABCEP certification, and specific San Francisco installation experience. Verify insurance coverage, check recent customer references, and ensure they handle all permitting and PG&E interconnection. Quality contractors provide detailed proposals, offer comprehensive warranties (minimum 10 years workmanship, 20+ years equipment), and include system monitoring. Avoid door-to-door sales and get multiple quotes from established local installers.</p>
+  </div>
+</div>`;
+---
+
+<Layout title="Solar Panels in San Francisco, California - Costs, Installation & Rebates | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/california" class="text-blue-600 hover:underline">California</a>
+        <span class="mx-2">/</span>
+        <a href="/california/san-francisco" class="text-blue-600 hover:underline">San Francisco</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">Solar Panels</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Solar Panels in San Francisco, California
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Complete guide to solar panel installation, costs, incentives, and ROI for San Francisco homeowners
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">📍 San Francisco County</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 31.8¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ PG&E</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section class="bg-gray-50 py-12 my-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Need More Information?</h2>
+      <p class="mb-6 text-gray-600">Check out our complete guide for San Francisco</p>
+      <a href="/california/san-francisco" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition inline-block">
+        View San Francisco Complete Guide
+      </a>
+    </div>
+  </section>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>

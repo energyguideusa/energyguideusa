@@ -1,0 +1,103 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import LeadForm from '../../../components/LeadForm.astro';
+
+const content = `<h2>HVAC Systems in Buffalo</h2>
+<p>Buffalo's harsh winters and humid summers create unique HVAC challenges for the city's 278,349 residents. With temperatures regularly dropping below freezing from December through March and summer highs reaching the 80s, Erie County homeowners need robust heating systems that can handle extended cold periods while still providing efficient cooling. The city's proximity to Lake Erie adds moisture to the air, requiring HVAC systems that can effectively manage humidity year-round while maintaining consistent indoor comfort.</p>
+
+<p>Energy efficiency is particularly crucial in Buffalo given National Grid's electricity rate of 16.8¢/kWh, which is higher than the national average. This makes selecting the right HVAC system a critical financial decision that impacts both comfort and long-term operating costs. Buffalo homeowners typically spend 40-50% more on heating than cooling due to the extended winter season, making high-efficiency heating solutions like heat pumps with backup systems or high-efficiency furnaces essential investments for managing energy costs effectively.</p>
+
+<h2>HVAC Installation Costs in Buffalo</h2>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Type</th>
+      <th class="border px-4 py-2 text-left">Installation Cost</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+      <th class="border px-4 py-2 text-left">Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="border px-4 py-2">16 SEER AC</td><td class="border px-4 py-2">\$5,500-7,500</td><td class="border px-4 py-2">\$280-420</td><td class="border px-4 py-2">8-12 years</td></tr>
+    <tr><td class="border px-4 py-2">18 SEER AC</td><td class="border px-4 py-2">\$6,800-9,000</td><td class="border px-4 py-2">\$480-650</td><td class="border px-4 py-2">7-10 years</td></tr>
+    <tr><td class="border px-4 py-2">Heat Pump</td><td class="border px-4 py-2">\$7,200-10,000</td><td class="border px-4 py-2">\$720-950</td><td class="border px-4 py-2">6-8 years</td></tr>
+  </tbody>
+</table>
+
+<h2>Best HVAC Systems for Buffalo Climate</h2>
+<p>For Buffalo's cold climate, dual-fuel heat pump systems with gas furnace backup are ideal, providing efficient heating down to 25°F before switching to gas. Look for heat pumps rated for cold climates with HSPF ratings of 9.0 or higher. For cooling, 16-18 SEER systems are optimal - higher SEER ratings provide diminishing returns given Buffalo's moderate summer cooling needs of only 60-80 days annually. Gas furnaces should have AFUE ratings of 90% or higher, while central air conditioning systems should include variable-speed blowers to manage the region's humidity effectively. Heating accounts for roughly 70% of annual HVAC energy use in Buffalo, making heating efficiency the primary consideration when selecting equipment.</p>
+
+<h2>HVAC Rebates in Buffalo</h2>
+<p>Buffalo residents can access multiple rebate programs to offset HVAC costs. Federal tax credits offer up to \$2,000 for qualifying heat pumps and up to \$600 for high-efficiency air conditioners installed through 2032. New York State's Clean Heat Program provides rebates up to \$4,000 for heat pump installations, with additional income-based incentives available. National Grid offers substantial rebates including \$500-1,200 for ENERGY STAR certified heat pumps, \$400-800 for high-efficiency central air systems, and up to \$1,000 for smart thermostats when bundled with system upgrades. The utility also provides 0% financing for qualifying HVAC upgrades, making energy-efficient systems more accessible to Erie County homeowners.</p>
+
+<h2>Choosing an HVAC Contractor in Buffalo</h2>
+<p>Selecting the right HVAC contractor in Buffalo requires verifying New York State licensing, insurance coverage, and Better Business Bureau ratings. Look for contractors with specific cold-climate experience who understand Lake Erie's impact on local humidity and can properly size systems for Buffalo's 6,600+ heating degree days. Quality contractors provide detailed load calculations, offer 5-10 year warranties on installations, and maintain 24/7 emergency service given Buffalo's harsh winters. Request references from recent customers and verify the contractor's experience with your specific system type, whether traditional furnace/AC combinations or newer heat pump technologies. Avoid door-to-door sales and always get multiple written estimates that include equipment specifications, labor costs, and warranty details.</p>
+
+<h2>Frequently Asked Questions</h2>
+<div class="space-y-4 my-6">
+  <div>
+    <h3 class="text-lg font-bold mb-2">How much do hvac systems cost in Buffalo?</h3>
+    <p>Complete HVAC system replacement in Buffalo typically costs \$8,000-15,000 depending on home size and equipment efficiency. Basic furnace and AC combinations start around \$6,500, while high-efficiency heat pump systems with backup heating range from \$12,000-18,000. Installation costs are slightly higher than national averages due to Buffalo's cold-climate requirements and the need for robust ductwork and electrical systems to handle extreme temperatures.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">What rebates are available in Buffalo?</h3>
+    <p>Buffalo residents can combine federal tax credits (up to \$2,000), New York State Clean Heat rebates (up to \$4,000), and National Grid utility rebates (up to \$1,200) for potential savings of \$7,200 on qualifying heat pump installations. Additional rebates are available for smart thermostats (\$100-250) and duct sealing services (\$300-500). Income-qualified residents may access enhanced rebates through NYSERDA programs.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">How do I choose a contractor in Buffalo?</h3>
+    <p>Choose licensed New York contractors with minimum 5 years local experience, current insurance, and strong references from recent Buffalo installations. Verify they understand cold-climate equipment requirements and offer comprehensive warranties. Avoid contractors without local addresses, those requesting full payment upfront, or anyone making door-to-door sales pitches. Quality contractors provide detailed written estimates and can explain rebate programs.</p>
+  </div>
+</div>`;
+---
+
+<Layout title="HVAC Systems in Buffalo, New York - Costs, Installation & Rebates | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/new-york" class="text-blue-600 hover:underline">New York</a>
+        <span class="mx-2">/</span>
+        <a href="/new-york/buffalo" class="text-blue-600 hover:underline">Buffalo</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">HVAC Systems</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        HVAC Systems in Buffalo, New York
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Complete guide to HVAC system installation, repair, costs, and energy efficiency for Buffalo homeowners
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">📍 Erie County</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 16.8¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ National Grid</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section class="bg-gray-50 py-12 my-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Need More Information?</h2>
+      <p class="mb-6 text-gray-600">Check out our complete guide for Buffalo</p>
+      <a href="/new-york/buffalo" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition inline-block">
+        View Buffalo Complete Guide
+      </a>
+    </div>
+  </section>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>

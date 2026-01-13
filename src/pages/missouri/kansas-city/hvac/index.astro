@@ -1,0 +1,103 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import LeadForm from '../../../components/LeadForm.astro';
+
+const content = `<h2>HVAC Systems in Kansas City</h2>
+<p>Kansas City's cold-mixed climate presents unique challenges for HVAC systems, requiring robust heating capabilities for harsh winters and efficient cooling for hot, humid summers. With temperatures ranging from sub-zero conditions in January to sweltering 90°F+ days in July and August, homeowners in Jackson County need versatile systems that can handle extreme temperature swings. The city's 508,090 residents face heating demands that typically account for 60% of annual HVAC energy usage, making efficient heat pumps and high-efficiency furnaces essential for managing utility costs.</p>
+
+<p>Energy costs in Kansas City are relatively moderate at 11.4¢/kWh through Evergy, but the extended heating season means HVAC systems run heavily from November through March. Smart system selection becomes crucial for managing annual energy bills, which can easily exceed \$1,800 for poorly insulated homes with inefficient equipment. Modern high-efficiency systems can reduce these costs by 20-40%, making upgrades particularly attractive given Kansas City's climate demands and reasonable electricity rates.</p>
+
+<h2>HVAC Installation Costs in Kansas City</h2>
+<table class="min-w-full bg-white border my-6">
+  <thead class="bg-gray-100">
+    <tr>
+      <th class="border px-4 py-2 text-left">System Type</th>
+      <th class="border px-4 py-2 text-left">Installation Cost</th>
+      <th class="border px-4 py-2 text-left">Annual Savings</th>
+      <th class="border px-4 py-2 text-left">Payback Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="border px-4 py-2">16 SEER AC</td><td class="border px-4 py-2">\$5,500-7,500</td><td class="border px-4 py-2">\$180-240</td><td class="border px-4 py-2">8-12 years</td></tr>
+    <tr><td class="border px-4 py-2">18 SEER AC</td><td class="border px-4 py-2">\$6,800-9,000</td><td class="border px-4 py-2">\$280-350</td><td class="border px-4 py-2">7-10 years</td></tr>
+    <tr><td class="border px-4 py-2">Heat Pump</td><td class="border px-4 py-2">\$7,200-10,000</td><td class="border px-4 py-2">\$420-580</td><td class="border px-4 py-2">6-8 years</td></tr>
+  </tbody>
+</table>
+
+<h2>Best HVAC Systems for Kansas City Climate</h2>
+<p>For Kansas City's cold-mixed climate, dual-fuel heat pump systems offer optimal efficiency and reliability. These systems combine an electric heat pump (ideal for temperatures above 25°F) with a gas furnace backup for extreme cold snaps. Look for heat pumps with 16+ SEER cooling ratings and 9+ HSPF heating ratings. For cooling-only needs, 16-18 SEER air conditioners provide excellent efficiency without over-investing in areas where cooling loads are moderate. Variable-speed systems excel in Kansas City's climate by maintaining consistent comfort during shoulder seasons while maximizing efficiency. Gas furnaces should have AFUE ratings of 90%+ to handle the substantial heating demands, while heat pumps with cold-climate technology can operate efficiently down to -5°F, covering most of Kansas City's winter conditions.</p>
+
+<h2>HVAC Rebates in Kansas City</h2>
+<p>Kansas City residents can access substantial rebates for HVAC upgrades through multiple programs. Federal tax credits offer 30% of installation costs (up to specific limits) for qualifying heat pumps and high-efficiency systems through 2032. Evergy provides rebates up to \$1,200 for ENERGY STAR certified heat pumps, \$800 for high-efficiency air conditioners, and \$600 for smart thermostats when installed by participating contractors. Missouri's energy efficiency programs offer additional incentives for low-income households and comprehensive home energy audits. The city occasionally runs weatherization assistance programs providing free HVAC upgrades for qualifying residents. Combined rebates can reduce total installation costs by \$2,000-4,000 for comprehensive system replacements, significantly improving payback periods for high-efficiency equipment.</p>
+
+<h2>Choosing an HVAC Contractor in Kansas City</h2>
+<p>Selecting the right HVAC contractor in Kansas City requires verifying proper Missouri state licensing, EPA certification for refrigerant handling, and comprehensive liability insurance. Look for contractors with extensive experience in cold-mixed climate installations who understand local building codes and permit requirements in Jackson County. Quality contractors should provide detailed Manual J load calculations, offer multiple equipment options with clear efficiency comparisons, and guarantee proper sizing for Kansas City's extreme temperature ranges. Prioritize companies offering 24/7 emergency service during harsh winter conditions, comprehensive warranties on both equipment and installation work, and maintenance plans to ensure peak performance. Check Better Business Bureau ratings, Google reviews focusing on winter performance issues, and request references from recent installations. Contractors should be factory-trained on the specific equipment they install and willing to explain rebate application processes for Evergy and federal programs.</p>
+
+<h2>Frequently Asked Questions</h2>
+<div class="space-y-4 my-6">
+  <div>
+    <h3 class="text-lg font-bold mb-2">How much do hvac systems cost in Kansas City?</h3>
+    <p>Complete HVAC system replacements in Kansas City range from \$8,000-15,000 for average homes, depending on system type and home size. Heat pump installations typically cost \$7,200-10,000, while high-efficiency gas furnaces range \$4,500-7,500. Air conditioning units cost \$5,500-9,000 installed. Ductwork modifications add \$2,000-5,000 to total project costs. Labor costs in Kansas City are approximately 15% below national averages, making professional installation more affordable than many metropolitan areas.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">What rebates are available in Kansas City?</h3>
+    <p>Kansas City residents can access federal tax credits worth 30% of equipment costs, Evergy rebates up to \$1,200 for heat pumps and \$800 for air conditioners, plus Missouri energy efficiency programs. Combined rebates typically reduce installation costs by \$2,000-4,000. Evergy also offers \$600 rebates for smart thermostats and financing options for qualified applicants. Low-income residents may qualify for additional weatherization assistance programs providing free equipment upgrades.</p>
+  </div>
+  <div>
+    <h3 class="text-lg font-bold mb-2">How do I choose a contractor in Kansas City?</h3>
+    <p>Verify Missouri state HVAC licensing, EPA refrigerant certification, and liability insurance coverage. Look for contractors with cold-climate experience, 24/7 emergency service, and comprehensive warranties. Check BBB ratings, recent customer reviews, and request local references. Quality contractors provide Manual J load calculations, explain rebate processes, and offer maintenance plans. Avoid door-to-door sales and always get multiple written estimates before making decisions.</p>
+  </div>
+</div>`;
+---
+
+<Layout title="HVAC Systems in Kansas City, Missouri - Costs, Installation & Rebates | Energy Guide USA">
+  <div class="bg-gray-100 py-3">
+    <div class="max-w-6xl mx-auto px-4">
+      <nav class="text-sm">
+        <a href="/" class="text-blue-600 hover:underline">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/missouri" class="text-blue-600 hover:underline">Missouri</a>
+        <span class="mx-2">/</span>
+        <a href="/missouri/kansas-city" class="text-blue-600 hover:underline">Kansas City</a>
+        <span class="mx-2">/</span>
+        <span class="text-gray-700">HVAC Systems</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="bg-[#2562eb] text-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        HVAC Systems in Kansas City, Missouri
+      </h1>
+      <p class="text-xl text-blue-100 mb-6">
+        Complete guide to HVAC system installation, repair, costs, and energy efficiency for Kansas City homeowners
+      </p>
+      <div class="flex flex-wrap gap-4 text-sm">
+        <div class="bg-white/20 px-4 py-2 rounded">📍 Jackson County</div>
+        <div class="bg-white/20 px-4 py-2 rounded">💰 11.4¢/kWh</div>
+        <div class="bg-white/20 px-4 py-2 rounded">⚡ Evergy</div>
+      </div>
+    </div>
+  </section>
+
+  <article class="max-w-4xl mx-auto px-4 py-12 prose prose-lg prose-headings:font-bold prose-h2:text-3xl prose-h2:mt-8 prose-h2:mb-4 prose-h3:text-2xl prose-h3:mt-6 prose-h3:mb-3 prose-p:mb-4 prose-table:my-6">
+    <Fragment set:html={content} />
+  </article>
+
+  <section class="bg-gray-50 py-12 my-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Need More Information?</h2>
+      <p class="mb-6 text-gray-600">Check out our complete guide for Kansas City</p>
+      <a href="/missouri/kansas-city" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition inline-block">
+        View Kansas City Complete Guide
+      </a>
+    </div>
+  </section>
+
+  <section id="get-quotes" class="py-16 bg-[#2562eb]">
+    <div class="max-w-2xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>
