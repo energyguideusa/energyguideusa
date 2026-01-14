@@ -1,0 +1,216 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Solar Cost Calculator - Energy Guide">
+  <section class="py-20" style="background: #98c965;">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6" style="color: #ffffff;">Solar Cost Calculator</h1>
+      <p class="text-xl" style="color: #ffffff;">Calculate your solar investment and savings</p>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Calculator Form -->
+        <div>
+          <h2 class="text-3xl font-bold mb-6" style="color: #000000;">Your Information</h2>
+          
+          <div class="space-y-6">
+            <div>
+              <label class="block font-bold mb-2" style="color: #000000;">Roof Square Footage</label>
+              <input 
+                type="number" 
+                id="squareFeet" 
+                placeholder="e.g., 2000"
+                class="w-full px-4 py-3 rounded-lg border-2"
+                style="border-color: #98c965;"
+              />
+              <p class="text-sm mt-1" style="color: #404952;">Typical home: 1,500 - 3,000 sq ft</p>
+            </div>
+
+            <div>
+              <label class="block font-bold mb-2" style="color: #000000;">Average Monthly Electric Bill ($)</label>
+              <input 
+                type="number" 
+                id="monthlyBill" 
+                placeholder="e.g., 150"
+                class="w-full px-4 py-3 rounded-lg border-2"
+                style="border-color: #98c965;"
+              />
+              <p class="text-sm mt-1" style="color: #404952;">Your current electricity cost</p>
+            </div>
+
+            <div>
+              <label class="block font-bold mb-2" style="color: #000000;">Your State</label>
+              <select 
+                id="state"
+                class="w-full px-4 py-3 rounded-lg border-2"
+                style="border-color: #98c965;"
+              >
+                <option value="high">High Sun State (AZ, CA, NV, TX, FL)</option>
+                <option value="medium" selected>Medium Sun State (Most States)</option>
+                <option value="low">Low Sun State (WA, OR, AK)</option>
+              </select>
+            </div>
+
+            <button 
+              id="calculateBtn"
+              class="w-full px-8 py-4 rounded-lg font-bold text-lg transition shadow-xl hover:shadow-2xl"
+              style="background: #98c965; color: #ffffff;"
+            >
+              Calculate My Savings
+            </button>
+          </div>
+        </div>
+
+        <!-- Results Panel -->
+        <div>
+          <div id="results" class="hidden">
+            <h2 class="text-3xl font-bold mb-6" style="color: #000000;">Your Solar Investment</h2>
+            
+            <div class="space-y-4">
+              <!-- System Size -->
+              <div class="p-4 rounded-lg" style="background: #eaeddd;">
+                <p class="text-sm font-bold" style="color: #404952;">SYSTEM SIZE</p>
+                <p class="text-2xl font-bold" style="color: #000000;"><span id="systemSize">0</span> kW</p>
+                <p class="text-sm" style="color: #404952;"><span id="numPanels">0</span> panels</p>
+              </div>
+
+              <!-- Total Cost -->
+              <div class="p-4 rounded-lg" style="background: #eaeddd;">
+                <p class="text-sm font-bold" style="color: #404952;">TOTAL INVESTMENT</p>
+                <p class="text-2xl font-bold" style="color: #000000;">$<span id="totalCost">0</span></p>
+                <p class="text-sm" style="color: #404952;">Equipment + Installation</p>
+              </div>
+
+              <!-- After Tax Credit -->
+              <div class="p-4 rounded-lg" style="background: #98c965;">
+                <p class="text-sm font-bold" style="color: #ffffff;">AFTER 30% FEDERAL TAX CREDIT</p>
+                <p class="text-3xl font-bold" style="color: #ffffff;">$<span id="afterTaxCredit">0</span></p>
+                <p class="text-sm" style="color: #ffffff;">Your actual out-of-pocket cost</p>
+              </div>
+
+              <!-- Annual Savings -->
+              <div class="p-4 rounded-lg" style="background: #eaeddd;">
+                <p class="text-sm font-bold" style="color: #404952;">ANNUAL SAVINGS</p>
+                <p class="text-2xl font-bold" style="color: #000000;">$<span id="annualSavings">0</span>/year</p>
+                <p class="text-sm" style="color: #404952;">Average electricity savings</p>
+              </div>
+
+              <!-- Payback Period -->
+              <div class="p-4 rounded-lg" style="background: #eaeddd;">
+                <p class="text-sm font-bold" style="color: #404952;">PAYBACK PERIOD</p>
+                <p class="text-2xl font-bold" style="color: #000000;"><span id="paybackYears">0</span> years</p>
+                <p class="text-sm" style="color: #404952;">Time to break even</p>
+              </div>
+
+              <!-- 25-Year Savings -->
+              <div class="p-4 rounded-lg" style="background: #98c965;">
+                <p class="text-sm font-bold" style="color: #ffffff;">25-YEAR TOTAL SAVINGS</p>
+                <p class="text-3xl font-bold" style="color: #ffffff;">$<span id="lifetimeSavings">0</span></p>
+                <p class="text-sm" style="color: #ffffff;">Total profit after payback</p>
+              </div>
+            </div>
+
+            <div class="mt-6 p-4 rounded-lg" style="background: #eaeddd;">
+              <p class="text-sm font-bold mb-2" style="color: #000000;">💡 What This Means:</p>
+              <p class="text-sm" style="color: #404952;">After <span id="paybackYears2">0</span> years, your system is paid off and you'll enjoy <strong>FREE electricity</strong> for the remaining <span id="freeYears">0</span>+ years of the system's life!</p>
+            </div>
+          </div>
+
+          <div id="placeholder" class="text-center py-12">
+            <svg class="w-24 h-24 mx-auto mb-4" style="color: #98c965;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+            </svg>
+            <p class="text-lg" style="color: #404952;">Enter your information to see your solar savings</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16" style="background: #eaeddd;">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 text-center" style="color: #000000;">How We Calculate</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg">
+          <h3 class="font-bold mb-2" style="color: #000000;">System Size</h3>
+          <p class="text-sm" style="color: #404952;">We calculate 1 kW per 100 sq ft of roof space with 400W panels</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg">
+          <h3 class="font-bold mb-2" style="color: #000000;">Installation Cost</h3>
+          <p class="text-sm" style="color: #404952;">Average $2.75/watt including equipment, labor, permits, and inverter</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg">
+          <h3 class="font-bold mb-2" style="color: #000000;">Energy Production</h3>
+          <p class="text-sm" style="color: #404952;">Based on your location's sun hours and typical system efficiency</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  document.getElementById('calculateBtn')?.addEventListener('click', () => {
+    const squareFeet = parseFloat(document.getElementById('squareFeet').value);
+    const monthlyBill = parseFloat(document.getElementById('monthlyBill').value);
+    const state = document.getElementById('state').value;
+
+    if (!squareFeet || !monthlyBill) {
+      alert('Please fill in all fields');
+      return;
+    }
+
+    // CALCULATIONS
+    // 1. System size: 1 kW per 100 sq ft (conservative)
+    const systemSizeKW = (squareFeet / 100);
+    const numPanels = Math.round(systemSizeKW / 0.4); // 400W panels
+    
+    // 2. Cost: $2.75 per watt (national average 2025)
+    const costPerWatt = 2.75;
+    const totalCost = Math.round(systemSizeKW * 1000 * costPerWatt);
+    
+    // 3. Federal tax credit: 30%
+    const taxCredit = Math.round(totalCost * 0.30);
+    const afterTaxCredit = totalCost - taxCredit;
+    
+    // 4. Annual production based on location
+    const sunHoursMap = {
+      'high': 5.5,    // High sun states
+      'medium': 4.5,  // Medium sun states
+      'low': 3.5      // Low sun states
+    };
+    const sunHours = sunHoursMap[state];
+    
+    // Annual kWh production
+    const annualkWh = Math.round(systemSizeKW * sunHours * 365);
+    
+    // 5. Annual savings (assuming $0.13/kWh average)
+    const electricityRate = monthlyBill / 1000; // Rough estimate
+    const annualSavings = Math.round(annualkWh * electricityRate);
+    
+    // 6. Payback period
+    const paybackYears = Math.round(afterTaxCredit / annualSavings * 10) / 10;
+    
+    // 7. 25-year savings (typical warranty period)
+    const lifetimeSavings = Math.round((annualSavings * 25) - afterTaxCredit);
+    const freeYears = Math.round(25 - paybackYears);
+
+    // UPDATE UI
+    document.getElementById('systemSize').textContent = systemSizeKW.toFixed(1);
+    document.getElementById('numPanels').textContent = numPanels;
+    document.getElementById('totalCost').textContent = totalCost.toLocaleString();
+    document.getElementById('afterTaxCredit').textContent = afterTaxCredit.toLocaleString();
+    document.getElementById('annualSavings').textContent = annualSavings.toLocaleString();
+    document.getElementById('paybackYears').textContent = paybackYears.toFixed(1);
+    document.getElementById('paybackYears2').textContent = paybackYears.toFixed(1);
+    document.getElementById('lifetimeSavings').textContent = lifetimeSavings.toLocaleString();
+    document.getElementById('freeYears').textContent = freeYears;
+
+    // Show results
+    document.getElementById('results').classList.remove('hidden');
+    document.getElementById('placeholder').classList.add('hidden');
+  });
+</script>
