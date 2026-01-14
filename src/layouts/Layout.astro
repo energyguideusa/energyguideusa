@@ -65,7 +65,7 @@ const { title } = Astro.props;
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Brand Column -->
                 <div>
-                    <h3 class="text-2xl font-bold mb-4" style="color: #98c965;">
+                    <h3 class="text-2xl font-bold mb-4" style="color: #98c965 !important;">
                         Energy Guide
                     </h3>
                     <p class="text-gray-300 mb-4">
@@ -83,7 +83,7 @@ const { title } = Astro.props;
 
                 <!-- Popular States -->
                 <div>
-                    <h4 class="font-bold text-lg mb-4">Popular States</h4>
+                    <h4 class="font-bold text-lg mb-4" style="color: #ffffff !important;">Popular States</h4>
                     <ul class="space-y-2">
                         <li><a href="/california/" class="text-gray-300 hover:text-white transition">California Solar & HVAC</a></li>
                         <li><a href="/texas/" class="text-gray-300 hover:text-white transition">Texas Solar & HVAC</a></li>
@@ -95,7 +95,7 @@ const { title } = Astro.props;
 
                 <!-- Services -->
                 <div>
-                    <h4 class="font-bold text-lg mb-4">Services</h4>
+                    <h4 class="font-bold text-lg mb-4" style="color: #ffffff !important;">Services</h4>
                     <ul class="space-y-2">
                         <li><a href="/#solar" class="text-gray-300 hover:text-white transition">Solar Panel Guides</a></li>
                         <li><a href="/#hvac" class="text-gray-300 hover:text-white transition">HVAC System Guides</a></li>
@@ -107,7 +107,7 @@ const { title } = Astro.props;
 
                 <!-- Company -->
                 <div>
-                    <h4 class="font-bold text-lg mb-4">Company</h4>
+                    <h4 class="font-bold text-lg mb-4" style="color: #ffffff !important;">Company</h4>
                     <ul class="space-y-2">
                         <li><a href="/about/" class="text-gray-300 hover:text-white transition">About Us</a></li>
                         <li><a href="/contact/" class="text-gray-300 hover:text-white transition">Contact</a></li>
@@ -181,13 +181,14 @@ const { title } = Astro.props;
             background: #7ab04d;
         }
 
-        /* Headings */
+        /* Headings - BLACK on light backgrounds by default */
         h1, h2, h3, h4, h5, h6 {
             font-weight: 700;
             letter-spacing: -0.02em;
             color: var(--black) !important;
         }
 
+        /* Article headings - BLACK */
         article h2 {
             font-size: 1.875rem;
             font-weight: 700;
@@ -209,26 +210,77 @@ const { title } = Astro.props;
             color: var(--grey) !important;
         }
 
-        /* Override all blue backgrounds to grey */
+        /* CRITICAL: Page titles on GREY backgrounds must be WHITE */
+        section[style*="#404952"] h1,
+        section[style*="background: #404952"] h1,
+        section.bg-\\[\\#404952\\] h1,
+        .bg-\\[\\#2562eb\\] h1,
+        [style*="background-color: #2562eb"] h1,
+        [style*="background: linear-gradient"][style*="404952"] h1,
+        [style*="background: linear-gradient"][style*="2562eb"] h1 {
+            color: white !important;
+        }
+
+        /* Page titles on blue sections = WHITE */
+        section[class*="bg-blue"] h1,
+        section.bg-blue-600 h1,
+        section.bg-blue-700 h1,
+        section.bg-blue-800 h1 {
+            color: white !important;
+        }
+
+        /* Footer headings - WHITE */
+        footer h3,
+        footer h4 {
+            color: white !important;
+        }
+
+        /* Override ALL blue backgrounds to GREY */
         .bg-blue-600,
         .bg-blue-700,
         .bg-blue-800,
         .bg-blue-900,
-        [class*="bg-blue"] {
+        [class*="bg-blue"],
+        section[class*="bg-blue"],
+        .py-16.bg-\\[\\#2562eb\\],
+        [style*="background-color: #2562eb"],
+        [style*="background: #2562eb"] {
             background: var(--grey) !important;
         }
 
-        /* Override all blue text to green */
+        /* Override blue gradients to GREY */
+        [style*="background: linear-gradient"][style*="blue-600"],
+        [style*="background: linear-gradient"][style*="blue-700"],
+        [style*="background: linear-gradient"][style*="2562eb"],
+        [style*="background: linear-gradient"][style*="2563eb"] {
+            background: var(--grey) !important;
+        }
+
+        /* ALL text on GREY backgrounds = WHITE */
+        section[style*="#404952"] p,
+        section[style*="background: #404952"] p,
+        section[style*="#404952"] span,
+        section.bg-\\[\\#404952\\] p,
+        .bg-\\[\\#2562eb\\] p,
+        [style*="background-color: #2562eb"] p,
+        section[class*="bg-blue"] p {
+            color: white !important;
+        }
+
+        /* Override blue text to GREEN (for links/accents only) */
         .text-blue-600,
         .text-blue-700,
-        .text-blue-800,
-        .text-blue-100,
-        .text-blue-200,
-        [class*="text-blue"] {
+        .text-blue-800 {
             color: var(--green) !important;
         }
 
-        /* Override blue borders to green */
+        /* Blue text on light backgrounds (like stats) = keep as green */
+        .text-blue-100,
+        .text-blue-200 {
+            color: rgba(255, 255, 255, 0.8) !important;
+        }
+
+        /* Override blue borders to GREEN */
         .border-blue-600,
         .border-blue-500,
         .border-blue-400,
@@ -237,40 +289,31 @@ const { title } = Astro.props;
             border-color: var(--green) !important;
         }
 
-        /* Fix hover states */
-        a:hover {
-            color: var(--green) !important;
-        }
-
-        /* Override gradient backgrounds */
-        [style*="background: linear-gradient"][style*="blue"] {
-            background: var(--grey) !important;
-        }
-
-        [style*="background-color: #2562eb"],
-        [style*="background: #2562eb"] {
-            background: var(--grey) !important;
-        }
-
-        /* Fix section headers on grey backgrounds */
-        section[style*="#2562eb"] h1,
-        section[style*="#2562eb"] h2,
-        section[style*="#2562eb"] h3,
-        section[class*="bg-blue"] h1,
-        section[class*="bg-blue"] h2,
-        section[class*="bg-blue"] h3 {
+        /* Links on dark backgrounds = WHITE, hover = GREEN */
+        section[style*="#404952"] a,
+        section.bg-\\[\\#404952\\] a,
+        .bg-\\[\\#2562eb\\] a {
             color: white !important;
         }
 
-        /* Fix breadcrumbs */
-        .bg-gray-100 a {
+        section[style*="#404952"] a:hover,
+        section.bg-\\[\\#404952\\] a:hover,
+        .bg-\\[\\#2562eb\\] a:hover {
             color: var(--green) !important;
         }
 
-        /* Fix buttons */
+        /* Breadcrumbs - GREEN links */
+        .bg-gray-100 a,
+        nav a {
+            color: var(--green) !important;
+        }
+
+        /* Buttons - GREEN background, WHITE text */
         button,
-        [type="submit"] {
+        [type="submit"],
+        .btn-primary {
             background: var(--green) !important;
+            color: white !important;
             border-color: var(--green) !important;
         }
 
@@ -279,34 +322,35 @@ const { title } = Astro.props;
             opacity: 0.9;
         }
 
-        /* Fix city/state navigation cards */
-        .bg-white.border-2.border-blue-600,
-        .border-2.border-blue-600 {
-            border-color: var(--green) !important;
+        /* Cards on GREY backgrounds need WHITE text */
+        section[style*="#404952"] .bg-white h3,
+        section[style*="#404952"] .bg-white p {
+            color: var(--black) !important;
         }
 
-        /* Fix service cards and backgrounds */
+        /* Service/Resource cards with grey backgrounds = WHITE text */
+        .bg-gray-50.border-2 p {
+            color: white !important;
+        }
+
+        /* Fix cards that should have light green background */
         .bg-gray-50 {
             background: var(--light-green) !important;
         }
 
-        /* Fix any inline blue styles */
-        [style*="color: #2563eb"],
-        [style*="color: rgb(37, 99, 235)"] {
-            color: var(--green) !important;
+        /* Cards on light green = BLACK text */
+        [style*="background: #eaeddd"] h3,
+        [style*="background: #eaeddd"] p {
+            color: var(--black) !important;
         }
 
-        /* Fix tables */
-        table {
-            margin: 1.5rem 0;
-        }
-
+        /* Tables */
         table th {
             background: var(--light-green) !important;
             color: var(--black) !important;
         }
 
-        /* Fix prose styles (for article content) */
+        /* Prose (article content) */
         .prose a {
             color: var(--green) !important;
         }
@@ -315,24 +359,7 @@ const { title } = Astro.props;
             color: var(--black) !important;
         }
 
-        /* Buttons */
-        .btn-primary {
-            background: var(--green) !important;
-            color: white !important;
-            padding: 0.875rem 2rem;
-            border-radius: 0.5rem;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(152, 201, 101, 0.2);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(152, 201, 101, 0.3);
-            opacity: 0.9;
-        }
-
-        /* Fix hover classes */
+        /* Hover states */
         .hover\:bg-blue-600:hover,
         .hover\:bg-blue-700:hover {
             background: var(--green) !important;
@@ -347,7 +374,7 @@ const { title } = Astro.props;
             border-color: var(--green) !important;
         }
 
-        /* Fix form inputs */
+        /* Form inputs - GREEN border */
         input[type="text"],
         input[type="email"],
         input[type="tel"],
@@ -366,21 +393,22 @@ const { title } = Astro.props;
             box-shadow: 0 0 0 3px rgba(152, 201, 101, 0.1);
         }
 
-        /* Fix cards with white background and blue border */
-        .bg-white.border-2 {
+        /* Cards with borders */
+        .bg-white.border-2,
+        .border-2.border-blue-600 {
             border-color: var(--green) !important;
         }
 
-        /* Fix group hover effects */
+        /* Group hover effects */
         .group:hover .text-blue-600,
         .group:hover .text-blue-700 {
             color: var(--green) !important;
         }
 
-        /* Fix section backgrounds that are blue */
-        section[class*="bg-\\[\\#2562eb\\]"],
-        .py-16.bg-\\[\\#2562eb\\] {
-            background: var(--grey) !important;
+        /* Fix any remaining inline blue */
+        [style*="color: #2563eb"],
+        [style*="color: rgb(37, 99, 235)"] {
+            color: var(--green) !important;
         }
     </style>
 </body>
