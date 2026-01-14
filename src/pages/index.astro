@@ -2,137 +2,207 @@
 import Layout from '../layouts/Layout.astro';
 import LeadForm from '../components/LeadForm.astro';
 ---
-<Layout title="Energy Guide USA - Your State-by-State Guide to Solar & HVAC">
-  <!-- Hero Section -->
-  <section class="bg-[#2562eb] text-white py-20">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h1 class="text-5xl font-bold mb-6">
-        Your State-by-State Guide to Solar & HVAC
-      </h1>
-      <p class="text-xl mb-8 text-blue-100">
-        Compare costs, find incentives, and get free quotes from certified installers in your area
-      </p>
-      <a href="#get-quotes" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-50 inline-block">
-        Get Free Quotes Now
-      </a>
+
+<Layout title="Energy Guide - Solar Panel & HVAC Guides for Every State">
+  <!-- HERO SECTION -->
+  <section class="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 text-white overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+    </div>
+    
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+      <div class="text-center">
+        <!-- Badge -->
+        <div class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-6">
+          <span class="text-sm font-medium">🌟 Trusted by thousands of homeowners nationwide</span>
+        </div>
+        
+        <!-- Main Heading -->
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+          Find The Best Solar & HVAC<br/>
+          <span class="bg-gradient-to-r from-green-400 to-blue-300 bg-clip-text text-transparent">
+            Solutions For Your Home
+          </span>
+        </h1>
+        
+        <!-- Subheading -->
+        <p class="text-xl md:text-2xl text-blue-100 mb-10 max-w-3xl mx-auto">
+          Comprehensive guides, cost breakdowns, and vetted contractors in all 50 states. Save thousands on your energy bills.
+        </p>
+        
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <a href="#states" class="bg-white text-blue-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+            Explore Your State
+          </a>
+          <a href="#get-quotes" class="bg-green-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 transition shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
+            Get Free Quotes
+          </a>
+        </div>
+        
+        <!-- Trust Indicators -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+            <div class="text-3xl font-bold mb-1">522</div>
+            <div class="text-sm text-blue-200">Comprehensive Guides</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+            <div class="text-3xl font-bold mb-1">50</div>
+            <div class="text-sm text-blue-200">States Covered</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+            <div class="text-3xl font-bold mb-1">100%</div>
+            <div class="text-sm text-blue-200">Free Information</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+            <div class="text-3xl font-bold mb-1">2025</div>
+            <div class="text-sm text-blue-200">Up-to-Date Data</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Wave Divider -->
+    <div class="absolute bottom-0 left-0 right-0">
+      <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full">
+        <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
+      </svg>
     </div>
   </section>
 
-  <!-- Benefits Section -->
-  <section class="py-16 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-12">Why Use Energy Guide USA?</h2>
-      
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <div class="text-4xl mb-4">⚡</div>
-          <h3 class="text-xl font-bold mb-3">Save Money</h3>
-          <p class="text-gray-600">
-            Compare quotes from multiple installers and save an average of $3,000-6,000 on your installation.
+  <!-- SERVICES SECTION -->
+  <section id="services" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">What We Cover</h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Everything you need to know about solar panels and HVAC systems
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <!-- Solar Card -->
+        <div class="group relative bg-gradient-to-br from-orange-50 to-yellow-50 rounded-2xl p-8 border-2 border-orange-200 hover:border-orange-400 transition hover:shadow-2xl">
+          <div class="text-6xl mb-4">☀️</div>
+          <h3 class="text-3xl font-bold mb-4 text-gray-900">Solar Panels</h3>
+          <p class="text-gray-700 mb-6">
+            Complete guides on solar panel costs, installation, rebates, ROI, and finding the best installers in your area.
           </p>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start">
+              <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>State-specific cost breakdowns</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>Federal & state incentives</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>ROI & payback calculations</span>
+            </li>
+          </ul>
+          <a href="/california/best-solar-companies/" class="inline-flex items-center text-orange-600 font-semibold group-hover:text-orange-700">
+            Learn More 
+            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+            </svg>
+          </a>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <div class="text-4xl mb-4">📍</div>
-          <h3 class="text-xl font-bold mb-3">Local Expertise</h3>
-          <p class="text-gray-600">
-            Get recommendations specific to your state's climate, incentives, and energy costs.
+
+        <!-- HVAC Card -->
+        <div class="group relative bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 border-2 border-blue-200 hover:border-blue-400 transition hover:shadow-2xl">
+          <div class="text-6xl mb-4">❄️</div>
+          <h3 class="text-3xl font-bold mb-4 text-gray-900">HVAC Systems</h3>
+          <p class="text-gray-700 mb-6">
+            Expert guidance on heating and cooling systems, energy efficiency, costs, and choosing the right contractor.
           </p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <div class="text-4xl mb-4">✓</div>
-          <h3 class="text-xl font-bold mb-3">Certified Installers</h3>
-          <p class="text-gray-600">
-            All installers are pre-screened, licensed, and certified for quality work.
-          </p>
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-start">
+              <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>System sizing & efficiency ratings</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>Climate-specific recommendations</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>Maintenance & repair guides</span>
+            </li>
+          </ul>
+          <a href="/california/best-hvac-companies/" class="inline-flex items-center text-blue-600 font-semibold group-hover:text-blue-700">
+            Learn More 
+            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- State Selector -->
-  <section class="py-16">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-12">Select Your State</h2>
-      
+  <!-- STATES SECTION -->
+  <section id="states" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">Select Your State</h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Get detailed solar and HVAC information specific to your state
+        </p>
+      </div>
+
       <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
-        <a href="/alabama" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Alabama</a>
-        <a href="/alaska" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Alaska</a>
-        <a href="/arizona" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Arizona</a>
-        <a href="/arkansas" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Arkansas</a>
-        <a href="/california" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">California</a>
-        <a href="/colorado" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Colorado</a>
-        <a href="/connecticut" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Connecticut</a>
-        <a href="/delaware" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Delaware</a>
-        <a href="/florida" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Florida</a>
-        <a href="/georgia" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Georgia</a>
-        <a href="/hawaii" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Hawaii</a>
-        <a href="/idaho" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Idaho</a>
-        <a href="/illinois" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Illinois</a>
-        <a href="/indiana" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Indiana</a>
-        <a href="/iowa" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Iowa</a>
-        <a href="/kansas" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Kansas</a>
-        <a href="/kentucky" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Kentucky</a>
-        <a href="/louisiana" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Louisiana</a>
-        <a href="/maine" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Maine</a>
-        <a href="/maryland" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Maryland</a>
-        <a href="/massachusetts" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Massachusetts</a>
-        <a href="/michigan" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Michigan</a>
-        <a href="/minnesota" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Minnesota</a>
-        <a href="/mississippi" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Mississippi</a>
-        <a href="/missouri" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Missouri</a>
-        <a href="/montana" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Montana</a>
-        <a href="/nebraska" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Nebraska</a>
-        <a href="/nevada" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Nevada</a>
-        <a href="/new-hampshire" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">New Hampshire</a>
-        <a href="/new-jersey" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">New Jersey</a>
-        <a href="/new-mexico" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">New Mexico</a>
-        <a href="/new-york" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">New York</a>
-        <a href="/north-carolina" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">North Carolina</a>
-        <a href="/north-dakota" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">North Dakota</a>
-        <a href="/ohio" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Ohio</a>
-        <a href="/oklahoma" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Oklahoma</a>
-        <a href="/oregon" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Oregon</a>
-        <a href="/pennsylvania" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Pennsylvania</a>
-        <a href="/rhode-island" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Rhode Island</a>
-        <a href="/south-carolina" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">South Carolina</a>
-        <a href="/south-dakota" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">South Dakota</a>
-        <a href="/tennessee" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Tennessee</a>
-        <a href="/texas" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Texas</a>
-        <a href="/utah" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Utah</a>
-        <a href="/vermont" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Vermont</a>
-        <a href="/virginia" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Virginia</a>
-        <a href="/washington" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Washington</a>
-        <a href="/west-virginia" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">West Virginia</a>
-        <a href="/wisconsin" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Wisconsin</a>
-        <a href="/wyoming" class="bg-blue-600 text-white p-3 rounded-lg text-center text-sm hover:bg-blue-700 transition">Wyoming</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Trust Signals -->
-  <section class="py-12 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="grid md:grid-cols-3 gap-8 text-center">
-        <div>
-          <div class="text-3xl font-bold text-blue-600 mb-2">50,000+</div>
-          <div class="text-gray-600">Homeowners Helped</div>
-        </div>
-        <div>
-          <div class="text-3xl font-bold text-blue-600 mb-2">$25M+</div>
-          <div class="text-gray-600">Saved on Energy Costs</div>
-        </div>
-        <div>
-          <div class="text-3xl font-bold text-blue-600 mb-2">1,000+</div>
-          <div class="text-gray-600">Certified Installers</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Lead Form -->
-  <section id="get-quotes" class="py-16 bg-[#2562eb]">
-    <div class="max-w-2xl mx-auto px-4">
-      <LeadForm />
-    </div>
-  </section>
-</Layout>
+        <a href="/alabama/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Alabama</span>
+        </a>
+        <a href="/alaska/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Alaska</span>
+        </a>
+        <a href="/arizona/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Arizona</span>
+        </a>
+        <a href="/arkansas/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Arkansas</span>
+        </a>
+        <a href="/california/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">California</span>
+        </a>
+        <a href="/colorado/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Colorado</span>
+        </a>
+        <a href="/connecticut/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Connecticut</span>
+        </a>
+        <a href="/delaware/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Delaware</span>
+        </a>
+        <a href="/florida/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Florida</span>
+        </a>
+        <a href="/georgia/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Georgia</span>
+        </a>
+        <a href="/hawaii/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Hawaii</span>
+        </a>
+        <a href="/idaho/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Idaho</span>
+        </a>
+        <a href="/illinois/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Illinois</span>
+        </a>
+        <a href="/indiana/" class="bg-
