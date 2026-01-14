@@ -24,11 +24,14 @@ const { title } = Astro.props;
                 </a>
                 
                 <!-- Desktop Navigation -->
-              <div class="px-2 pt-2 pb-3 space-y-1">
-    <a href="/" class="block px-3 py-2 rounded-md" style="color: #404952;">Home</a>
-    <a href="/#states" class="block px-3 py-2 rounded-md" style="color: #404952;">States</a>
-    <a href="/solar-calculator/" class="block px-3 py-2 rounded-md" style="color: #404952;">Calculator</a>
-    <a href="#get-quotes" class="block px-3 py-2 rounded-md text-center" style="background: #98c965; color: #ffffff !important;">Get Free Quotes</a>                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="font-medium transition" style="color: #404952;" onmouseover="this.style.color='#98c965'" onmouseout="this.style.color='#404952'">Home</a>
+                    <a href="/#states" class="font-medium transition" style="color: #404952;" onmouseover="this.style.color='#98c965'" onmouseout="this.style.color='#404952'">States</a>
+                    <a href="/solar-calculator/" class="font-medium transition" style="color: #404952;" onmouseover="this.style.color='#98c965'" onmouseout="this.style.color='#404952'">Calculator</a>
+                    <a href="#get-quotes" class="px-6 py-2.5 rounded-lg font-semibold shadow-md transition hover:opacity-90" style="background: #98c965; color: #ffffff !important;">
+                        Get Free Quotes
+                    </a>
+                </div>
 
                 <!-- Mobile Menu Button -->
                 <button class="md:hidden" style="color: #404952;" id="mobile-menu-button">
@@ -43,7 +46,7 @@ const { title } = Astro.props;
                 <div class="px-2 pt-2 pb-3 space-y-1">
                     <a href="/" class="block px-3 py-2 rounded-md" style="color: #404952;">Home</a>
                     <a href="/#states" class="block px-3 py-2 rounded-md" style="color: #404952;">States</a>
-                    <a href="/#services" class="block px-3 py-2 rounded-md" style="color: #404952;">Services</a>
+                    <a href="/solar-calculator/" class="block px-3 py-2 rounded-md" style="color: #404952;">Calculator</a>
                     <a href="#get-quotes" class="block px-3 py-2 rounded-md text-center" style="background: #98c965; color: #ffffff !important;">Get Free Quotes</a>
                 </div>
             </div>
@@ -97,7 +100,7 @@ const { title } = Astro.props;
                         <li><a href="/#solar" class="text-gray-300 hover:text-white transition">Solar Panel Guides</a></li>
                         <li><a href="/#hvac" class="text-gray-300 hover:text-white transition">HVAC System Guides</a></li>
                         <li><a href="/#incentives" class="text-gray-300 hover:text-white transition">Incentives & Rebates</a></li>
-                       <li><a href="/solar-calculator/" class="text-gray-300 hover:text-white transition">Solar Calculator</a></li>
+                        <li><a href="/solar-calculator/" class="text-gray-300 hover:text-white transition">Solar Calculator</a></li>
                         <li><a href="/#companies" class="text-gray-300 hover:text-white transition">Find Companies</a></li>
                     </ul>
                 </div>
