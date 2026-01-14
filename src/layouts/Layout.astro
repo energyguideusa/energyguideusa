@@ -44,7 +44,7 @@ const { title } = Astro.props;
             <!-- Mobile Navigation -->
             <div class="md:hidden hidden" id="mobile-menu">
                 <div class="px-2 pt-2 pb-3 space-y-1">
-                    <a href="/" class="block px-3 py-2 rounded-md" style="color: #404952; hover:background: #eaeddd;">Home</a>
+                    <a href="/" class="block px-3 py-2 rounded-md" style="color: #404952;">Home</a>
                     <a href="/#states" class="block px-3 py-2 rounded-md" style="color: #404952;">States</a>
                     <a href="/#services" class="block px-3 py-2 rounded-md" style="color: #404952;">Services</a>
                     <a href="#get-quotes" class="block px-3 py-2 text-white rounded-md text-center" style="background: #98c965;">Get Free Quotes</a>
@@ -163,6 +163,7 @@ const { title } = Astro.props;
             scroll-behavior: smooth;
         }
 
+        /* Custom scrollbar */
         ::-webkit-scrollbar {
             width: 10px;
         }
@@ -180,9 +181,11 @@ const { title } = Astro.props;
             background: #7ab04d;
         }
 
+        /* Headings */
         h1, h2, h3, h4, h5, h6 {
             font-weight: 700;
             letter-spacing: -0.02em;
+            color: var(--black) !important;
         }
 
         article h2 {
@@ -190,7 +193,7 @@ const { title } = Astro.props;
             font-weight: 700;
             margin-top: 2.5rem;
             margin-bottom: 1rem;
-            color: var(--black);
+            color: var(--black) !important;
         }
 
         article h3 {
@@ -198,17 +201,124 @@ const { title } = Astro.props;
             font-weight: 600;
             margin-top: 2rem;
             margin-bottom: 0.75rem;
-            color: var(--black);
+            color: var(--black) !important;
         }
 
         article p {
             line-height: 1.75;
-            color: var(--grey);
+            color: var(--grey) !important;
         }
 
+        /* Override all blue backgrounds to grey */
+        .bg-blue-600,
+        .bg-blue-700,
+        .bg-blue-800,
+        .bg-blue-900,
+        [class*="bg-blue"] {
+            background: var(--grey) !important;
+        }
+
+        /* Override all blue text to green */
+        .text-blue-600,
+        .text-blue-700,
+        .text-blue-800,
+        .text-blue-100,
+        .text-blue-200,
+        [class*="text-blue"] {
+            color: var(--green) !important;
+        }
+
+        /* Override blue borders to green */
+        .border-blue-600,
+        .border-blue-500,
+        .border-blue-400,
+        .border-blue-200,
+        [class*="border-blue"] {
+            border-color: var(--green) !important;
+        }
+
+        /* Fix hover states */
+        a:hover {
+            color: var(--green) !important;
+        }
+
+        /* Override gradient backgrounds */
+        [style*="background: linear-gradient"][style*="blue"] {
+            background: var(--grey) !important;
+        }
+
+        [style*="background-color: #2562eb"],
+        [style*="background: #2562eb"] {
+            background: var(--grey) !important;
+        }
+
+        /* Fix section headers on grey backgrounds */
+        section[style*="#2562eb"] h1,
+        section[style*="#2562eb"] h2,
+        section[style*="#2562eb"] h3,
+        section[class*="bg-blue"] h1,
+        section[class*="bg-blue"] h2,
+        section[class*="bg-blue"] h3 {
+            color: white !important;
+        }
+
+        /* Fix breadcrumbs */
+        .bg-gray-100 a {
+            color: var(--green) !important;
+        }
+
+        /* Fix buttons */
+        button,
+        [type="submit"] {
+            background: var(--green) !important;
+            border-color: var(--green) !important;
+        }
+
+        button:hover,
+        [type="submit"]:hover {
+            opacity: 0.9;
+        }
+
+        /* Fix city/state navigation cards */
+        .bg-white.border-2.border-blue-600,
+        .border-2.border-blue-600 {
+            border-color: var(--green) !important;
+        }
+
+        /* Fix service cards and backgrounds */
+        .bg-gray-50 {
+            background: var(--light-green) !important;
+        }
+
+        /* Fix any inline blue styles */
+        [style*="color: #2563eb"],
+        [style*="color: rgb(37, 99, 235)"] {
+            color: var(--green) !important;
+        }
+
+        /* Fix tables */
+        table {
+            margin: 1.5rem 0;
+        }
+
+        table th {
+            background: var(--light-green) !important;
+            color: var(--black) !important;
+        }
+
+        /* Fix prose styles (for article content) */
+        .prose a {
+            color: var(--green) !important;
+        }
+
+        .prose strong {
+            color: var(--black) !important;
+        }
+
+        /* Buttons */
         .btn-primary {
-            background: var(--green);
-            color: white;
+            background: var(--green) !important;
+            color: white !important;
             padding: 0.875rem 2rem;
             border-radius: 0.5rem;
             font-weight: 600;
@@ -220,6 +330,57 @@ const { title } = Astro.props;
             transform: translateY(-2px);
             box-shadow: 0 6px 12px rgba(152, 201, 101, 0.3);
             opacity: 0.9;
+        }
+
+        /* Fix hover classes */
+        .hover\:bg-blue-600:hover,
+        .hover\:bg-blue-700:hover {
+            background: var(--green) !important;
+        }
+
+        .hover\:text-blue-600:hover,
+        .hover\:text-blue-700:hover {
+            color: var(--green) !important;
+        }
+
+        .hover\:border-blue-500:hover {
+            border-color: var(--green) !important;
+        }
+
+        /* Fix form inputs */
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea,
+        select {
+            border-color: var(--green) !important;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="tel"]:focus,
+        textarea:focus,
+        select:focus {
+            border-color: var(--green) !important;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(152, 201, 101, 0.1);
+        }
+
+        /* Fix cards with white background and blue border */
+        .bg-white.border-2 {
+            border-color: var(--green) !important;
+        }
+
+        /* Fix group hover effects */
+        .group:hover .text-blue-600,
+        .group:hover .text-blue-700 {
+            color: var(--green) !important;
+        }
+
+        /* Fix section backgrounds that are blue */
+        section[class*="bg-\\[\\#2562eb\\]"],
+        .py-16.bg-\\[\\#2562eb\\] {
+            background: var(--grey) !important;
         }
     </style>
 </body>
