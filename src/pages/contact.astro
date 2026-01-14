@@ -1,0 +1,77 @@
+@'
+---
+import Layout from '../layouts/Layout.astro';
+import LeadForm from '../components/LeadForm.astro';
+---
+
+<Layout title="Contact Us - Energy Guide">
+  <section class="py-20" style="background: #98c965;">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6" style="color: #ffffff;">Contact Energy Guide</h1>
+      <p class="text-xl" style="color: #ffffff;">Get in touch with us for solar and HVAC information</p>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <h2 class="text-3xl font-bold mb-6" style="color: #000000;">Get Free Quotes</h2>
+          <p class="text-lg mb-6" style="color: #404952;">
+            Fill out the form and we'll connect you with qualified solar and HVAC professionals in your area.
+          </p>
+          
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <svg class="w-6 h-6 mr-3 flex-shrink-0" style="color: #98c965;" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+              </svg>
+              <div>
+                <h3 class="font-bold mb-1" style="color: #000000;">Email</h3>
+                <p style="color: #404952;">info@energyguideusa.com</p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <svg class="w-6 h-6 mr-3 flex-shrink-0" style="color: #98c965;" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <h3 class="font-bold mb-1" style="color: #000000;">Coverage</h3>
+                <p style="color: #404952;">All 50 United States</p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <svg class="w-6 h-6 mr-3 flex-shrink-0" style="color: #98c965;" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <h3 class="font-bold mb-1" style="color: #000000;">Response Time</h3>
+                <p style="color: #404952;">Within 24 hours</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white border-2 rounded-xl p-6" style="border-color: #98c965;">
+          <LeadForm />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16" style="background: #eaeddd;">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4" style="color: #000000;">Browse Our Guides</h2>
+      <p class="text-xl mb-8" style="color: #404952;">
+        Find detailed solar and HVAC information for your state
+      </p>
+      <a href="/#states" class="inline-block px-8 py-4 rounded-lg font-bold text-lg transition shadow-xl hover:shadow-2xl" style="background: #98c965; color: #ffffff;">
+        View All States
+      </a>
+    </div>
+  </section>
+</Layout>
+'@ | Out-File -FilePath "src/pages/contact.astro" -Encoding UTF8
