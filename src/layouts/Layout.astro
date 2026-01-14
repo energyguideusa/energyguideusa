@@ -18,7 +18,7 @@ const { title } = Astro.props;
             <div class="flex justify-between items-center h-16">
                 <!-- Logo/Brand -->
                 <a href="/" class="flex items-center">
-                    <span class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-green-500 bg-clip-text text-transparent">
+                    <span class="text-2xl font-bold" style="color: #0f4c81;">
                         Energy Guide
                     </span>
                 </a>
@@ -28,7 +28,7 @@ const { title } = Astro.props;
                     <a href="/" class="text-gray-700 hover:text-blue-600 transition font-medium">Home</a>
                     <a href="/#states" class="text-gray-700 hover:text-blue-600 transition font-medium">States</a>
                     <a href="/#services" class="text-gray-700 hover:text-blue-600 transition font-medium">Services</a>
-                    <a href="#get-quotes" class="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2 rounded-full hover:from-blue-700 hover:to-blue-800 transition font-medium shadow-md">
+                    <a href="#get-quotes" class="text-white px-6 py-2.5 rounded-lg font-semibold shadow-md transition hover:shadow-lg" style="background: linear-gradient(135deg, #00a651 0%, #008a43 100%);">
                         Get Free Quotes
                     </a>
                 </div>
@@ -47,7 +47,7 @@ const { title } = Astro.props;
                     <a href="/" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Home</a>
                     <a href="/#states" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md">States</a>
                     <a href="/#services" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Services</a>
-                    <a href="#get-quotes" class="block px-3 py-2 text-white bg-blue-600 rounded-md text-center">Get Free Quotes</a>
+                    <a href="#get-quotes" class="block px-3 py-2 text-white rounded-md text-center" style="background: #00a651;">Get Free Quotes</a>
                 </div>
             </div>
         </nav>
@@ -65,7 +65,7 @@ const { title } = Astro.props;
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Brand Column -->
                 <div>
-                    <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent mb-4">
+                    <h3 class="text-2xl font-bold mb-4" style="color: #00a651;">
                         Energy Guide
                     </h3>
                     <p class="text-gray-400 mb-4">
@@ -144,12 +144,27 @@ const { title } = Astro.props;
 
     <!-- Global Styles -->
     <style is:global>
-        /* Smooth scrolling */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+        :root {
+            --primary: #0f4c81;
+            --primary-dark: #0a3a5f;
+            --accent: #00a651;
+            --accent-dark: #008a43;
+            --text-dark: #1a1a1a;
+            --text-gray: #4a5568;
+            --bg-light: #f7fafc;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            color: var(--text-dark);
+        }
+
         html {
             scroll-behavior: smooth;
         }
 
-        /* Custom scrollbar */
         ::-webkit-scrollbar {
             width: 10px;
         }
@@ -159,29 +174,69 @@ const { title } = Astro.props;
         }
 
         ::-webkit-scrollbar-thumb {
-            background: #2563eb;
+            background: var(--primary);
             border-radius: 5px;
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: #1d4ed8;
+            background: var(--primary-dark);
         }
 
-        /* Headings global styles */
-        :global(article h2) {
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            color: var(--text-dark);
+            letter-spacing: -0.02em;
+        }
+
+        article h2 {
             font-size: 1.875rem;
-            font-weight: bold;
-            margin-top: 2rem;
+            font-weight: 700;
+            margin-top: 2.5rem;
             margin-bottom: 1rem;
-            color: #1f2937;
+            color: var(--text-dark);
         }
 
-        :global(article h3) {
+        article h3 {
             font-size: 1.5rem;
             font-weight: 600;
-            margin-top: 1.5rem;
+            margin-top: 2rem;
             margin-bottom: 0.75rem;
-            color: #374151;
+            color: var(--text-dark);
+        }
+
+        article p {
+            line-height: 1.75;
+            color: var(--text-gray);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 0.875rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(15, 76, 129, 0.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(15, 76, 129, 0.3);
+        }
+
+        .btn-accent {
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+            color: white;
+            padding: 0.875rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 166, 81, 0.2);
+        }
+
+        .btn-accent:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 166, 81, 0.3);
         }
     </style>
 </body>
