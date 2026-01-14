@@ -11,30 +11,30 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="description" content="Professional solar panel and HVAC guides for homeowners across America">
 </head>
-<body class="flex flex-col min-h-screen">
+<body class="flex flex-col min-h-screen" style="background: #ffffff;">
     <!-- HEADER -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <!-- Logo/Brand -->
                 <a href="/" class="flex items-center">
-                    <span class="text-2xl font-bold" style="color: #0f4c81;">
+                    <span class="text-2xl font-bold" style="color: #000000;">
                         Energy Guide
                     </span>
                 </a>
                 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="/" class="text-gray-700 hover:text-blue-600 transition font-medium">Home</a>
-                    <a href="/#states" class="text-gray-700 hover:text-blue-600 transition font-medium">States</a>
-                    <a href="/#services" class="text-gray-700 hover:text-blue-600 transition font-medium">Services</a>
-                    <a href="#get-quotes" class="text-white px-6 py-2.5 rounded-lg font-semibold shadow-md transition hover:shadow-lg" style="background: linear-gradient(135deg, #00a651 0%, #008a43 100%);">
+                    <a href="/" class="font-medium transition" style="color: #404952;" onmouseover="this.style.color='#98c965'" onmouseout="this.style.color='#404952'">Home</a>
+                    <a href="/#states" class="font-medium transition" style="color: #404952;" onmouseover="this.style.color='#98c965'" onmouseout="this.style.color='#404952'">States</a>
+                    <a href="/#services" class="font-medium transition" style="color: #404952;" onmouseover="this.style.color='#98c965'" onmouseout="this.style.color='#404952'">Services</a>
+                    <a href="#get-quotes" class="text-white px-6 py-2.5 rounded-lg font-semibold shadow-md transition hover:opacity-90" style="background: #98c965;">
                         Get Free Quotes
                     </a>
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button class="md:hidden text-gray-700" id="mobile-menu-button">
+                <button class="md:hidden" style="color: #404952;" id="mobile-menu-button">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
@@ -44,10 +44,10 @@ const { title } = Astro.props;
             <!-- Mobile Navigation -->
             <div class="md:hidden hidden" id="mobile-menu">
                 <div class="px-2 pt-2 pb-3 space-y-1">
-                    <a href="/" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Home</a>
-                    <a href="/#states" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md">States</a>
-                    <a href="/#services" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Services</a>
-                    <a href="#get-quotes" class="block px-3 py-2 text-white rounded-md text-center" style="background: #00a651;">Get Free Quotes</a>
+                    <a href="/" class="block px-3 py-2 rounded-md" style="color: #404952; hover:background: #eaeddd;">Home</a>
+                    <a href="/#states" class="block px-3 py-2 rounded-md" style="color: #404952;">States</a>
+                    <a href="/#services" class="block px-3 py-2 rounded-md" style="color: #404952;">Services</a>
+                    <a href="#get-quotes" class="block px-3 py-2 text-white rounded-md text-center" style="background: #98c965;">Get Free Quotes</a>
                 </div>
             </div>
         </nav>
@@ -59,23 +59,23 @@ const { title } = Astro.props;
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+    <footer class="text-white" style="background: #404952;">
         <!-- Main Footer Content -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Brand Column -->
                 <div>
-                    <h3 class="text-2xl font-bold mb-4" style="color: #00a651;">
+                    <h3 class="text-2xl font-bold mb-4" style="color: #98c965;">
                         Energy Guide
                     </h3>
-                    <p class="text-gray-400 mb-4">
+                    <p class="text-gray-300 mb-4">
                         Your trusted source for solar panel and HVAC information across America.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition">
+                        <a href="#" class="text-gray-300 hover:text-white transition">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                         </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition">
+                        <a href="#" class="text-gray-300 hover:text-white transition">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
                         </a>
                     </div>
@@ -85,11 +85,11 @@ const { title } = Astro.props;
                 <div>
                     <h4 class="font-bold text-lg mb-4">Popular States</h4>
                     <ul class="space-y-2">
-                        <li><a href="/california/" class="text-gray-400 hover:text-white transition">California Solar & HVAC</a></li>
-                        <li><a href="/texas/" class="text-gray-400 hover:text-white transition">Texas Solar & HVAC</a></li>
-                        <li><a href="/florida/" class="text-gray-400 hover:text-white transition">Florida Solar & HVAC</a></li>
-                        <li><a href="/new-york/" class="text-gray-400 hover:text-white transition">New York Solar & HVAC</a></li>
-                        <li><a href="/arizona/" class="text-gray-400 hover:text-white transition">Arizona Solar & HVAC</a></li>
+                        <li><a href="/california/" class="text-gray-300 hover:text-white transition">California Solar & HVAC</a></li>
+                        <li><a href="/texas/" class="text-gray-300 hover:text-white transition">Texas Solar & HVAC</a></li>
+                        <li><a href="/florida/" class="text-gray-300 hover:text-white transition">Florida Solar & HVAC</a></li>
+                        <li><a href="/new-york/" class="text-gray-300 hover:text-white transition">New York Solar & HVAC</a></li>
+                        <li><a href="/arizona/" class="text-gray-300 hover:text-white transition">Arizona Solar & HVAC</a></li>
                     </ul>
                 </div>
 
@@ -97,11 +97,11 @@ const { title } = Astro.props;
                 <div>
                     <h4 class="font-bold text-lg mb-4">Services</h4>
                     <ul class="space-y-2">
-                        <li><a href="/#solar" class="text-gray-400 hover:text-white transition">Solar Panel Guides</a></li>
-                        <li><a href="/#hvac" class="text-gray-400 hover:text-white transition">HVAC System Guides</a></li>
-                        <li><a href="/#incentives" class="text-gray-400 hover:text-white transition">Incentives & Rebates</a></li>
-                        <li><a href="/#costs" class="text-gray-400 hover:text-white transition">Cost Calculators</a></li>
-                        <li><a href="/#companies" class="text-gray-400 hover:text-white transition">Find Companies</a></li>
+                        <li><a href="/#solar" class="text-gray-300 hover:text-white transition">Solar Panel Guides</a></li>
+                        <li><a href="/#hvac" class="text-gray-300 hover:text-white transition">HVAC System Guides</a></li>
+                        <li><a href="/#incentives" class="text-gray-300 hover:text-white transition">Incentives & Rebates</a></li>
+                        <li><a href="/#costs" class="text-gray-300 hover:text-white transition">Cost Calculators</a></li>
+                        <li><a href="/#companies" class="text-gray-300 hover:text-white transition">Find Companies</a></li>
                     </ul>
                 </div>
 
@@ -109,24 +109,24 @@ const { title } = Astro.props;
                 <div>
                     <h4 class="font-bold text-lg mb-4">Company</h4>
                     <ul class="space-y-2">
-                        <li><a href="/about/" class="text-gray-400 hover:text-white transition">About Us</a></li>
-                        <li><a href="/contact/" class="text-gray-400 hover:text-white transition">Contact</a></li>
-                        <li><a href="/privacy/" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
-                        <li><a href="/terms/" class="text-gray-400 hover:text-white transition">Terms of Service</a></li>
-                        <li><a href="/sitemap-index.xml" class="text-gray-400 hover:text-white transition">Sitemap</a></li>
+                        <li><a href="/about/" class="text-gray-300 hover:text-white transition">About Us</a></li>
+                        <li><a href="/contact/" class="text-gray-300 hover:text-white transition">Contact</a></li>
+                        <li><a href="/privacy/" class="text-gray-300 hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="/terms/" class="text-gray-300 hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="/sitemap-index.xml" class="text-gray-300 hover:text-white transition">Sitemap</a></li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <!-- Bottom Bar -->
-        <div class="border-t border-gray-800">
+        <div style="border-top: 1px solid rgba(255,255,255,0.1);">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
                 <div class="md:flex md:items-center md:justify-between">
-                    <p class="text-gray-400 text-sm">
+                    <p class="text-gray-300 text-sm">
                         &copy; 2025 Energy Guide. All rights reserved.
                     </p>
-                    <p class="text-gray-400 text-sm mt-2 md:mt-0">
+                    <p class="text-gray-300 text-sm mt-2 md:mt-0">
                         Connecting homeowners with trusted solar and HVAC professionals nationwide.
                     </p>
                 </div>
@@ -147,18 +147,16 @@ const { title } = Astro.props;
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
         :root {
-            --primary: #0f4c81;
-            --primary-dark: #0a3a5f;
-            --accent: #00a651;
-            --accent-dark: #008a43;
-            --text-dark: #1a1a1a;
-            --text-gray: #4a5568;
-            --bg-light: #f7fafc;
+            --grey: #404952;
+            --green: #98c965;
+            --light-green: #eaeddd;
+            --white: #ffffff;
+            --black: #000000;
         }
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            color: var(--text-dark);
+            color: var(--grey);
         }
 
         html {
@@ -174,17 +172,16 @@ const { title } = Astro.props;
         }
 
         ::-webkit-scrollbar-thumb {
-            background: var(--primary);
+            background: var(--green);
             border-radius: 5px;
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: var(--primary-dark);
+            background: #7ab04d;
         }
 
         h1, h2, h3, h4, h5, h6 {
             font-weight: 700;
-            color: var(--text-dark);
             letter-spacing: -0.02em;
         }
 
@@ -193,7 +190,7 @@ const { title } = Astro.props;
             font-weight: 700;
             margin-top: 2.5rem;
             margin-bottom: 1rem;
-            color: var(--text-dark);
+            color: var(--black);
         }
 
         article h3 {
@@ -201,42 +198,28 @@ const { title } = Astro.props;
             font-weight: 600;
             margin-top: 2rem;
             margin-bottom: 0.75rem;
-            color: var(--text-dark);
+            color: var(--black);
         }
 
         article p {
             line-height: 1.75;
-            color: var(--text-gray);
+            color: var(--grey);
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            background: var(--green);
             color: white;
             padding: 0.875rem 2rem;
             border-radius: 0.5rem;
             font-weight: 600;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(15, 76, 129, 0.2);
+            box-shadow: 0 4px 6px rgba(152, 201, 101, 0.2);
         }
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(15, 76, 129, 0.3);
-        }
-
-        .btn-accent {
-            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
-            color: white;
-            padding: 0.875rem 2rem;
-            border-radius: 0.5rem;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0, 166, 81, 0.2);
-        }
-
-        .btn-accent:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0, 166, 81, 0.3);
+            box-shadow: 0 6px 12px rgba(152, 201, 101, 0.3);
+            opacity: 0.9;
         }
     </style>
 </body>
