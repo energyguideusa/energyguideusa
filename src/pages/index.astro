@@ -6,19 +6,16 @@ import LeadForm from '../components/LeadForm.astro';
 <Layout title="Energy Guide - Solar Panel & HVAC Guides for Every State">
   <!-- HERO SECTION -->
   <section class="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 text-white overflow-hidden">
-    <!-- Background Pattern -->
     <div class="absolute inset-0 opacity-10">
       <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
     </div>
     
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
       <div class="text-center">
-        <!-- Badge -->
         <div class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-6">
           <span class="text-sm font-medium">🌟 Trusted by thousands of homeowners nationwide</span>
         </div>
         
-        <!-- Main Heading -->
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
           Find The Best Solar & HVAC<br/>
           <span class="bg-gradient-to-r from-green-400 to-blue-300 bg-clip-text text-transparent">
@@ -26,12 +23,10 @@ import LeadForm from '../components/LeadForm.astro';
           </span>
         </h1>
         
-        <!-- Subheading -->
         <p class="text-xl md:text-2xl text-blue-100 mb-10 max-w-3xl mx-auto">
           Comprehensive guides, cost breakdowns, and vetted contractors in all 50 states. Save thousands on your energy bills.
         </p>
         
-        <!-- CTA Buttons -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
           <a href="#states" class="bg-white text-blue-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
             Explore Your State
@@ -41,7 +36,6 @@ import LeadForm from '../components/LeadForm.astro';
           </a>
         </div>
         
-        <!-- Trust Indicators -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
           <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4">
             <div class="text-3xl font-bold mb-1">522</div>
@@ -63,7 +57,6 @@ import LeadForm from '../components/LeadForm.astro';
       </div>
     </div>
     
-    <!-- Wave Divider -->
     <div class="absolute bottom-0 left-0 right-0">
       <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full">
         <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
@@ -81,74 +74,26 @@ import LeadForm from '../components/LeadForm.astro';
         </p>
       </div>
 
-      <div class="grid md:grid-cols-2 gap-8 mb-12">
-        <!-- Solar Card -->
-        <div class="group relative bg-gradient-to-br from-orange-50 to-yellow-50 rounded-2xl p-8 border-2 border-orange-200 hover:border-orange-400 transition hover:shadow-2xl">
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="group bg-gradient-to-br from-orange-50 to-yellow-50 rounded-2xl p-8 border-2 border-orange-200 hover:border-orange-400 transition hover:shadow-2xl">
           <div class="text-6xl mb-4">☀️</div>
-          <h3 class="text-3xl font-bold mb-4 text-gray-900">Solar Panels</h3>
+          <h3 class="text-3xl font-bold mb-4">Solar Panels</h3>
           <p class="text-gray-700 mb-6">
-            Complete guides on solar panel costs, installation, rebates, ROI, and finding the best installers in your area.
+            Complete guides on solar panel costs, installation, rebates, ROI, and finding the best installers.
           </p>
-          <ul class="space-y-3 mb-6">
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-              </svg>
-              <span>State-specific cost breakdowns</span>
-            </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-              </svg>
-              <span>Federal & state incentives</span>
-            </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-              </svg>
-              <span>ROI & payback calculations</span>
-            </li>
-          </ul>
-          <a href="/california/best-solar-companies/" class="inline-flex items-center text-orange-600 font-semibold group-hover:text-orange-700">
-            Learn More 
-            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
-            </svg>
+          <a href="/california/best-solar-companies/" class="text-orange-600 font-semibold hover:text-orange-700">
+            Learn More →
           </a>
         </div>
 
-        <!-- HVAC Card -->
-        <div class="group relative bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 border-2 border-blue-200 hover:border-blue-400 transition hover:shadow-2xl">
+        <div class="group bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 border-2 border-blue-200 hover:border-blue-400 transition hover:shadow-2xl">
           <div class="text-6xl mb-4">❄️</div>
-          <h3 class="text-3xl font-bold mb-4 text-gray-900">HVAC Systems</h3>
+          <h3 class="text-3xl font-bold mb-4">HVAC Systems</h3>
           <p class="text-gray-700 mb-6">
-            Expert guidance on heating and cooling systems, energy efficiency, costs, and choosing the right contractor.
+            Expert guidance on heating and cooling systems, energy efficiency, and choosing contractors.
           </p>
-          <ul class="space-y-3 mb-6">
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-              </svg>
-              <span>System sizing & efficiency ratings</span>
-            </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-              </svg>
-              <span>Climate-specific recommendations</span>
-            </li>
-            <li class="flex items-start">
-              <svg class="w-6 h-6 text-green-500 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-              </svg>
-              <span>Maintenance & repair guides</span>
-            </li>
-          </ul>
-          <a href="/california/best-hvac-companies/" class="inline-flex items-center text-blue-600 font-semibold group-hover:text-blue-700">
-            Learn More 
-            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
-            </svg>
+          <a href="/california/best-hvac-companies/" class="text-blue-600 font-semibold hover:text-blue-700">
+            Learn More →
           </a>
         </div>
       </div>
@@ -160,49 +105,226 @@ import LeadForm from '../components/LeadForm.astro';
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-4xl md:text-5xl font-bold mb-4">Select Your State</h2>
-        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-          Get detailed solar and HVAC information specific to your state
-        </p>
+        <p class="text-xl text-gray-600">Get detailed information for your state</p>
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
-        <a href="/alabama/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+      <div class="max-w-md mx-auto mb-8">
+        <input 
+          type="text" 
+          id="state-search" 
+          placeholder="Search for your state..." 
+          class="w-full px-6 py-4 rounded-full border-2 border-gray-200 focus:border-blue-500 focus:outline-none"
+        />
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+        <a href="/alabama/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
           <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Alabama</span>
         </a>
-        <a href="/alaska/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+        <a href="/alaska/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
           <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Alaska</span>
         </a>
-        <a href="/arizona/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+        <a href="/arizona/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
           <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Arizona</span>
         </a>
-        <a href="/arkansas/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+        <a href="/arkansas/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
           <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Arkansas</span>
         </a>
-        <a href="/california/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+        <a href="/california/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
           <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">California</span>
         </a>
-        <a href="/colorado/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+        <a href="/colorado/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
           <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Colorado</span>
         </a>
-        <a href="/connecticut/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+        <a href="/connecticut/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
           <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Connecticut</span>
         </a>
-        <a href="/delaware/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+        <a href="/delaware/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
           <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Delaware</span>
         </a>
-        <a href="/florida/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+        <a href="/florida/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
           <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Florida</span>
         </a>
-        <a href="/georgia/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+        <a href="/georgia/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
           <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Georgia</span>
         </a>
-        <a href="/hawaii/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+        <a href="/hawaii/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
           <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Hawaii</span>
         </a>
-        <a href="/idaho/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+        <a href="/idaho/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
           <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Idaho</span>
         </a>
-        <a href="/illinois/" class="bg-white border-2 border-gray-200 hover:border-blue-500 p-3 rounded-lg text-center hover:shadow-lg transition group">
+        <a href="/illinois/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
           <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Illinois</span>
         </a>
-        <a href="/indiana/" class="bg-
+        <a href="/indiana/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Indiana</span>
+        </a>
+        <a href="/iowa/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Iowa</span>
+        </a>
+        <a href="/kansas/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Kansas</span>
+        </a>
+        <a href="/kentucky/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Kentucky</span>
+        </a>
+        <a href="/louisiana/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Louisiana</span>
+        </a>
+        <a href="/maine/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Maine</span>
+        </a>
+        <a href="/maryland/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Maryland</span>
+        </a>
+        <a href="/massachusetts/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Massachusetts</span>
+        </a>
+        <a href="/michigan/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Michigan</span>
+        </a>
+        <a href="/minnesota/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Minnesota</span>
+        </a>
+        <a href="/mississippi/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Mississippi</span>
+        </a>
+        <a href="/missouri/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Missouri</span>
+        </a>
+        <a href="/montana/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Montana</span>
+        </a>
+        <a href="/nebraska/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Nebraska</span>
+        </a>
+        <a href="/nevada/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Nevada</span>
+        </a>
+        <a href="/new-hampshire/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">New Hampshire</span>
+        </a>
+        <a href="/new-jersey/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">New Jersey</span>
+        </a>
+        <a href="/new-mexico/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">New Mexico</span>
+        </a>
+        <a href="/new-york/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">New York</span>
+        </a>
+        <a href="/north-carolina/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">North Carolina</span>
+        </a>
+        <a href="/north-dakota/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">North Dakota</span>
+        </a>
+        <a href="/ohio/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Ohio</span>
+        </a>
+        <a href="/oklahoma/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Oklahoma</span>
+        </a>
+        <a href="/oregon/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Oregon</span>
+        </a>
+        <a href="/pennsylvania/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Pennsylvania</span>
+        </a>
+        <a href="/rhode-island/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Rhode Island</span>
+        </a>
+        <a href="/south-carolina/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">South Carolina</span>
+        </a>
+        <a href="/south-dakota/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">South Dakota</span>
+        </a>
+        <a href="/tennessee/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Tennessee</span>
+        </a>
+        <a href="/texas/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Texas</span>
+        </a>
+        <a href="/utah/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Utah</span>
+        </a>
+        <a href="/vermont/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Vermont</span>
+        </a>
+        <a href="/virginia/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Virginia</span>
+        </a>
+        <a href="/washington/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Washington</span>
+        </a>
+        <a href="/west-virginia/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">West Virginia</span>
+        </a>
+        <a href="/wisconsin/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Wisconsin</span>
+        </a>
+        <a href="/wyoming/" class="state-link bg-white border border-gray-200 hover:border-blue-500 p-4 rounded-lg text-center hover:shadow-lg transition group">
+          <span class="text-sm font-medium text-gray-700 group-hover:text-blue-600">Wyoming</span>
+        </a>
+      </div>
+    </div>
+
+    <script>
+      const searchInput = document.getElementById('state-search');
+      const stateLinks = document.querySelectorAll('.state-link');
+      
+      searchInput?.addEventListener('input', (e) => {
+        const searchTerm = e.target.value.toLowerCase();
+        stateLinks.forEach(link => {
+          const stateName = link.textContent.toLowerCase().trim();
+          link.style.display = stateName.includes(searchTerm) ? '' : 'none';
+        });
+      });
+    </script>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">How It Works</h2>
+        <p class="text-xl text-gray-600">Get started in three simple steps</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <span class="text-2xl font-bold text-blue-600">1</span>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Select Your State</h3>
+          <p class="text-gray-600">Choose your state to access localized information, costs, and incentives.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <span class="text-2xl font-bold text-green-600">2</span>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Explore Your Options</h3>
+          <p class="text-gray-600">Read comprehensive guides on solar panels, HVAC systems, and local contractors.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <span class="text-2xl font-bold text-orange-600">3</span>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Get Free Quotes</h3>
+          <p class="text-gray-600">Connect with vetted local contractors and receive free quotes for your project.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section id="get-quotes" class="py-20 bg-gradient-to-br from-blue-600 to-blue-800">
+    <div class="max-w-4xl mx-auto px-4">
+      <LeadForm />
+    </div>
+  </section>
+</Layout>
