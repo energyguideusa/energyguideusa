@@ -1,57 +1,188 @@
 ---
-interface Props {
-  title: string;
-}
 const { title } = Astro.props;
 ---
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Your state-by-state guide to solar panels and HVAC systems" />
-    <meta name="viewport" content="width=device-width" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title}</title>
-    <style is:global>
-      @tailwind base;
-      @tailwind components;
-      @tailwind utilities;
-    </style>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="description" content="Professional solar panel and HVAC guides for homeowners across America">
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- HEADER -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Brand -->
+                <a href="/" class="flex items-center">
+                    <span class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-green-500 bg-clip-text text-transparent">
+                        Energy Guide
+                    </span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="text-gray-700 hover:text-blue-600 transition font-medium">Home</a>
+                    <a href="/#states" class="text-gray-700 hover:text-blue-600 transition font-medium">States</a>
+                    <a href="/#services" class="text-gray-700 hover:text-blue-600 transition font-medium">Services</a>
+                    <a href="#get-quotes" class="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-2 rounded-full hover:from-blue-700 hover:to-blue-800 transition font-medium shadow-md">
+                        Get Free Quotes
+                    </a>
+                </div>
 
-    <style>
-      :global(article h2) {
-        font-size: 1.875rem;
-        font-weight: 700;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-        color: #1f2937;
-      }
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-700" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
 
-      :global(article h3) {
-        font-size: 1.5rem;
-        font-weight: 600;
-        margin-top: 1.5rem;
-        margin-bottom: 0.75rem;
-        color: #374151;
-      }
-    </style>
- 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header class="bg-white shadow-sm">
-      <div class="max-w-6xl mx-auto px-4 py-4">
-        <a href="/" class="text-2xl font-bold text-blue-600">Energy Guide USA</a>
-      </div>
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="/" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Home</a>
+                    <a href="/#states" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md">States</a>
+                    <a href="/#services" class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md">Services</a>
+                    <a href="#get-quotes" class="block px-3 py-2 text-white bg-blue-600 rounded-md text-center">Get Free Quotes</a>
+                </div>
+            </div>
+        </nav>
     </header>
-    <main>
-      <slot />
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow">
+        <slot />
     </main>
-    <footer class="bg-gray-800 text-white py-12 mt-20">
-      <div class="max-w-6xl mx-auto px-4 text-center">
-        <p class="text-gray-400">© 2026 Energy Guide USA. All rights reserved.</p>
-      </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+        <!-- Main Footer Content -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Brand Column -->
+                <div>
+                    <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent mb-4">
+                        Energy Guide
+                    </h3>
+                    <p class="text-gray-400 mb-4">
+                        Your trusted source for solar panel and HVAC information across America.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Popular States -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Popular States</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/california/" class="text-gray-400 hover:text-white transition">California Solar & HVAC</a></li>
+                        <li><a href="/texas/" class="text-gray-400 hover:text-white transition">Texas Solar & HVAC</a></li>
+                        <li><a href="/florida/" class="text-gray-400 hover:text-white transition">Florida Solar & HVAC</a></li>
+                        <li><a href="/new-york/" class="text-gray-400 hover:text-white transition">New York Solar & HVAC</a></li>
+                        <li><a href="/arizona/" class="text-gray-400 hover:text-white transition">Arizona Solar & HVAC</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/#solar" class="text-gray-400 hover:text-white transition">Solar Panel Guides</a></li>
+                        <li><a href="/#hvac" class="text-gray-400 hover:text-white transition">HVAC System Guides</a></li>
+                        <li><a href="/#incentives" class="text-gray-400 hover:text-white transition">Incentives & Rebates</a></li>
+                        <li><a href="/#costs" class="text-gray-400 hover:text-white transition">Cost Calculators</a></li>
+                        <li><a href="/#companies" class="text-gray-400 hover:text-white transition">Find Companies</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/about/" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="/contact/" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                        <li><a href="/privacy/" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="/terms/" class="text-gray-400 hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="/sitemap-index.xml" class="text-gray-400 hover:text-white transition">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+                <div class="md:flex md:items-center md:justify-between">
+                    <p class="text-gray-400 text-sm">
+                        &copy; 2025 Energy Guide. All rights reserved.
+                    </p>
+                    <p class="text-gray-400 text-sm mt-2 md:mt-0">
+                        Connecting homeowners with trusted solar and HVAC professionals nationwide.
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
-  </body>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.getElementById('mobile-menu-button')?.addEventListener('click', () => {
+            const menu = document.getElementById('mobile-menu');
+            menu?.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Global Styles -->
+    <style is:global>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #2563eb;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1d4ed8;
+        }
+
+        /* Headings global styles */
+        :global(article h2) {
+            font-size: 1.875rem;
+            font-weight: bold;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+
+        :global(article h3) {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: #374151;
+        }
+    </style>
+</body>
 </html>
